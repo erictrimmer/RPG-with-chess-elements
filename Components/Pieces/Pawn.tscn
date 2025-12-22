@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt5j22kc0iil7"]
+
+[ext_resource type="Script" uid="uid://dvcmrpa86l3kj" path="res://Systems/BasePiece.gd" id="1_7rufk"]
+
+[node name="Pawn" type="Sprite2D"]
+script = ExtResource("1_7rufk")

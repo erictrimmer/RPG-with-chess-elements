@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (transparent in game, but light gray here so you can see it on white pages) -->
+  <rect width="16" height="16" fill="#f0f0f0"/>
+
+  <!-- Skin (Earthbound peach tone) -->
+  <rect x="5" y="4" width="6" height="5" fill="#ffdbac"/>   <!-- face -->
+  <rect x="4" y="5" width="1" height="1" fill="#ffdbac"/>   <!-- left ear-ish -->
+  <rect x="11" y="5" width="1" height="1" fill="#ffdbac"/>  <!-- right ear-ish -->
+
+  <!-- Eyes (classic Earthbound dot eyes) -->
+  <rect x="6" y="6" width="2" height="2" fill="#000"/>
+  <rect x="10" y="6" width="2" height="2" fill="#000"/>
+
+  <!-- Hair (black bowl cut) -->
+  <rect x="4" y="3" width="8" height="2" fill="#000"/>
+
+  <!-- Pawn helmet (dark gray with white highlight) -->
+  <rect x="5" y="1" width="6" height="3" fill="#444"/>
+  <rect x="6" y="2" width="4" height="1" fill="#666"/>
+  <rect x="7" y="0" width="2" height="2" fill="#444"/>      <!-- top nub of pawn -->
+
+  <!-- Striped shirt (red/white - classic Ness colors) -->
+  <rect x="4" y="9" width="8" height="2" fill="#ff0000"/>
+  <rect x="4" y="11" width="8" height="2" fill="#ffffff"/>
+  <rect x="4" y="13" width="8" height="2" fill="#ff0000"/>
+
+  <!-- Arms (peach) -->
+  <rect x="3" y="9" width="1" height="4" fill="#ffdbac"/>
+  <rect x="12" y="9" width="1" height="4" fill="#ffdbac"/>
+
+  <!-- Shorts / legs (blue) -->
+  <rect x="5" y="15" width="2" height="1" fill="#0060ff"/>
+  <rect x="9" y="15" width="2" height="1" fill="#0060ff"/>
+
+  <!-- Shoes (black) -->
+  <rect x="5" y="15" width="1" height="1" fill="#000"/>
+  <rect x="10" y="15" width="1" height="1" fill="#000"/>
+</svg>

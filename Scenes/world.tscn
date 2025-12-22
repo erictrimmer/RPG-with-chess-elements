@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://by4b2cyal2qly"]
+
+[ext_resource type="Script" uid="uid://bqgkvpnh42q50" path="res://Scenes/world.gd" id="1_0fj1v"]
+[ext_resource type="PackedScene" uid="uid://dhgjr051n538b" path="res://Entities/Player/player.tscn" id="1_3xqr2"]
+[ext_resource type="PackedScene" uid="uid://dgapfyfgrdbpt" path="res://Entities/NPCs/PawnTutor.tscn" id="9_pawntutor_scn"]
+[ext_resource type="PackedScene" uid="uid://bot200npcscene" path="res://Scenes/Bots/Bot200NPC.tscn" id="5_bot200_scn"]
+[ext_resource type="PackedScene" uid="uid://n5lo4lruv7tq" path="res://Entities/NPCs/BobbyNPC.tscn" id="11_bobby_scn"]
+
+[node name="World" type="Node2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_0fj1v")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="Player" parent="." instance=ExtResource("1_3xqr2")]
+position = Vector2(160, 20)
+
+[node name="PawnTutor" parent="." instance=ExtResource("9_pawntutor_scn")]
+position = Vector2(40, 40)
+
+[node name="BobbyNPC" parent="." instance=ExtResource("11_bobby_scn")]
+position = Vector2(300, 160)
+
+[node name="Bot200NPC" parent="." instance=ExtResource("5_bot200_scn")]
+position = Vector2(80, 40)

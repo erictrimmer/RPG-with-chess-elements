@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BotProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Resources/BotProfile.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+bot_name = "Bobby"
+description = "A young prodigy who plays sharp, aggressive chess."
+elo = 2800
+opening_book = {
+"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -": "e2e4",
+"rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": "g1f3",
+"rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": "g1f3",
+"rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -": "d2d4",
+"rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -": "c7c5",
+"rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq -": "g8f6",
+"rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq -": "g7g6"
+}
+color_preference = "any"
+start_dialog = "I only play the best moves."
+win_dialog = "Checkmate."
+lose_dialog = "You play well. For now."

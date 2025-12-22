@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BotProfile" load_steps=2 format=3 uid="uid://bot200profile"]
+
+[ext_resource type="Script" path="res://Resources/BotProfile.gd" id="1_profile"]
+
+[resource]
+script = ExtResource("1_profile")
+bot_name = "Training Bot 200"
+description = "A very basic bot for beginners."
+elo = 200
+opening_book = {}
+color_preference = "any"
+start_dialog = "I'm not very good, but I'll try!"
+win_dialog = "I won? Wow!"
+lose_dialog = "Good game! You're strong."

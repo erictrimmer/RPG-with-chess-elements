@@ -1,0 +1,12 @@
+{
+    "name": "Italian Punisher",
+    "elo": 600,
+    "color_preference": "white",
+    "opening_book": "italian_game.json",
+    "personality": {
+        "aggression": 0.7,
+        "blunder_rate": 0.3,
+        "fallback_elo": 400
+    },
+    "description": "Teaches the Italian Game. Punishes players who don't know proper responses."
+}

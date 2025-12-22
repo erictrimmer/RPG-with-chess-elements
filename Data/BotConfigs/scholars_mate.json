@@ -1,0 +1,12 @@
+{
+    "name": "Scholar's Mate Punisher",
+    "elo": 400,
+    "color_preference": "white",
+    "opening_book": "scholars_mate.json",
+    "personality": {
+        "aggression": 1.0,
+        "blunder_rate": 0.6,
+        "fallback_elo": 200
+    },
+    "description": "Attempts Scholar's Mate. Very weak if you defend correctly. Teaches beginners to protect f7."
+}

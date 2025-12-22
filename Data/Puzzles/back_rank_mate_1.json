@@ -1,0 +1,17 @@
+{
+    "name": "Back Rank Mate - Basic",
+    "elo_min": 200,
+    "elo_max": 600,
+    "theme": "back_rank_mate",
+    "difficulty": "easy",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+    "objective_move": "e1e8",
+    "instruction": "White to move. Deliver checkmate in one move!",
+    "success_text": "Perfect! That's a back rank mate. The king had no escape squares.",
+    "hint": "Look at Black's back rank. The king is trapped by its own pawns.",
+    "tags": [
+        "mate_in_1",
+        "back_rank",
+        "beginner"
+    ]
+}

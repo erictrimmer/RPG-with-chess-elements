@@ -1,0 +1,18 @@
+{
+    "name": "Back Rank Mate - Promoted Pawn",
+    "elo_min": 200,
+    "elo_max": 600,
+    "theme": "back_rank_mate",
+    "difficulty": "easy",
+    "fen": "6k1/4Pppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+    "objective_move": "e7e8q",
+    "instruction": "White to move. Promote and checkmate!",
+    "success_text": "Brilliant! Pawn promotion to queen delivers back rank mate.",
+    "hint": "Promote the pawn to a queen on e8.",
+    "tags": [
+        "mate_in_1",
+        "back_rank",
+        "beginner",
+        "promotion"
+    ]
+}

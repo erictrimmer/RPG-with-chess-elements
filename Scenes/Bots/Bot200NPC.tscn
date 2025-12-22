@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bot200npcscene"]
+
+[ext_resource type="Script" path="res://Scenes/Bots/Bot200NPC.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/pieces/wp.png" id="2_tex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(16, 16)
+
+[node name="Bot200NPC" type="Area2D"]
+script = ExtResource("1_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

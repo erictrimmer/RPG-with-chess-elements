@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddblish3sopxx"]
+
+[ext_resource type="PackedScene" uid="uid://by4b2cyal2qly" path="res://Scenes/world.tscn" id="1_tworr"]
+
+[node name="KnightNpc" type="Node2D"]
+
+[node name="World" parent="." instance=ExtResource("1_tworr")]
