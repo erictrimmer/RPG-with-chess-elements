@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 signal interaction_requested(type)
 
@@ -13,8 +13,8 @@ func _ready():
 		sprite.scale = Vector2(0.05, 0.05) # Scale down the giant pawn texture
 
 func _input(event):
-	if event.is_action_pressed("interact") and len(get_overlapping_bodies()) > 0:
-		for body in get_overlapping_bodies():
+	if event.is_action_pressed("interact") and $InteractionArea.has_overlapping_bodies():
+		for body in $InteractionArea.get_overlapping_bodies():
 			if body.name == "Player":
 				print("Bot200 Interaction Request Sent")
 				emit_signal("interaction_requested", "show_bot_200_challenge")

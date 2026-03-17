@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://n5lo4lruv7tq"]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" uid="uid://5wtoxy6by4v4" path="res://Entities/NPCs/BobbyNPC.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://b2ue4wwetkb6b" path="res://Assets/Sprites/Characters/Bobby_idle_spritemap.png" id="2_sprite"]
@@ -88,6 +88,8 @@ _data = {
 }
 
 [node name="BobbyNPC" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -99,7 +101,8 @@ frame = 2
 shape = SubResource("RectangleShape2D_body")
 
 [node name="InteractionArea" type="Area2D" parent="."]
-collision_layer = 2
+collision_layer = 8
+collision_mask = 1
 
 [node name="InteractionCollision" type="CollisionShape2D" parent="InteractionArea"]
 shape = SubResource("CircleShape2D_interact")

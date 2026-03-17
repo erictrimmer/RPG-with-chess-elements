@@ -1,11 +1,12 @@
 extends Node
 
 # --- SCENE REGISTRY ---
-const WORLD_SCENE = "res://Scenes/world.tscn"
+const WORLD_SCENE = "res://Scenes/demo.tscn"
 const BATTLE_SCENE = "res://Scenes/StandardMatch.tscn"
 const PAWN_TUTORIAL = "res://Scenes/Puzzles/Pawns/PawnTutorial.tscn"
 const KNIGHT_TUTORIAL = "res://Scenes/Puzzles/Knights/KnightTutorial.tscn"
 const QUEEN_TUTORIAL = "res://Scenes/Puzzles/Queens/QueenTutorial.tscn"
+const YORKTOWN_SCENE = "res://Scenes/Yorktown.tscn"
 
 # --- SYSTEM REFERENCES ---
 var chess_engine: Node = null

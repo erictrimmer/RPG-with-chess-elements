@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pawn's Journey"
-run/main_scene="uid://by4b2cyal2qly"
+run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 
 [autoload]
@@ -21,6 +21,8 @@ PuzzleManager="*res://Systems/PuzzleManager.gd"
 DialogManager="*res://Systems/DialogManager.gd"
 GameState="*res://Systems/GameState.gd"
 GameManager="*res://Systems/GameManager.gd"
+InventoryManager="*res://Systems/InventoryManager.gd"
+QuestManager="*res://Systems/QuestManager.gd"
 
 [display]
 

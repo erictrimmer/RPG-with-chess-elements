@@ -96,6 +96,7 @@ func _on_resign_requested():
 	return_to_world("failed")
 
 func return_to_world(result: String):
+	print("PawnTutorial: Returning to world with result: ", result)
 	GameState.set_tutorial_state("pawn_tutorial", result)
 	GameManager.go_to_world()
 
