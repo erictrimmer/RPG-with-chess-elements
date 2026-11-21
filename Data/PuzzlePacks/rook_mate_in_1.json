@@ -1,0 +1,1206 @@
+{
+ "pack": "rook_mate_in_1",
+ "source": "Lichess puzzle database (CC0)",
+ "puzzles": [
+  {
+   "id": "4uLNP",
+   "name": "Rook mate in 1 #4uLNP",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2r2k2/8/2R2K2/8/8/8/8/8 w - - 18 81",
+   "objective_move": "c6c8",
+   "solution": [
+    "c6c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "IqViB",
+   "name": "Rook mate in 1 #IqViB",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/7r/8/4k3/8/1R2K3 b - - 15 73",
+   "objective_move": "h5h1",
+   "solution": [
+    "h5h1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "jjDYQ",
+   "name": "Rook mate in 1 #jjDYQ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/N7/8/7r/2B2k2/8/5K2 b - - 0 59",
+   "objective_move": "h4h1",
+   "solution": [
+    "h4h1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "sghOj",
+   "name": "Rook mate in 1 #sghOj",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/2k5/KR6/1P6/5r2/8/8 b - - 4 64",
+   "objective_move": "f3a3",
+   "solution": [
+    "f3a3"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "lk260",
+   "name": "Rook mate in 1 #lk260",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R7/8/5K1k/7r/8/8/8/8 w - - 0 57",
+   "objective_move": "a8h8",
+   "solution": [
+    "a8h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "XUXFb",
+   "name": "Rook mate in 1 #XUXFb",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k2/8/5PK1/7R/7p/8/8/7r w - - 2 67",
+   "objective_move": "h5h8",
+   "solution": [
+    "h5h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Znm6H",
+   "name": "Rook mate in 1 #Znm6H",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/k1r5/8/K1R5 b - - 15 65",
+   "objective_move": "c3c1",
+   "solution": [
+    "c3c1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "2lk5l",
+   "name": "Rook mate in 1 #2lk5l",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k1K/8/8/4r2P/8/8/1R6/8 b - - 5 68",
+   "objective_move": "e5h5",
+   "solution": [
+    "e5h5"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "3SIaG",
+   "name": "Rook mate in 1 #3SIaG",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/1k2r3/8/1K2R3 b - - 45 84",
+   "objective_move": "e3e1",
+   "solution": [
+    "e3e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "5ItBw",
+   "name": "Rook mate in 1 #5ItBw",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6Q1/8/4p3/8/8/1k6/p3r3/K7 b - - 0 52",
+   "objective_move": "e2e1",
+   "solution": [
+    "e2e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "AdzVK",
+   "name": "Rook mate in 1 #AdzVK",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2r5/8/1P6/8/8/1R2pk2/8/5K2 b - - 2 55",
+   "objective_move": "c8c1",
+   "solution": [
+    "c8c1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ByPvn",
+   "name": "Rook mate in 1 #ByPvn",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/7p/4r1kP/1R6/6K1 b - - 18 75",
+   "objective_move": "e3e1",
+   "solution": [
+    "e3e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "GvUDw",
+   "name": "Rook mate in 1 #GvUDw",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6P1/3p2K1/8/8/8/3r4/7R w - - 1 47",
+   "objective_move": "h1h8",
+   "solution": [
+    "h1h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "NgtlY",
+   "name": "Rook mate in 1 #NgtlY",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/p7/6k1/7p/1rQ4K b - - 0 60",
+   "objective_move": "b1c1",
+   "solution": [
+    "b1c1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "cegJD",
+   "name": "Rook mate in 1 #cegJD",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/8/3PK3/8/7R/2r4p/8/8 w - - 3 73",
+   "objective_move": "h4h8",
+   "solution": [
+    "h4h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ylMji",
+   "name": "Rook mate in 1 #ylMji",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/8/R2K4/8/5P2/p7/r7/8 w - - 0 61",
+   "objective_move": "a6a8",
+   "solution": [
+    "a6a8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "SaCH9",
+   "name": "Rook mate in 1 #SaCH9",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2k5/8/R1K5/8/8/8/8/7r w - - 3 85",
+   "objective_move": "a6a8",
+   "solution": [
+    "a6a8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "UG9Ay",
+   "name": "Rook mate in 1 #UG9Ay",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/5pp1/6rk/5K2/5R2 w - - 0 53",
+   "objective_move": "f1h1",
+   "solution": [
+    "f1h1"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "0GEB2",
+   "name": "Rook mate in 1 #0GEB2",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k6/8/1K4R1/p5p1/6r1/8/8/8 w - - 0 53",
+   "objective_move": "g6g8",
+   "solution": [
+    "g6g8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "c0vsJ",
+   "name": "Rook mate in 1 #c0vsJ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R7/8/5Kpk/8/6r1/8/5n1p/8 w - - 0 70",
+   "objective_move": "a8h8",
+   "solution": [
+    "a8h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "rI2KR",
+   "name": "Rook mate in 1 #rI2KR",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/7r/6rk/6RP/6PK/8/8 w - - 0 53",
+   "objective_move": "g4g5",
+   "solution": [
+    "g4g5"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Rnstc",
+   "name": "Rook mate in 1 #Rnstc",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/7R/6P1/4p3/4r1kP/8/6K1 b - - 2 48",
+   "objective_move": "e3e1",
+   "solution": [
+    "e3e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "e2ek6",
+   "name": "Rook mate in 1 #e2ek6",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/r2P2p1/1R1K4/8/8/5p2/8/8 w - - 0 47",
+   "objective_move": "b6b8",
+   "solution": [
+    "b6b8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "utmqE",
+   "name": "Rook mate in 1 #utmqE",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/P7/1RR5/K1P5/2k5/3r4/8 b - - 4 71",
+   "objective_move": "d2a2",
+   "solution": [
+    "d2a2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "bm25u",
+   "name": "Rook mate in 1 #bm25u",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/RP6/P7/2k4r/8/2K5 b - - 0 57",
+   "objective_move": "h3h1",
+   "solution": [
+    "h3h1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "2rYQq",
+   "name": "Rook mate in 1 #2rYQq",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/r5p1/4R1K1/8/6k1 w - - 14 66",
+   "objective_move": "e3e1",
+   "solution": [
+    "e3e1"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "WZpsH",
+   "name": "Rook mate in 1 #WZpsH",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/2r4k/6p1/R5P1/6K1 b - - 0 58",
+   "objective_move": "c4c1",
+   "solution": [
+    "c4c1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Etoob",
+   "name": "Rook mate in 1 #Etoob",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "Q7/8/1P5R/2P3p1/4r3/6k1/8/6K1 b - - 0 62",
+   "objective_move": "e4e1",
+   "solution": [
+    "e4e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "FDR1g",
+   "name": "Rook mate in 1 #FDR1g",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P4/2K3p1/7p/8/4R3/7P/q7 w - - 0 44",
+   "objective_move": "e3e8",
+   "solution": [
+    "e3e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "QhKkd",
+   "name": "Rook mate in 1 #QhKkd",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R4r1k/8/6K1/6p1/8/7P/P5r1/8 w - - 0 45",
+   "objective_move": "a8f8",
+   "solution": [
+    "a8f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "TIjq4",
+   "name": "Rook mate in 1 #TIjq4",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3r3k/8/6RP/8/8/pP6/P7/K7 b - - 0 39",
+   "objective_move": "d8d1",
+   "solution": [
+    "d8d1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "jDpPQ",
+   "name": "Rook mate in 1 #jDpPQ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4k3/p3P3/4K2R/8/8/1p6/8/2q5 w - - 0 54",
+   "objective_move": "h6h8",
+   "solution": [
+    "h6h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "qddj4",
+   "name": "Rook mate in 1 #qddj4",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/r7/P2R4/4BP1r/4K3/8/8/8 w - - 1 55",
+   "objective_move": "d6d8",
+   "solution": [
+    "d6d8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "tXqC7",
+   "name": "Rook mate in 1 #tXqC7",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R7/8/5Kpk/8/2p3b1/8/6r1/3q4 w - - 0 48",
+   "objective_move": "a8h8",
+   "solution": [
+    "a8h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "tvHMD",
+   "name": "Rook mate in 1 #tvHMD",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/6pp/8/5P2/8/8/2r2P2/4R1K1 w - - 0 44",
+   "objective_move": "e1e8",
+   "solution": [
+    "e1e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "uYsZR",
+   "name": "Rook mate in 1 #uYsZR",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/2k5/PRp5/K1P5/1P6/7r b - - 8 43",
+   "objective_move": "h1a1",
+   "solution": [
+    "h1a1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "wkIc8",
+   "name": "Rook mate in 1 #wkIc8",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/3R4/7P/5P2/6p1/4k1r1/8/3BK3 b - - 0 67",
+   "objective_move": "g3g1",
+   "solution": [
+    "g3g1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "3zJv1",
+   "name": "Rook mate in 1 #3zJv1",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/6p1/6rk/2R5/7K/8 w - - 27 70",
+   "objective_move": "c3h3",
+   "solution": [
+    "c3h3"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "66RgC",
+   "name": "Rook mate in 1 #66RgC",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/1R6/6p1/2r3Pk/5K1P/8/8/b7 w - - 1 62",
+   "objective_move": "b7h7",
+   "solution": [
+    "b7h7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "J17a9",
+   "name": "Rook mate in 1 #J17a9",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R3r2k/8/6Kp/8/p7/8/6PP/8 w - - 2 44",
+   "objective_move": "a8e8",
+   "solution": [
+    "a8e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "NXfqd",
+   "name": "Rook mate in 1 #NXfqd",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/6k1/7p/6pK/6P1/4r2P/6R1/8 b - - 1 66",
+   "objective_move": "e3h3",
+   "solution": [
+    "e3h3"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "P1jvP",
+   "name": "Rook mate in 1 #P1jvP",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3R4/4r1p1/5p1k/7P/5PK1/8/8/8 w - - 0 55",
+   "objective_move": "d8h8",
+   "solution": [
+    "d8h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Q679o",
+   "name": "Rook mate in 1 #Q679o",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/5p1p/5P2/5rP1/8/3R4/4K3/8 w - - 9 76",
+   "objective_move": "d3d8",
+   "solution": [
+    "d3d8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "QBMGZ",
+   "name": "Rook mate in 1 #QBMGZ",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k2/3K1pp1/8/3P4/7p/4R3/8/2r5 w - - 0 67",
+   "objective_move": "e3e8",
+   "solution": [
+    "e3e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "RaZyX",
+   "name": "Rook mate in 1 #RaZyX",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k1r1R3/P7/1K4p1/5p2/8/6P1/8/8 w - - 1 57",
+   "objective_move": "e8c8",
+   "solution": [
+    "e8c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "d6QVq",
+   "name": "Rook mate in 1 #d6QVq",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1Rr3k1/5p2/5P1K/7p/1P6/8/8/8 w - - 7 49",
+   "objective_move": "b8c8",
+   "solution": [
+    "b8c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "K1c46",
+   "name": "Rook mate in 1 #K1c46",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4R3/5r1k/6b1/1p6/3B2K1/8/8/8 w - - 13 58",
+   "objective_move": "e8h8",
+   "solution": [
+    "e8h8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "7oOkx",
+   "name": "Rook mate in 1 #7oOkx",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k2/6r1/2R1K3/8/8/8/8/8 w - - 22 70",
+   "objective_move": "c6c8",
+   "solution": [
+    "c6c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "oJLHl",
+   "name": "Rook mate in 1 #oJLHl",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1Q6/8/6R1/8/K1k3p1/8/8/2r5 b - - 0 46",
+   "objective_move": "c1a1",
+   "solution": [
+    "c1a1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "3Nr0h",
+   "name": "Rook mate in 1 #3Nr0h",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "rook_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/R7/5k2/5P1K/6P1/P3r3/8 b - - 9 48",
+   "objective_move": "e2h2",
+   "solution": [
+    "e2h2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The rook delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "rook_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  }
+ ]
+}

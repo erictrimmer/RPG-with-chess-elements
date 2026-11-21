@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://Entities/Player/player_forge.gd" id="1_forge"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/Characters/Chess_RPG_cyhippy.png" id="2_sheet"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_feet"]
+size = Vector2(10, 6)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_forge")
+sheet = ExtResource("2_sheet")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sheet")
+hframes = 56
+vframes = 20
+frame = 130
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_feet")
+
+[node name="Camera2D" type="Camera2D" parent="."]

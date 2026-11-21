@@ -57,6 +57,7 @@ func start_puzzle(fen: String, objective: String, instruction: String, success: 
 	is_battle_active = true
 	is_puzzle_mode = true
 	current_fen = fen
+	set_player_side_from_fen(fen)   # puzzles can start with either colour to move
 	puzzle_objective_move = objective
 	puzzle_success_text = success
 	
@@ -68,7 +69,7 @@ func start_puzzle(fen: String, objective: String, instruction: String, success: 
 	
 	if game_ui_node:
 		game_ui_node.update_pgn("")
-		game_ui_node.update_status("Puzzle: White to Move")
+		game_ui_node.update_status("Puzzle: %s to Move" % ("White" if is_player_white else "Black"))
 		game_ui_node.set_instruction(instruction)
 		game_ui_node.enable_buttons()
 		

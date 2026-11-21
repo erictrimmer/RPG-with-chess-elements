@@ -1,0 +1,4626 @@
+{
+ "group": "nature",
+ "sheets_reviewed": [
+  "Tileset_1_MV.png",
+  "Tileset_17_MV.png",
+  "Tileset_20_MV.png",
+  "Tileset_21_MV.png",
+  "Tileset_25_MV.png",
+  "Tileset_26_MV.png",
+  "Tileset_27_MV.png",
+  "Tileset_28_MV.png",
+  "Tileset_69_MV.png",
+  "Tileset_70_MV.png",
+  "Tileset_78_MV.png",
+  "Tileset_81_MV.png"
+ ],
+ "sheet_notes": {
+  "Tileset_1_MV.png": "Street/parking ground sheet; right side has round street tree, tall conifer, cypress row, tree-in-planter base, bushes, planters, dumpsters, lamp posts.",
+  "Tileset_17_MV.png": "Park/playground: grass-dirt patches, big round oak (bare and in planter), logs, potted trees, flower patches and flower-hedge planters, window boxes; basketball hoops, sandboxes, seesaws, lemonade stand (not nature).",
+  "Tileset_20_MV.png": "Treehouse oak (complete) plus cabin/ladder/platform modules, a spreading oak and an oak with tire swing.",
+  "Tileset_21_MV.png": "Forest-wall modules: dense tree canopy rows with grey railing at the bottom (oak, conifer, round-tree variants) that tile horizontally into an impassable border.",
+  "Tileset_25_MV.png": "Pond/water autotile pieces (grass/water banks, deep water patches), lily pads, beach balls, floating apples, apple trees with alternate trunk rows, small fruit trees, baskets and fruit piles.",
+  "Tileset_26_MV.png": "Tree sheet. Each tree = canopy + brown-trunk bottom row; the row(s) directly below are alternate bottoms (pale sycamore-like bark, then grey bark) that replace the trunk row. Strip wraps: 8,0 and 13,0 are grey-bark bottoms for the trees at 0,11 and 5,11.",
+  "Tileset_27_MV.png": "Continuation of the tree strip: huge oak, dead trees, tall spruce, tall-canopy tree, tall-trunk apple, each with alternate bark rows below. Rows 0-3 cols 8-13 and rows 4-7 cols 8-13 are partial canopy/trunk extension pieces (not complete trees); rows 14-15 cols 0-5 are cut-off conifer tops.",
+  "Tileset_28_MV.png": "Wooden dock/pier kit over water (decks, pier with boat slip, edge posts, broken planks, pilings), fishing rods, fish, lifebuoys, crates, barrels.",
+  "Tileset_69_MV.png": "Hedge kit: hedge walls/maze pieces, iron gate in hedge, hedge arches, potted and free topiaries, round/wide/flowering bushes, animal topiaries.",
+  "Tileset_70_MV.png": "Park statuary: animal topiaries, small garden statues and urns, wall basins, tiered fountains (grey and sandstone, with water and dry), large angel statue, maiden-with-urn fountain.",
+  "Tileset_78_MV.png": "Water-side dressing: reeds/cattails, lily pads, rocks in water, pilings, carved face posts, no-swimming signs, bollards with rope, tall reeds, ladders, stumps/posts; bottom rows cut off.",
+  "Tileset_81_MV.png": "Small nature dressing (rocks, ferns, mushrooms, flower patches, flower boxes, pots, canopy shadow decals) plus cemetery set: headstones, stone crosses, coffins, open grave."
+ },
+ "prefabs": [
+  {
+   "id": "nt_s1_round_tree",
+   "sheet": "Tileset_1_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "small round deciduous street tree: dense dark-green oval canopy, short brown trunk with root flare",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalk street tree (Market St / George St), park edges",
+   "notes": "Same species as 5,11 2x3 on this sheet (duplicate). Its top 2 rows (8,3 2x2) can sit above nt_s1_tree_planter_base for a tree in a curb planter."
+  },
+  {
+   "id": "nt_s1_conifer_tall",
+   "sheet": "Tileset_1_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 2,
+   "h": 4,
+   "category": "tree",
+   "desc": "tall narrow evergreen (arborvitae / Italian-cypress shape), bright green with brown root base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery rows, front lawns, park borders",
+   "notes": "Identical copy at 5,7 (2x4)."
+  },
+  {
+   "id": "nt_s1_cypress_row",
+   "sheet": "Tileset_1_MV.png",
+   "x": 12,
+   "y": 3,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "row of three tall columnar evergreens (arborvitae screen); outer trees are cut flat at the left/right rect edges",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery screening rows, behind fences, building side yards",
+   "notes": "Outer columns are half trees: place against a wall/edge, or butt two copies together to make a longer screen."
+  },
+  {
+   "id": "nt_s1_tree_planter_base",
+   "sheet": "Tileset_1_MV.png",
+   "x": 10,
+   "y": 5,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "lower part of a round street tree (canopy bottom + trunk) growing out of a square concrete curb planter with grass",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalk tree pits",
+   "notes": "Not a complete tree: stamp the top 2 rows of nt_s1_round_tree (Tileset_1 8,3 2x2) directly above it. A near-identical copy is at 10,3 2x2."
+  },
+  {
+   "id": "nt_s1_hedge_bush",
+   "sheet": "Tileset_1_MV.png",
+   "x": 10,
+   "y": 7,
+   "w": 2,
+   "h": 1,
+   "category": "hedge",
+   "desc": "low rounded light-green boxwood bush, 2 tiles wide",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront / lawn edging, park paths",
+   "notes": ""
+  },
+  {
+   "id": "nt_s1_bush_wood_planter",
+   "sheet": "Tileset_1_MV.png",
+   "x": 10,
+   "y": 8,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "light-green boxwood bush in a long wooden/brick-red planter box",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront planters, downtown plaza",
+   "notes": ""
+  },
+  {
+   "id": "nt_s1_grass_planter_curb",
+   "sheet": "Tileset_1_MV.png",
+   "x": 12,
+   "y": 8,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "small square concrete curb planter filled with grass (empty)",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk planter, plaza",
+   "notes": ""
+  },
+  {
+   "id": "nt_s1_flower_planter_box",
+   "sheet": "Tileset_1_MV.png",
+   "x": 8,
+   "y": 14,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "long wooden planter box overflowing with green leafy plants and small yellow/red/white flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront window planters, Continental Square, park entrance",
+   "notes": ""
+  },
+  {
+   "id": "nt_s1_flower_bush_small",
+   "sheet": "Tileset_1_MV.png",
+   "x": 15,
+   "y": 2,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small round green bush dotted with pink/yellow flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, cemetery plots, planters",
+   "notes": ""
+  },
+  {
+   "id": "nt_s1_wildflower_strip",
+   "sheet": "Tileset_1_MV.png",
+   "x": 7,
+   "y": 0,
+   "w": 1,
+   "h": 5,
+   "category": "decal",
+   "desc": "vertical strip of scattered tiny white/orange wildflowers on transparent ground",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sprinkle over grass in parks, cemetery, creek banks",
+   "notes": "Walkable decal; can be cut to any 1x1 piece."
+  },
+  {
+   "id": "nt_s17_oak_round_big",
+   "sheet": "Tileset_17_MV.png",
+   "x": 10,
+   "y": 2,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "large round deciduous tree (oak/maple), lumpy bright-green canopy with dark outlines, brown trunk at the bottom centre",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park shade tree, cemetery lawns, courthouse lawn",
+   "notes": "Same canopy as nt_s17_oak_in_planter."
+  },
+  {
+   "id": "nt_s17_oak_in_planter",
+   "sheet": "Tileset_17_MV.png",
+   "x": 13,
+   "y": 2,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "same large round deciduous tree growing out of a low oval stone planter ring",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "plaza / Continental Square tree, monument grounds",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_log_mushrooms",
+   "sheet": "Tileset_17_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "fallen brown log with red-capped mushrooms and grass tufts",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "woodsy creek bank, park undergrowth",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_log",
+   "sheet": "Tileset_17_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "fallen brown log on a grass tuft",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek bank, park, fairground woodpile",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_potted_tree_a",
+   "sheet": "Tileset_17_MV.png",
+   "x": 12,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "small round topiary tree in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront doorway, hotel entrance, porches",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_potted_tree_b",
+   "sheet": "Tileset_17_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "small cone-shaped evergreen in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront doorway, bank entrance",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_window_box_red",
+   "sheet": "Tileset_17_MV.png",
+   "x": 7,
+   "y": 4,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small wooden flower box with red flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "under shop windows, porches",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_window_box_white",
+   "sheet": "Tileset_17_MV.png",
+   "x": 7,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small wooden flower box with white/yellow flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "under shop windows, porches",
+   "notes": "Other colours in the same column: 7,5..7,9."
+  },
+  {
+   "id": "nt_s17_sapling",
+   "sheet": "Tileset_17_MV.png",
+   "x": 1,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "tree",
+   "desc": "tiny young tree / sapling with round green crown",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "newly planted park trees, yards",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_bonsai_tree",
+   "sheet": "Tileset_17_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "tree",
+   "desc": "tiny gnarled dark-green tree (bonsai-like)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "garden accents",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_stump_big",
+   "sheet": "Tileset_17_MV.png",
+   "x": 2,
+   "y": 8,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "wide cut tree stump with root flare and grass",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, cemetery, creek woods",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_stump_small",
+   "sheet": "Tileset_17_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small cut tree stump on grass",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, creek woods",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flowers_blue",
+   "sheet": "Tileset_17_MV.png",
+   "x": 1,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of light-blue/white flowers with green leaves",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds, cemetery plots, park borders",
+   "notes": "Walkable flower patch. Identical patches on Tileset_81."
+  },
+  {
+   "id": "nt_s17_flowers_pink",
+   "sheet": "Tileset_17_MV.png",
+   "x": 3,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of pink flowers with green leaves",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds, park",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flowers_red",
+   "sheet": "Tileset_17_MV.png",
+   "x": 5,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of red tulip-like flowers",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds, courthouse lawn",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flowers_yellow",
+   "sheet": "Tileset_17_MV.png",
+   "x": 1,
+   "y": 11,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of yellow/white daisies",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds, park",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flowers_purple",
+   "sheet": "Tileset_17_MV.png",
+   "x": 3,
+   "y": 11,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of purple pansies/violets",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flowers_crimson",
+   "sheet": "Tileset_17_MV.png",
+   "x": 5,
+   "y": 11,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of crimson/magenta flowers",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "flower beds",
+   "notes": ""
+  },
+  {
+   "id": "nt_s17_flower_hedge_box_blue",
+   "sheet": "Tileset_17_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "wooden raised planter with a green hedge and blue/white flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront planters, park entrance",
+   "notes": "Colour variants at 2,13, 4,13, 6,13 (all 2x2)."
+  },
+  {
+   "id": "nt_s17_flower_hedge_box_pink",
+   "sheet": "Tileset_17_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "wooden raised planter with a green hedge and pink flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront planters, plaza",
+   "notes": ""
+  },
+  {
+   "id": "nt_s20_treehouse",
+   "sheet": "Tileset_20_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 11,
+   "category": "tree",
+   "desc": "big leafy oak with a wooden treehouse (plank cabin with window and door, side deck), ladder and tire swing below",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ]
+   ],
+   "overhead_rows": 9,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "back yards on residential streets, kid quest location",
+   "notes": "Cabin/ladder/platform modules are below at 0,11 (4x4 cabin), 4,11 and 4,13 (ladders), 0,15 (5x1 plank floor). A small detached leaf tuft at the top of column 7 is part of the canopy."
+  },
+  {
+   "id": "nt_s20_oak_spreading",
+   "sheet": "Tileset_20_MV.png",
+   "x": 9,
+   "y": 3,
+   "w": 5,
+   "h": 4,
+   "category": "tree",
+   "desc": "broad spreading oak: wide lumpy canopy, short trunk with roots on a grass patch",
+   "era1960": "good",
+   "solid": [
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park shade tree, courthouse lawn, cemetery, fairground picnic area",
+   "notes": ""
+  },
+  {
+   "id": "nt_s20_oak_tire_swing",
+   "sheet": "Tileset_20_MV.png",
+   "x": 9,
+   "y": 7,
+   "w": 6,
+   "h": 5,
+   "category": "tree",
+   "desc": "very large oak with a leaning trunk and a black tire swing hanging on the right",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "back yard, park, fairground picnic grove",
+   "notes": ""
+  },
+  {
+   "id": "nt_s21_forestwall_oak",
+   "sheet": "Tileset_21_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 5,
+   "h": 6,
+   "category": "tree",
+   "desc": "dense wall of deciduous tree canopy with two visible trunks, a strip of grass and a grey metal railing along the bottom",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "solid park/woods border along Codorus Creek or the edge of the map",
+   "notes": "Tileable module: edges continue seamlessly; repeat horizontally. Matching end piece at 8,0 3x3. Treat as an impassable wall."
+  },
+  {
+   "id": "nt_s21_forestwall_conifer",
+   "sheet": "Tileset_21_MV.png",
+   "x": 5,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "row of three bright-green conical evergreens with grey railing along the bottom",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery/park border screen",
+   "notes": "Repeatable horizontally; single-conifer end caps at 5,4 1x4 and 7,4 1x4."
+  },
+  {
+   "id": "nt_s21_forestwall_endcap",
+   "sheet": "Tileset_21_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 3,
+   "category": "tree",
+   "desc": "end piece of the forest wall: canopy, one trunk, railing ending",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "end of nt_s21_forestwall_oak run",
+   "notes": ""
+  },
+  {
+   "id": "nt_s21_forestwall_round",
+   "sheet": "Tileset_21_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "row of round bushy trees with a trunk and grey railing at the bottom",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park border, creek path edge",
+   "notes": "Repeatable; 2-wide round-tree module at 4,8 2x4."
+  },
+  {
+   "id": "nt_s21_forestwall_single",
+   "sheet": "Tileset_21_MV.png",
+   "x": 0,
+   "y": 10,
+   "w": 3,
+   "h": 6,
+   "category": "tree",
+   "desc": "single tall deciduous tree with grass patch and short railing; canopy right edge is cut straight (joins to wall modules)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "end of a park railing / tree wall",
+   "notes": ""
+  },
+  {
+   "id": "nt_s25_apple_tree",
+   "sheet": "Tileset_25_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "broad fruit tree (apple) with dark-green canopy dotted with red apples, brown trunk on a grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground orchard / farm stand, back yards",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: replace rows 7-8 with 8,9 4x2 (pale trunk) or 8,11 4x2 (grey trunk). Identical copy at 12,5."
+  },
+  {
+   "id": "nt_s25_fruit_tree_small_a",
+   "sheet": "Tileset_25_MV.png",
+   "x": 8,
+   "y": 13,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "small apple tree: round canopy with red apples, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "orchard, back yard",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: replace row 14 with row 15 (pale trunk). Mirror variant at 14,13."
+  },
+  {
+   "id": "nt_s25_fruit_tree_small_b",
+   "sheet": "Tileset_25_MV.png",
+   "x": 10,
+   "y": 13,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "small apple tree, alternate leaf shape, red apples, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "orchard, back yard",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: replace row 14 with row 15. Mirror variant at 12,13."
+  },
+  {
+   "id": "nt_s25_pond_square",
+   "sheet": "Tileset_25_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "water",
+   "desc": "small square pond cut into grass: grass frame with dirt bank lip on the north side and grass tufts overhanging the south edge, blue water inside",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "park duck pond, cemetery reflecting pool",
+   "notes": "Water edge tiles: row 0 = north bank (grass over dirt lip into water), row 3 = south bank. Columns 1-2 can be repeated to widen, rows 1-2 to lengthen."
+  },
+  {
+   "id": "nt_s25_grass_island",
+   "sheet": "Tileset_25_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "water",
+   "desc": "grass island surrounded by water: dirt bank lip along its south edge, water row underneath",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "island in a pond / creek",
+   "notes": "Row 2 shows the grass-to-water bank (front-facing dirt lip) that also works as a creek north bank; row 3 is plain water."
+  },
+  {
+   "id": "nt_s25_creek_bank_north",
+   "sheet": "Tileset_25_MV.png",
+   "x": 4,
+   "y": 14,
+   "w": 4,
+   "h": 2,
+   "category": "water",
+   "desc": "grass bank with dirt lip dropping into water below (front view of a bank), rounded corners at both ends",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "north bank of Codorus Creek channel",
+   "notes": "Row 14 is walkable grass, row 15 water. Middle columns repeat to extend the bank."
+  },
+  {
+   "id": "nt_s25_pond_round_top",
+   "sheet": "Tileset_25_MV.png",
+   "x": 0,
+   "y": 14,
+   "w": 4,
+   "h": 2,
+   "category": "water",
+   "desc": "top half of a round pond: grass with an arched dirt-lipped bank opening into water",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "round park pond",
+   "notes": "Stack nt_s25_pond_round_bottom (8,0 4x2) directly below to complete a 4x4 round pond."
+  },
+  {
+   "id": "nt_s25_pond_round_bottom",
+   "sheet": "Tileset_25_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 4,
+   "h": 2,
+   "category": "water",
+   "desc": "bottom half of a round pond: water curving into grass with tufted edge",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "round park pond",
+   "notes": "Goes below nt_s25_pond_round_top."
+  },
+  {
+   "id": "nt_s25_lily_pads",
+   "sheet": "Tileset_25_MV.png",
+   "x": 5,
+   "y": 6,
+   "w": 3,
+   "h": 1,
+   "category": "water",
+   "desc": "three water tiles with floating green lily pads",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "pond / creek still water dressing",
+   "notes": "Water background included."
+  },
+  {
+   "id": "nt_s25_islet_shrubs",
+   "sheet": "Tileset_25_MV.png",
+   "x": 1,
+   "y": 5,
+   "w": 3,
+   "h": 1,
+   "category": "water",
+   "desc": "three small round shrubby islets sitting in water",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "pond / creek dressing",
+   "notes": ""
+  },
+  {
+   "id": "nt_s25_water_ripples",
+   "sheet": "Tileset_25_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 4,
+   "h": 1,
+   "category": "water",
+   "desc": "plain water tiles with light ripple marks",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "creek/pond fill",
+   "notes": "Ground-type fill; included only as reference for water texture."
+  },
+  {
+   "id": "nt_s25_apple_basket",
+   "sheet": "Tileset_25_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "wicker basket full of red apples",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground produce stand, farmers market",
+   "notes": ""
+  },
+  {
+   "id": "nt_s25_apple_pile",
+   "sheet": "Tileset_25_MV.png",
+   "x": 14,
+   "y": 4,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small pile of red apples on the ground",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "under the apple tree, market stall",
+   "notes": ""
+  },
+  {
+   "id": "nt_s25_bush_low",
+   "sheet": "Tileset_25_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 2,
+   "h": 1,
+   "category": "hedge",
+   "desc": "low rounded green bush, 2 wide",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, lawns, yards",
+   "notes": ""
+  },
+  {
+   "id": "nt_s26_oak_large",
+   "sheet": "Tileset_26_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "large round deciduous tree, bright layered green canopy, wide brown trunk with roots on grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street tree on wider avenues, park, cemetery lawns",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 4 (pale/sycamore bark) or row 5 (grey-green bark) replaces row 3. Same species as nt_s26_oak_large_b (lower canopy)."
+  },
+  {
+   "id": "nt_s26_oak_large_b",
+   "sheet": "Tileset_26_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 4,
+   "h": 3,
+   "category": "tree",
+   "desc": "large round deciduous tree, slightly flatter canopy, brown trunk with roots",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, creek path, cemetery",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 9 (pale) or row 10 (grey) replaces row 8."
+  },
+  {
+   "id": "nt_s26_tree_small",
+   "sheet": "Tileset_26_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "small round deciduous tree, dark-green canopy, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalk tree, yards",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 2 (pale) or row 3 (grey) replaces row 1."
+  },
+  {
+   "id": "nt_s26_apple_small",
+   "sheet": "Tileset_26_MV.png",
+   "x": 6,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "small apple tree with red fruit, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, orchard",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 2 or 3 replaces row 1."
+  },
+  {
+   "id": "nt_s26_sapling",
+   "sheet": "Tileset_26_MV.png",
+   "x": 4,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "young sapling: small round crown on a thin brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "newly planted street trees along sidewalks",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 6 (pale) or 7 (grey) replaces row 5."
+  },
+  {
+   "id": "nt_s26_sapling_apple",
+   "sheet": "Tileset_26_MV.png",
+   "x": 6,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "young apple sapling with a few red apples",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, orchard",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 6 or 7 replaces row 5."
+  },
+  {
+   "id": "nt_s26_tree_round_small",
+   "sheet": "Tileset_26_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "compact round tree, bright green canopy, short brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk street tree, front yards",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 6,8 2x1 (pale) or 6,9 2x1 (grey) replaces row 10."
+  },
+  {
+   "id": "nt_s26_maple_med",
+   "sheet": "Tileset_26_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "medium round deciduous tree (maple-like), rich green canopy, brown trunk on grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, cemetery, residential streets",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 8,6 4x2 (pale) or 8,8 4x2 (grey) replaces rows 4-5."
+  },
+  {
+   "id": "nt_s26_tree_dark_round",
+   "sheet": "Tileset_26_MV.png",
+   "x": 12,
+   "y": 2,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "round deciduous tree with darker blue-green canopy, brown trunk with roots",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery (sombre), park",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 6 (pale) or row 7 (grey) replaces row 5."
+  },
+  {
+   "id": "nt_s26_apple_large",
+   "sheet": "Tileset_26_MV.png",
+   "x": 12,
+   "y": 8,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "large apple tree, dark canopy with red apples, brown trunk on grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground orchard, farm",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 12 (pale) or 13 (grey) replaces row 11."
+  },
+  {
+   "id": "nt_s26_conifer_short",
+   "sheet": "Tileset_26_MV.png",
+   "x": 8,
+   "y": 11,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "short dark-green spruce/fir, layered tiers, trunk and grass at base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery evergreens, park",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 14 (pale) or 15 (grey) replaces row 13. Same species as nt_s26_conifer_tall."
+  },
+  {
+   "id": "nt_s26_conifer_tall",
+   "sheet": "Tileset_26_MV.png",
+   "x": 10,
+   "y": 10,
+   "w": 2,
+   "h": 4,
+   "category": "tree",
+   "desc": "taller dark-green spruce/fir, layered tiers, trunk at base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery evergreens, park",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 14 or 15 replaces row 13."
+  },
+  {
+   "id": "nt_s26_tree_wide",
+   "sheet": "Tileset_26_MV.png",
+   "x": 0,
+   "y": 11,
+   "w": 5,
+   "h": 3,
+   "category": "tree",
+   "desc": "very wide low-crowned deciduous tree (spreading elm/sycamore), brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek-side park, cemetery lawns",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 0,14 5x2 (pale bark) or 8,0 5x2 (grey bark) replaces rows 12-13."
+  },
+  {
+   "id": "nt_s26_tree_medium",
+   "sheet": "Tileset_26_MV.png",
+   "x": 5,
+   "y": 11,
+   "w": 3,
+   "h": 3,
+   "category": "tree",
+   "desc": "medium round deciduous tree, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street tree, park",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 5,14 3x2 (pale) or 13,0 3x2 (grey) replaces rows 12-13."
+  },
+  {
+   "id": "nt_s27_oak_huge",
+   "sheet": "Tileset_27_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 5,
+   "h": 6,
+   "category": "tree",
+   "desc": "huge old deciduous tree, tall layered canopy with visible branches, brown trunk with roots on grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 5,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "landmark tree in park / cemetery / courthouse lawn",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 0,6 5x4 (grey bark) or 0,10 5x4 (pale bark) replaces rows 2-5."
+  },
+  {
+   "id": "nt_s27_dead_tree",
+   "sheet": "Tileset_27_MV.png",
+   "x": 5,
+   "y": 0,
+   "w": 3,
+   "h": 3,
+   "category": "tree",
+   "desc": "bare dead tree: gnarled brown trunk with leafless branches, grass ring at base",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery (spooky), winter scene, vacant lot",
+   "notes": "Mirrored copy at 5,6 3x3."
+  },
+  {
+   "id": "nt_s27_dead_tree_small",
+   "sheet": "Tileset_27_MV.png",
+   "x": 6,
+   "y": 12,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "small bare dead tree with twisted branches and grass at base",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery, vacant lot",
+   "notes": ""
+  },
+  {
+   "id": "nt_s27_dead_sapling",
+   "sheet": "Tileset_27_MV.png",
+   "x": 14,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "small bare leafless tree on a grass patch",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery, winter yards",
+   "notes": ""
+  },
+  {
+   "id": "nt_s27_spruce_tall",
+   "sheet": "Tileset_27_MV.png",
+   "x": 14,
+   "y": 2,
+   "w": 2,
+   "h": 4,
+   "category": "tree",
+   "desc": "tall dark-green spruce with layered tiers, brown trunk",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery evergreen, park",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: row 6 (pale) or row 7 (grey) replaces row 5."
+  },
+  {
+   "id": "nt_s27_tree_tall_canopy",
+   "sheet": "Tileset_27_MV.png",
+   "x": 8,
+   "y": 8,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "round deciduous tree with a tall dark under-canopy and brown trunk on grass oval",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, street",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 8,12 4x2 (pale) or 8,14 4x2 (grey) replaces rows 10-11."
+  },
+  {
+   "id": "nt_s27_apple_tall_trunk",
+   "sheet": "Tileset_27_MV.png",
+   "x": 12,
+   "y": 8,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "apple tree on a tall bare trunk, round canopy with red apples",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "orchard, fairground",
+   "notes": "Alt trunk rows on the sheet (same x,w) can replace the bottom row(s) for a different bark colour: 12,12 4x2 (pale) or 12,14 4x2 (grey) replaces rows 10-11."
+  },
+  {
+   "id": "nt_s27_twigs",
+   "sheet": "Tileset_27_MV.png",
+   "x": 7,
+   "y": 5,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "fallen twig/branch with a few leaves",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "ground clutter under trees",
+   "notes": "More at 5,5 / 6,5 / 5,11 / 6,11 / 7,11."
+  },
+  {
+   "id": "nt_s28_boardwalk_h",
+   "sheet": "Tileset_28_MV.png",
+   "x": 2,
+   "y": 1,
+   "w": 6,
+   "h": 3,
+   "category": "bridge",
+   "desc": "wooden boardwalk/dock section: vertical plank deck (rows 1-2) with dark pilings and water along its front face (row 3), mooring post on the right end",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "riverside boardwalk along Codorus Creek, fishing dock",
+   "notes": "Deck columns repeat to lengthen. Left end piece at 0,1 1x3. Row 3 (front face) contains water; place on water."
+  },
+  {
+   "id": "nt_s28_pier_boatslip",
+   "sheet": "Tileset_28_MV.png",
+   "x": 1,
+   "y": 4,
+   "w": 6,
+   "h": 6,
+   "category": "bridge",
+   "desc": "wooden pier: horizontal-plank deck (top 3 rows) ending in a boat slip with two narrow jetty arms, wooden mooring posts and a sagging chain between them over water",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "creek fishing pier, boat rental at the park lake",
+   "notes": "Deck (rel rows 0-2) walkable, jetty arms (rel cols 1 and 4, rows 3-4) walkable. Place on water."
+  },
+  {
+   "id": "nt_s28_dock_deck",
+   "sheet": "Tileset_28_MV.png",
+   "x": 1,
+   "y": 4,
+   "w": 6,
+   "h": 3,
+   "category": "bridge",
+   "desc": "plain plank deck block (horizontal boards in three 2-tile bays)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "bridge deck / pier fill / boardwalk",
+   "notes": "Fully walkable; tile to any length. Side end pieces with water face at 0,4 1x3 and 7,4 1x3."
+  },
+  {
+   "id": "nt_s28_dock_edge_post",
+   "sheet": "Tileset_28_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "bridge",
+   "desc": "dock edge: vertical plank deck with a post and rope ring, water face with pilings below",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "creek dock edge",
+   "notes": "Mirror piece at 12,6 2x3. Row 8 is water."
+  },
+  {
+   "id": "nt_s28_plank_bridge_deck",
+   "sheet": "Tileset_28_MV.png",
+   "x": 10,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "bridge",
+   "desc": "horizontal plank bridge deck with its water face beneath (planks over water)",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "simple wooden footbridge across the creek",
+   "notes": "Row 9 strip (8,9 6x1) continues the planks sideways; place over water so the bridge carries a path across."
+  },
+  {
+   "id": "nt_s28_dock_broken",
+   "sheet": "Tileset_28_MV.png",
+   "x": 10,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "bridge",
+   "desc": "broken, collapsed dock planks over water",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "derelict pier, flood-damaged creek dock",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_dock_piling",
+   "sheet": "Tileset_28_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 1,
+   "h": 2,
+   "category": "bridge",
+   "desc": "single wooden piling post standing in water",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "old pier pilings, creek",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_lifebuoy",
+   "sheet": "Tileset_28_MV.png",
+   "x": 1,
+   "y": 2,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "red-and-white life ring (sits low in the rect, top edge in the upper tile)",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, swimming area",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_crates_stack",
+   "sheet": "Tileset_28_MV.png",
+   "x": 14,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "stack of wooden shipping crates",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, warehouse yard, rail siding, fairground backstage",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_crates_pair",
+   "sheet": "Tileset_28_MV.png",
+   "x": 14,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "two pale wooden crates, one open",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, market, warehouse",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_barrel",
+   "sheet": "Tileset_28_MV.png",
+   "x": 14,
+   "y": 6,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "single wooden barrel with iron hoops",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, general store front, brewery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s28_barrels_pile",
+   "sheet": "Tileset_28_MV.png",
+   "x": 14,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "pile of three wooden barrels",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, warehouse, fairground",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_wall",
+   "sheet": "Tileset_69_MV.png",
+   "x": 1,
+   "y": 0,
+   "w": 3,
+   "h": 2,
+   "category": "hedge",
+   "desc": "straight boxwood hedge wall: light-green clipped top row, dark-green front face",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal garden borders, cemetery hedges, mansion lawns",
+   "notes": "Middle column repeats to lengthen."
+  },
+  {
+   "id": "nt_s69_hedge_maze_block",
+   "sheet": "Tileset_69_MV.png",
+   "x": 1,
+   "y": 2,
+   "w": 3,
+   "h": 5,
+   "category": "hedge",
+   "desc": "closed loop of clipped hedge (hedge-maze autotile reference: corners, sides, centre hole)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal garden, fairground hedge maze",
+   "notes": "Pieces can be cut out of this block for maze corners/T-junctions."
+  },
+  {
+   "id": "nt_s69_hedge_post",
+   "sheet": "Tileset_69_MV.png",
+   "x": 0,
+   "y": 3,
+   "w": 1,
+   "h": 4,
+   "category": "hedge",
+   "desc": "single-width vertical hedge run with rounded top end",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "garden path edging, hedge maze",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_diamond",
+   "sheet": "Tileset_69_MV.png",
+   "x": 4,
+   "y": 1,
+   "w": 2,
+   "h": 6,
+   "category": "hedge",
+   "desc": "diamond-outline clipped hedge with hollow centre (diagonal formal parterre)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal garden centrepiece",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_iron_gate",
+   "sheet": "Tileset_69_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 3,
+   "category": "hedge",
+   "desc": "hedge wall with an arched black wrought-iron gate in the middle column",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery or estate garden entrance",
+   "notes": "Gate is closed; middle column could be made passable for a gateway."
+  },
+  {
+   "id": "nt_s69_hedge_arch_small",
+   "sheet": "Tileset_69_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 3,
+   "h": 3,
+   "category": "hedge",
+   "desc": "small clipped-hedge archway (walk-through)",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "garden path entrance, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_arch_a",
+   "sheet": "Tileset_69_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 3,
+   "h": 4,
+   "category": "hedge",
+   "desc": "tall clipped-hedge archway, 1 tile opening",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "garden path, park entrance",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_arch_b",
+   "sheet": "Tileset_69_MV.png",
+   "x": 11,
+   "y": 6,
+   "w": 4,
+   "h": 4,
+   "category": "hedge",
+   "desc": "tall clipped-hedge archway, 2 tile opening",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park entrance, cemetery path",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_hedge_arch_wide",
+   "sheet": "Tileset_69_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 5,
+   "h": 4,
+   "category": "hedge",
+   "desc": "wide clipped-hedge archway, 3 tile opening",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "main park entrance, fairground garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_potted_ball",
+   "sheet": "Tileset_69_MV.png",
+   "x": 11,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "clipped ball topiary in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "hotel/bank entrance, porches",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_potted_cone",
+   "sheet": "Tileset_69_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "tall spiral/cone topiary in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal entrance",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_potted_lollipop",
+   "sheet": "Tileset_69_MV.png",
+   "x": 14,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "lollipop standard topiary (ball on a stem) in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "storefront doorway",
+   "notes": "Twin at 15,0."
+  },
+  {
+   "id": "nt_s69_topiary_double_ball",
+   "sheet": "Tileset_69_MV.png",
+   "x": 11,
+   "y": 2,
+   "w": 1,
+   "h": 2,
+   "category": "hedge",
+   "desc": "unpotted two-tier ball topiary",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal garden, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_cone",
+   "sheet": "Tileset_69_MV.png",
+   "x": 13,
+   "y": 2,
+   "w": 1,
+   "h": 2,
+   "category": "hedge",
+   "desc": "unpotted tiered cone topiary",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "formal garden, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_potted_round",
+   "sheet": "Tileset_69_MV.png",
+   "x": 14,
+   "y": 2,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "round shrub in a terracotta pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "porches, storefronts",
+   "notes": "Twin at 15,2."
+  },
+  {
+   "id": "nt_s69_topiary_bear",
+   "sheet": "Tileset_69_MV.png",
+   "x": 12,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "bear-shaped topiary in a pot",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground garden, kids park",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_round",
+   "sheet": "Tileset_69_MV.png",
+   "x": 3,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "round leafy green bush",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, park, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_ball_small",
+   "sheet": "Tileset_69_MV.png",
+   "x": 5,
+   "y": 7,
+   "w": 1,
+   "h": 2,
+   "category": "hedge",
+   "desc": "small upright round shrub",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, foundation planting",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_shrub_columnar",
+   "sheet": "Tileset_69_MV.png",
+   "x": 2,
+   "y": 8,
+   "w": 1,
+   "h": 3,
+   "category": "hedge",
+   "desc": "narrow upright columnar shrub (juniper/arborvitae)",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery plots, house corners",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_round_b",
+   "sheet": "Tileset_69_MV.png",
+   "x": 3,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "round leafy bush, darker base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, park",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_wide",
+   "sheet": "Tileset_69_MV.png",
+   "x": 5,
+   "y": 9,
+   "w": 3,
+   "h": 2,
+   "category": "hedge",
+   "desc": "wide spreading leafy shrub",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, creek path, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_flowering",
+   "sheet": "Tileset_69_MV.png",
+   "x": 3,
+   "y": 11,
+   "w": 2,
+   "h": 2,
+   "category": "hedge",
+   "desc": "round bush with small white/yellow blossoms",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards, park, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_flowering_small",
+   "sheet": "Tileset_69_MV.png",
+   "x": 5,
+   "y": 11,
+   "w": 1,
+   "h": 2,
+   "category": "hedge",
+   "desc": "small upright flowering shrub",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "yards",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_bush_flowering_wide",
+   "sheet": "Tileset_69_MV.png",
+   "x": 5,
+   "y": 13,
+   "w": 3,
+   "h": 2,
+   "category": "hedge",
+   "desc": "wide flowering shrub with white/yellow blossoms",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s69_topiary_horse",
+   "sheet": "Tileset_69_MV.png",
+   "x": 13,
+   "y": 10,
+   "w": 3,
+   "h": 3,
+   "category": "hedge",
+   "desc": "animal topiary shaped like a horse/deer",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground garden, estate lawn",
+   "notes": "Second animal at 13,13 3x3; sitting bear at 11,14 2x2."
+  },
+  {
+   "id": "nt_s69_topiary_deer",
+   "sheet": "Tileset_69_MV.png",
+   "x": 13,
+   "y": 13,
+   "w": 3,
+   "h": 3,
+   "category": "hedge",
+   "desc": "animal topiary shaped like a deer",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_fountain_tiered_grey",
+   "sheet": "Tileset_70_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 4,
+   "h": 5,
+   "category": "statue",
+   "desc": "round grey-stone park fountain: tiered central spire with blue water in an octagonal basin, round outer rim with knobs",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Continental Square / park centrepiece, courthouse lawn",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_fountain_tiered_sand",
+   "sheet": "Tileset_70_MV.png",
+   "x": 12,
+   "y": 3,
+   "w": 4,
+   "h": 5,
+   "category": "statue",
+   "desc": "same tiered fountain in tan sandstone",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park, plaza, cemetery entrance",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_fountain_basin_dry",
+   "sheet": "Tileset_70_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 4,
+   "h": 3,
+   "category": "statue",
+   "desc": "dry round grey-stone fountain basin (no water, no spire tip)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "winter / abandoned park",
+   "notes": "Tan version at 12,0 4x3. Spire-tip pieces at 0,14 and 4,14 (cut at sheet bottom)."
+  },
+  {
+   "id": "nt_s70_angel_statue",
+   "sheet": "Tileset_70_MV.png",
+   "x": 8,
+   "y": 8,
+   "w": 5,
+   "h": 7,
+   "category": "statue",
+   "desc": "large weathered tan-stone angel with spread wings and praying hands on a stepped pedestal",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery monument, memorial garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_statue_fountain_maiden",
+   "sheet": "Tileset_70_MV.png",
+   "x": 13,
+   "y": 9,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "grey-stone statue of a woman pouring from an urn, standing in a round basin",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park fountain, plaza, cemetery garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_garden_statue",
+   "sheet": "Tileset_70_MV.png",
+   "x": 0,
+   "y": 5,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "small cream-stone ornamental statue (cherub/gargoyle figure) on a pedestal",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery, formal garden",
+   "notes": "Mirror at 2,5; copies at 4,5 and 6,5."
+  },
+  {
+   "id": "nt_s70_urn_statue",
+   "sheet": "Tileset_70_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "cream-stone urn sculpture with carved foliage on a pedestal",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery, garden, building entrance",
+   "notes": "Mirror/copies at 2,8 4,8 6,8."
+  },
+  {
+   "id": "nt_s70_wall_fountain_water",
+   "sheet": "Tileset_70_MV.png",
+   "x": 2,
+   "y": 11,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "small grey-stone arched wall fountain / basin filled with blue water",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park drinking fountain, cemetery",
+   "notes": "Dry grey at 0,11; tan dry 4,11; tan with water 6,11."
+  },
+  {
+   "id": "nt_s70_wall_fountain_tan_dry",
+   "sheet": "Tileset_70_MV.png",
+   "x": 4,
+   "y": 11,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "small tan-stone arched basin (dry)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery, garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s70_topiary_panther_elephant",
+   "sheet": "Tileset_70_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 4,
+   "h": 4,
+   "category": "hedge",
+   "desc": "pair of green leafy animal topiaries: a prowling big cat above an elephant (overlapping)",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "fairground / zoo-style garden",
+   "notes": "Mirrored pair at 4,0 4x4. Animals overlap rows so cannot be split."
+  },
+  {
+   "id": "nt_s78_cattails",
+   "sheet": "Tileset_78_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "water",
+   "desc": "cattails with brown heads and reeds growing out of water",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "creek bank, pond edge",
+   "notes": "More reeds: 0,0 1x1, 1,0 1x3."
+  },
+  {
+   "id": "nt_s78_lilypads_big",
+   "sheet": "Tileset_78_MV.png",
+   "x": 5,
+   "y": 0,
+   "w": 2,
+   "h": 4,
+   "category": "water",
+   "desc": "cluster of large floating lily pads, two with white flowers, on transparent background with water-ripple edges",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "pond / creek still water",
+   "notes": "Overlay decal on water tiles."
+  },
+  {
+   "id": "nt_s78_rock_in_water",
+   "sheet": "Tileset_78_MV.png",
+   "x": 2,
+   "y": 1,
+   "w": 1,
+   "h": 1,
+   "category": "water",
+   "desc": "mossy rock poking out of water",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek dressing",
+   "notes": "Variants 2,0 2,2 7,1."
+  },
+  {
+   "id": "nt_s78_piling_log",
+   "sheet": "Tileset_78_MV.png",
+   "x": 2,
+   "y": 3,
+   "w": 1,
+   "h": 2,
+   "category": "bridge",
+   "desc": "single round wooden piling/log post standing in water",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "old pier, creek",
+   "notes": ""
+  },
+  {
+   "id": "nt_s78_no_swimming_sign",
+   "sheet": "Tileset_78_MV.png",
+   "x": 4,
+   "y": 5,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "round red-slash prohibition sign on a metal post",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek/pond: no swimming / no fishing",
+   "notes": ""
+  },
+  {
+   "id": "nt_s78_bollard_rope",
+   "sheet": "Tileset_78_MV.png",
+   "x": 2,
+   "y": 7,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "iron mooring bollard with coiled rope",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "dock, pier",
+   "notes": ""
+  },
+  {
+   "id": "nt_s78_reeds_tall",
+   "sheet": "Tileset_78_MV.png",
+   "x": 1,
+   "y": 8,
+   "w": 3,
+   "h": 3,
+   "category": "water",
+   "desc": "patch of tall green reeds / marsh grass",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek bank, marshy pond edge",
+   "notes": "Walk-through decal. Tall single reed column at 0,7 1x4."
+  },
+  {
+   "id": "nt_s78_dock_ladder",
+   "sheet": "Tileset_78_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 1,
+   "h": 3,
+   "category": "bridge",
+   "desc": "wooden rung ladder (dock side / swimming ladder)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "pier side into water",
+   "notes": "Second ladder at 6,8 1x3; broken segment 5,9 1x2."
+  },
+  {
+   "id": "nt_s78_stump_post",
+   "sheet": "Tileset_78_MV.png",
+   "x": 1,
+   "y": 12,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "short cut wooden post/stump",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek bank, path edging",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_headstone_grey",
+   "sheet": "Tileset_81_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "grave",
+   "desc": "grey rounded-top headstone with plaque",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery rows",
+   "notes": "Column 10 rows 0-12 is a strip of 1x1 headstones in grey and tan."
+  },
+  {
+   "id": "nt_s81_headstone_grey_cross",
+   "sheet": "Tileset_81_MV.png",
+   "x": 10,
+   "y": 1,
+   "w": 1,
+   "h": 1,
+   "category": "grave",
+   "desc": "grey rounded headstone engraved with a cross",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery rows",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_headstone_cross_small",
+   "sheet": "Tileset_81_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 1,
+   "h": 1,
+   "category": "grave",
+   "desc": "small grey stone cross",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_headstone_tan",
+   "sheet": "Tileset_81_MV.png",
+   "x": 10,
+   "y": 4,
+   "w": 1,
+   "h": 1,
+   "category": "grave",
+   "desc": "tan/sandstone rounded headstone with plaque",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_headstone_tan_cross",
+   "sheet": "Tileset_81_MV.png",
+   "x": 10,
+   "y": 5,
+   "w": 1,
+   "h": 1,
+   "category": "grave",
+   "desc": "tan headstone engraved with a cross",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_cross_grey_tall",
+   "sheet": "Tileset_81_MV.png",
+   "x": 8,
+   "y": 1,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "tall grey-stone cross monument on a stepped base, moss at the foot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery family plot",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_cross_tan_tall",
+   "sheet": "Tileset_81_MV.png",
+   "x": 11,
+   "y": 0,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "tall tan-stone cross monument on a base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_cross_grey_short",
+   "sheet": "Tileset_81_MV.png",
+   "x": 11,
+   "y": 3,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "shorter grey-stone cross on a base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": "Similar: 11,5 2x2, 11,7 2x3, 11,10 2x3, 8,4 2x3."
+  },
+  {
+   "id": "nt_s81_cross_tan_short",
+   "sheet": "Tileset_81_MV.png",
+   "x": 8,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "shorter tan-stone cross on a base",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery",
+   "notes": "Similar: 8,7 2x2, 8,11 2x3."
+  },
+  {
+   "id": "nt_s81_open_grave",
+   "sheet": "Tileset_81_MV.png",
+   "x": 13,
+   "y": 6,
+   "w": 3,
+   "h": 3,
+   "category": "grave",
+   "desc": "freshly dug open grave: dark rectangular pit edged with grass tufts",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery burial scene",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_coffin",
+   "sheet": "Tileset_81_MV.png",
+   "x": 14,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "orange-wood coffin standing upright",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "undertaker, spooky event",
+   "notes": "Box style 13,0, strapped 15,0; pale versions rows 2-3, dark rows 4-5."
+  },
+  {
+   "id": "nt_s81_flowers_pink",
+   "sheet": "Tileset_81_MV.png",
+   "x": 5,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "patch of pink flowers",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "cemetery plots, flower beds",
+   "notes": "Blue 3,2, yellow 3,4, purple 5,4, red 5,6, red/pink 5,8 (all 2x2)."
+  },
+  {
+   "id": "nt_s81_flower_box_yellow",
+   "sheet": "Tileset_81_MV.png",
+   "x": 3,
+   "y": 6,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small wooden planter box with yellow/white flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "grave plots, porches",
+   "notes": "Others: 4,6 red, 3,7 white, 4,7 pink, 3,8 pink, 4,8 purple."
+  },
+  {
+   "id": "nt_s81_flower_box_red",
+   "sheet": "Tileset_81_MV.png",
+   "x": 4,
+   "y": 6,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small wooden planter box with red flowers",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "grave plots, window sills",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_clay_pot",
+   "sheet": "Tileset_81_MV.png",
+   "x": 3,
+   "y": 9,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "empty terracotta flower pot",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "porch, grave, garden",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_mushrooms_red",
+   "sheet": "Tileset_81_MV.png",
+   "x": 1,
+   "y": 7,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "cluster of red-capped toadstools",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "woods, creek bank",
+   "notes": "Brown mushrooms 0,6 1,6 2,6 0,7 2,7."
+  },
+  {
+   "id": "nt_s81_fern",
+   "sheet": "Tileset_81_MV.png",
+   "x": 1,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "leafy green fern/ground plant",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "under trees, cemetery",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_boulders_mossy",
+   "sheet": "Tileset_81_MV.png",
+   "x": 6,
+   "y": 0,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "two tan boulders with moss/grass tufts",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "creek bank, park",
+   "notes": "More single rocks in column 7 rows 0-9."
+  },
+  {
+   "id": "nt_s81_stepping_stones",
+   "sheet": "Tileset_81_MV.png",
+   "x": 3,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "flat tan stepping stones",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "garden path, creek crossing stones",
+   "notes": ""
+  },
+  {
+   "id": "nt_s81_tree_shadow_big",
+   "sheet": "Tileset_81_MV.png",
+   "x": 0,
+   "y": 10,
+   "w": 3,
+   "h": 3,
+   "category": "decal",
+   "desc": "soft dark-green blob shadow (tree canopy shadow)",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "place under/beside tree canopies on grass",
+   "notes": "Smaller shadows at 3,10 3,12 3,14 5,10 5,12 5,14 (2x2)."
+  },
+  {
+   "id": "nt_s81_tree_shadow_small",
+   "sheet": "Tileset_81_MV.png",
+   "x": 3,
+   "y": 10,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "small dark-green blob shadow",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "under small trees and bushes",
+   "notes": ""
+  }
+ ]
+}

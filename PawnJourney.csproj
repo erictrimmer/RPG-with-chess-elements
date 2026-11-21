@@ -4,7 +4,4 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>PawnJourney</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="ChessDotNetCore" Version="1.6.0" />
-  </ItemGroup>
 </Project>

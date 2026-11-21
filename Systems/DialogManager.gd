@@ -26,7 +26,7 @@ extends CanvasLayer
 #   # With portrait:
 #   DialogManager.show_sequence([
 #       {"text": "Nice to meet you!", "speaker": "Librarian",
-#        "portrait": preload("res://Assets/Sprites/Characters/librarian_portrait.png")},
+#        "portrait": preload("res://path/to/portrait.png")},
 #   ])
 #
 #   # Final page with choices:

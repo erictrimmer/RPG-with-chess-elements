@@ -6,7 +6,7 @@ const BATTLE_SCENE = "res://Scenes/StandardMatch.tscn"
 const PAWN_TUTORIAL = "res://Scenes/Puzzles/Pawns/PawnTutorial.tscn"
 const KNIGHT_TUTORIAL = "res://Scenes/Puzzles/Knights/KnightTutorial.tscn"
 const QUEEN_TUTORIAL = "res://Scenes/Puzzles/Queens/QueenTutorial.tscn"
-const YORKTOWN_SCENE = "res://Scenes/Yorktown.tscn"
+const DRILL_MENU = "res://Scenes/Puzzles/Drill/DrillMenu.tscn"
 
 # --- SYSTEM REFERENCES ---
 var chess_engine: Node = null
@@ -36,6 +36,12 @@ func go_to_battle(config: MatchConfig):
 	GameState.current_match_config = config
 	_cleanup_current_scene()
 	get_tree().change_scene_to_file(BATTLE_SCENE)
+
+# Open the puzzle drills from the world. Remembers where the player stands, so exiting the drills
+# puts them back there (the world restores GameState's saved position).
+func start_drills(player_position: Vector2):
+	GameState.save_player_position(player_position)
+	go_to_scene(DRILL_MENU)
 
 func go_to_scene(path: String):
 	_cleanup_current_scene()

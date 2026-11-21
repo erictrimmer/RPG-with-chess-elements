@@ -1,0 +1,212 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://Scenes/ScaleTestGrid.gd" id="1"]
+[ext_resource type="PackedScene" path="res://Entities/Player/player.tscn" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/ScaleTest/rowhouse_tall.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/ScaleTest/rowhouse_short.png" id="4"]
+[ext_resource type="Texture2D" path="res://Assets/ScaleTest/house.png" id="5"]
+[ext_resource type="Texture2D" path="res://Assets/ScaleTest/car_side.png" id="6"]
+[ext_resource type="Texture2D" path="res://Assets/ScaleTest/car_top.png" id="7"]
+
+[node name="ScaleTest" type="Node2D"]
+
+[node name="Grass" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 0
+offset_right = 960
+offset_bottom = 800
+mouse_filter = 2
+color = Color(0.42, 0.62, 0.36, 1)
+
+[node name="Sidewalk_A_front_3" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 288
+offset_right = 832
+offset_bottom = 336
+mouse_filter = 2
+color = Color(0.72, 0.72, 0.70, 1)
+
+[node name="Road_A_6" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 336
+offset_right = 832
+offset_bottom = 432
+mouse_filter = 2
+color = Color(0.30, 0.30, 0.32, 1)
+
+[node name="Line_A" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 383
+offset_right = 832
+offset_bottom = 385
+mouse_filter = 2
+color = Color(0.95, 0.85, 0.30, 1)
+
+[node name="Sidewalk_A_back_2" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 432
+offset_right = 832
+offset_bottom = 464
+mouse_filter = 2
+color = Color(0.72, 0.72, 0.70, 1)
+
+[node name="Road_B_4" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 512
+offset_right = 832
+offset_bottom = 576
+mouse_filter = 2
+color = Color(0.30, 0.30, 0.32, 1)
+
+[node name="Sidewalk_B_2" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 576
+offset_right = 832
+offset_bottom = 608
+mouse_filter = 2
+color = Color(0.72, 0.72, 0.70, 1)
+
+[node name="Sidewalk_C_2" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 624
+offset_right = 832
+offset_bottom = 656
+mouse_filter = 2
+color = Color(0.72, 0.72, 0.70, 1)
+
+[node name="Road_C_8" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 656
+offset_right = 832
+offset_bottom = 784
+mouse_filter = 2
+color = Color(0.30, 0.30, 0.32, 1)
+
+[node name="Line_C" type="ColorRect" parent="."]
+offset_left = 0
+offset_top = 719
+offset_right = 832
+offset_bottom = 721
+mouse_filter = 2
+color = Color(0.95, 0.85, 0.30, 1)
+
+[node name="Side_Street_4" type="ColorRect" parent="."]
+offset_left = 832
+offset_top = 288
+offset_right = 896
+offset_bottom = 784
+mouse_filter = 2
+color = Color(0.30, 0.30, 0.32, 1)
+
+[node name="Side_Street_Walk_2" type="ColorRect" parent="."]
+offset_left = 896
+offset_top = 288
+offset_right = 928
+offset_bottom = 784
+mouse_filter = 2
+color = Color(0.72, 0.72, 0.70, 1)
+
+[node name="RowHouse_0" type="Sprite2D" parent="."]
+texture = ExtResource("4")
+centered = false
+position = Vector2(32, 68)
+
+[node name="RowHouse_1" type="Sprite2D" parent="."]
+texture = ExtResource("3")
+centered = false
+position = Vector2(144, 4)
+
+[node name="RowHouse_2" type="Sprite2D" parent="."]
+texture = ExtResource("4")
+centered = false
+position = Vector2(256, 68)
+
+[node name="RowHouse_3" type="Sprite2D" parent="."]
+texture = ExtResource("3")
+centered = false
+position = Vector2(368, 4)
+
+[node name="RowHouse_4" type="Sprite2D" parent="."]
+texture = ExtResource("4")
+centered = false
+position = Vector2(480, 68)
+
+[node name="House" type="Sprite2D" parent="."]
+texture = ExtResource("5")
+centered = false
+position = Vector2(608, 80)
+
+[node name="Car_Side_RoadA" type="Sprite2D" parent="."]
+texture = ExtResource("6")
+centered = false
+position = Vector2(96, 344)
+
+[node name="Car_Side_RoadB" type="Sprite2D" parent="."]
+texture = ExtResource("6")
+centered = false
+position = Vector2(320, 516)
+
+[node name="Car_Side_RoadC" type="Sprite2D" parent="."]
+texture = ExtResource("6")
+centered = false
+position = Vector2(480, 664)
+
+[node name="Car_Side_RoadC2" type="Sprite2D" parent="."]
+texture = ExtResource("6")
+centered = false
+position = Vector2(640, 728)
+
+[node name="Car_Top_SideStreet" type="Sprite2D" parent="."]
+texture = ExtResource("7")
+centered = false
+position = Vector2(840, 480)
+
+[node name="Label_A" type="Label" parent="."]
+offset_left = 32
+offset_top = 432
+offset_right = 256
+offset_bottom = 448
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 10
+text = "Road A: 6 tiles (sidewalks 3 + 2)"
+
+[node name="Label_B" type="Label" parent="."]
+offset_left = 32
+offset_top = 496
+offset_right = 256
+offset_bottom = 512
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 10
+text = "Road B: 4 tiles"
+
+[node name="Label_C" type="Label" parent="."]
+offset_left = 32
+offset_top = 608
+offset_right = 256
+offset_bottom = 624
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 10
+text = "Road C: 8 tiles"
+
+[node name="Label_S" type="Label" parent="."]
+offset_left = 704
+offset_top = 784
+offset_right = 928
+offset_bottom = 800
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 10
+text = "Side street: 4"
+
+[node name="Grid" type="Node2D" parent="."]
+script = ExtResource("1")
+
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(160, 320)

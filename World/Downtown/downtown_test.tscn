@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://World/Downtown/level_test.gd" id="1_bcspp"]
+[ext_resource type="PackedScene" path="res://World/Downtown/downtown_level.tscn" id="2_frh6f"]
+[ext_resource type="PackedScene" path="res://Entities/Player/player_forge.tscn" id="3_5kwnx"]
+[ext_resource type="Script" path="res://Components/SceneDoor.gd" id="4_door"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door_double"]
+size = Vector2(32, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door_single"]
+size = Vector2(16, 10)
+
+[node name="DowntownTest" type="Node2D"]
+script = ExtResource("1_bcspp")
+
+[node name="Level" type="Node2D" parent="." instance=ExtResource("2_frh6f")]
+metadata/size_px = Vector2i(2560, 2048)
+
+[node name="Player" type="CharacterBody2D" parent="." instance=ExtResource("3_5kwnx")]
+position = Vector2(1944, 1968)
+collision_mask = 6
+
+; The depot's two doors as drawn: the double arched door (tiles 119-120) and the single orange door
+; (tile 125). Each trigger sits against the bottom edge of the building, so it overlaps the player
+; when they are pressed up against the door. (The door Markers in downtown_level.tscn are off by a
+; tile or two for the double door, so these are placed from the art.)
+[node name="DepotDoorWest" type="Area2D" parent="."]
+position = Vector2(1920, 1924)
+script = ExtResource("4_door")
+target_scene = "res://World/Interior/depot_interior.tscn"
+target_spawn = Vector2(80, 150)
+target_facing = &"up"
+push_action = &"move_up"
+
+[node name="Shape" type="CollisionShape2D" parent="DepotDoorWest"]
+shape = SubResource("RectangleShape2D_door_double")
+
+[node name="DepotDoorEast" type="Area2D" parent="."]
+position = Vector2(2008, 1924)
+script = ExtResource("4_door")
+target_scene = "res://World/Interior/depot_interior.tscn"
+target_spawn = Vector2(168, 150)
+target_facing = &"up"
+push_action = &"move_up"
+
+[node name="Shape" type="CollisionShape2D" parent="DepotDoorEast"]
+shape = SubResource("RectangleShape2D_door_single")

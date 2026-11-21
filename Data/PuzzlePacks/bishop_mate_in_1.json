@@ -1,0 +1,126 @@
+{
+ "pack": "bishop_mate_in_1",
+ "source": "Lichess puzzle database (CC0)",
+ "puzzles": [
+  {
+   "id": "eRb4u",
+   "name": "Bishop mate in 1 #eRb4u",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "bishop_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/7p/p5p1/1p2q3/1PBB4/7P/P5P1/6K1 w - - 1 54",
+   "objective_move": "d4e5",
+   "solution": [
+    "d4e5"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The bishop delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "bishop_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "9YOTe",
+   "name": "Bishop mate in 1 #9YOTe",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "bishop_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6bk/7p/5rpP/8/8/P1B1p3/1P4P1/6K1 w - - 0 47",
+   "objective_move": "c3f6",
+   "solution": [
+    "c3f6"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The bishop delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "bishop_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "5Y279",
+   "name": "Bishop mate in 1 #5Y279",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "bishop_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3r2k1/1p4Pp/1P1bp2P/8/p7/6PB/8/6K1 w - - 3 51",
+   "objective_move": "h3e6",
+   "solution": [
+    "h3e6"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The bishop delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "bishop_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "2RVNs",
+   "name": "Bishop mate in 1 #2RVNs",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "bishop_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6Pn/p1p1p2K/P1PpP3/1pbP2B1/8/8/8 w - - 0 48",
+   "objective_move": "g4e6",
+   "solution": [
+    "g4e6"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The bishop delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "bishop_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "koQFf",
+   "name": "Bishop mate in 1 #koQFf",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "bishop_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3q2k1/6Pn/p2pr2B/2p5/1pB1P3/1P6/P7/R3K3 w Q - 0 31",
+   "objective_move": "c4e6",
+   "solution": [
+    "c4e6"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The bishop delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "bishop_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  }
+ ]
+}

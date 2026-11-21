@@ -26,3 +26,26 @@ build/
 *.dat
 *.save
 *.log
+
+# Licensed art: kept on disk, never committed (this repo is public).
+# LimeZu Modern Exteriors / Modern Interiors / Character Generator output, and other third-party packs.
+# The Forge-made character sheets (Chess_RPG_cyhippy.png) are original and stay tracked.
+/Assets/Modern Exteriors/
+/Assets/Tilemap/Modern_Exteriors_Complete_Tileset.png
+/Assets/Interiors/
+/World/Downtown/downtown_terrain.png
+/World/Downtown/downtown_objects.png
+/World/Downtown/previews/
+/Assets/Sprites/Characters/Chess_RPG_*.png
+!/Assets/Sprites/Characters/Chess_RPG_cyhippy.png
+/_archive/Assets/Sprites/Pixel Crawler - Free Pack/
+# Scale-test crops and previews cut from the licensed packs
+/_archive/Assets/ScaleTest/
+/_archive/Claude outputs/
+
+# Large source data (re-downloadable from Lichess)
+/Puzzles/lichess_db_puzzle.csv
+
+# Junk
+*.tmp
+desktop.ini

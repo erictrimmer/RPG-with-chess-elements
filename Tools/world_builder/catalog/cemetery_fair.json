@@ -1,0 +1,5827 @@
+{
+ "group": "cemetery_fair",
+ "sheets_reviewed": [
+  "Tileset_22_MV.png",
+  "Tileset_23_MV.png",
+  "Tileset_31_MV.png",
+  "Tileset_32_MV.png",
+  "Tileset_34_MV.png",
+  "Tileset_35_MV.png",
+  "Tileset_36_MV.png",
+  "Tileset_37_MV.png",
+  "Tileset_38_MV.png",
+  "Tileset_55_MV.png",
+  "Tileset_71_MV.png",
+  "Tileset_77_MV.png",
+  "Tileset_82_MV.png",
+  "Tileset_83_MV.png",
+  "Tileset_84_MV.png",
+  "Tileset_104_MV.png",
+  "Tileset_105_MV.png"
+ ],
+ "sheet_notes": {
+  "Tileset_22_MV.png": "Camping: 'Camping' wooden arch sign, picnic tables (plain/with food), kerosene lanterns, firewood, stumps, camp chairs, backpacks, sleeping bags, coolers, and white motorhomes (side/front/rear views). Objects are separate.",
+  "Tileset_23_MV.png": "Canvas tents (A-frame and wall tents in blue/green/beige), small wooden poster kiosks (2x2 complete + 1-wide left/right halves that pair), notice board, arrow signposts, camp tables/chairs/cots, campfire, tripod kettle, mushrooms, rocks.",
+  "Tileset_31_MV.png": "Street food: red British phone boxes (avoid), canopy-less food carts at y0-1 (canopy poles cut at sheet top), striped-canopy pushcarts (pink at x8-13,y2-4; tan/red at x0-5,y12-14; row 15 canopies belong to carts off-sheet), hot-dog van, kiosk pieces x6-7,y9-13, small food tables, chalkboard signs, taco truck (avoid).",
+  "Tileset_32_MV.png": "Pizza kiosk + delivery scooter, vendor-window sprites, rainbow-umbrella produce/flower carts, ice-cream truck (overlaps a vendor sprite - see skip_cells), generator, and many rocky dirt-hole/puddle decals (x8-15) not cataloged.",
+  "Tileset_34_MV.png": "Modern playground: helicopter play structure (avoid), red-roof wooden play towers, plastic slides, swing sets, arched climbing bridges, seesaw. Little 1960s value beyond swings.",
+  "Tileset_35_MV.png": "Plastic playground pipe tunnels (avoid), floodlight towers (top and side views), log rail beams, and a wooden plank-tier + stepped log-post set usable as small bleachers.",
+  "Tileset_36_MV.png": "Basketball half-courts (ground), hoops, same plank-tier/log-post bleacher art and floodlight as sheet 35 - nothing new cataloged.",
+  "Tileset_37_MV.png": "More basketball court ground + hoops + floodlights + same bleacher art - nothing new cataloged.",
+  "Tileset_38_MV.png": "Striped-grass soccer field ground with white lines and soccer goals/nets - not cataloged (no fairground use; field could serve as infield turf if needed).",
+  "Tileset_55_MV.png": "Modular wrought-iron spear fence kit: stone-curb set (x0-7,y1-8) and brick-curb set (x0-7,y8-14) laid out as demo enclosures with 'modular' guide text (do not stamp text cells), diagonal pieces x6-7 and x14-15, plain curb-less iron fence (x8-13,y0-6, row 15), modular raised grass beds x8-13,y7-15.",
+  "Tileset_71_MV.png": "Stone statuary in beige sandstone and grey marble: praying angel, urn maiden (dry and water fountains), tall capstone piers, short pedestals/columns, broken columns and broken pedestals, plinth blocks. Columns at x10-15,y0-2 are cut off at the sheet top (skipped).",
+  "Tileset_77_MV.png": "Ivy-overgrown versions: two urn-maiden basins and a praying angel. Partial angels at x9-13,y0-3 and x1-5,y13-15 are cut by sheet edges (skipped).",
+  "Tileset_82_MV.png": "Graveyard kit: dirt mounds with shovels, grey and beige headstones (tall/cross/round), small slate stones, candles/lanterns, candelabras, wooden cross markers, crows, bats, stone-lidded graves (closed/open/skeletons), bones, bare trees, jack-o-lanterns (avoid).",
+  "Tileset_83_MV.png": "Mostly Halloween: ~20 jack-o-lanterns, spooky face trees with hanging pumpkins, vampire coffins with emblems, coffins in graves; one usable fresh dirt grave pit.",
+  "Tileset_84_MV.png": "Gothic cemetery architecture: iron-railed square plot enclosure, gothic stone gateways (4-wide tall/short, 3-wide; grey orb = good, red glowing gem = avoid), stone chapel front with attached arched receiving-vault wing. Gates touch each other edge to edge; bottom-row gates at y13-15 are cut off (skipped).",
+  "Tileset_104_MV.png": "Beach: tiki beach bar with fish 'Bar' signs (avoid), striped beach/market umbrellas open and closed, beach towels, slat-roof wooden stalls with counters (good midway booths), stools.",
+  "Tileset_105_MV.png": "Event stage: big wooden plank stage decks (flat and raised), aluminium truss arch and truss gantry with spotlights (avoid), tripod speakers, amps, metal stage stairs, crowd barriers."
+ },
+ "prefabs": [
+  {
+   "id": "cf_angel_praying_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 5,
+   "h": 7,
+   "category": "statue",
+   "desc": "Large weeping/praying angel with spread wings, hands clasped, on a two-step square sandstone pedestal; beige carved stone.",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ]
+   ],
+   "overhead_rows": 5,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: centrepiece memorial at the end of a main lane or on a family plot",
+   "notes": "Wings overhang cols 0 and 4; pedestal footprint is cols 1-3."
+  },
+  {
+   "id": "cf_urn_maiden_basin_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 5,
+   "y": 0,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "Classical draped maiden holding an urn on her shoulder, standing in a dry round stone basin; beige sandstone.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery memorial or a park/square fountain (dry)",
+   "notes": "Basin footprint rows 4-5."
+  },
+  {
+   "id": "cf_broken_column_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 6,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "Broken-off fluted column on a square plinth (Victorian 'life cut short' grave monument); beige stone.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: classic Victorian grave monument",
+   "notes": ""
+  },
+  {
+   "id": "cf_pedestal_short_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 1,
+   "h": 3,
+   "category": "statue",
+   "desc": "Short squat baluster pedestal with square cap, beige stone (urn/bust stand).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery plot marker, gate-side post, or garden pedestal",
+   "notes": "Touches column x9 on the sheet; separate object."
+  },
+  {
+   "id": "cf_column_short_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 1,
+   "h": 3,
+   "category": "statue",
+   "desc": "Slim turned stone column with square cap and base, beige.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery plot corner post / memorial column",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_sandstone_a",
+   "sheet": "Tileset_71_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall stone pier: big square blank capstone over an ornate capital, fluted shaft, stepped base; beige sandstone.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery entrance gate piers (two flanking an iron gate run) or memorial pedestal",
+   "notes": "A grey shaft fragment sits directly below on the sheet (row 8) - not included."
+  },
+  {
+   "id": "cf_pier_capstone_sandstone_b",
+   "sheet": "Tileset_71_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall stone pier with blank square capstone, scroll capital, plain shaft, stepped base; beige.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers / pedestals",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_sandstone_c",
+   "sheet": "Tileset_71_MV.png",
+   "x": 12,
+   "y": 3,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall stone pier with blank capstone, plain shaft, beige (variant).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers / pedestals",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_marble_a",
+   "sheet": "Tileset_71_MV.png",
+   "x": 14,
+   "y": 3,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall white/grey marble pier with blank capstone, fluted shaft, stepped base.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers, mausoleum-front columns",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_marble_b",
+   "sheet": "Tileset_71_MV.png",
+   "x": 10,
+   "y": 8,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall grey marble pier with blank capstone, ornate capital, plain shaft.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers / pedestals",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_marble_c",
+   "sheet": "Tileset_71_MV.png",
+   "x": 12,
+   "y": 8,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall grey marble pier, blank capstone, plain shaft (variant).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers / pedestals",
+   "notes": ""
+  },
+  {
+   "id": "cf_pier_capstone_marble_d",
+   "sheet": "Tileset_71_MV.png",
+   "x": 14,
+   "y": 8,
+   "w": 2,
+   "h": 5,
+   "category": "statue",
+   "desc": "Tall grey marble pier, blank capstone, scroll capital, fluted shaft.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery gate piers / pedestals",
+   "notes": ""
+  },
+  {
+   "id": "cf_fountain_urn_maiden_marble",
+   "sheet": "Tileset_71_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "Grey marble urn-bearing maiden statue in a round basin filled with blue water.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Park or cemetery-gate fountain, town square",
+   "notes": "Basin touches the beige twin at x3 (tile-aligned split is clean)."
+  },
+  {
+   "id": "cf_fountain_urn_maiden_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 3,
+   "y": 8,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "Beige sandstone urn-bearing maiden statue in a round water-filled basin.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Park/cemetery fountain, town square",
+   "notes": ""
+  },
+  {
+   "id": "cf_broken_plaque_pedestal_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 6,
+   "y": 9,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "Ruined pedestal: tilted blank stone tablet on a cracked leg; beige.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: old/neglected section dressing",
+   "notes": ""
+  },
+  {
+   "id": "cf_pedestal_short_marble",
+   "sheet": "Tileset_71_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 1,
+   "h": 3,
+   "category": "statue",
+   "desc": "Short grey marble baluster pedestal with square cap.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery plot post / urn stand",
+   "notes": ""
+  },
+  {
+   "id": "cf_column_short_marble",
+   "sheet": "Tileset_71_MV.png",
+   "x": 9,
+   "y": 9,
+   "w": 1,
+   "h": 4,
+   "category": "statue",
+   "desc": "Slim grey marble turned column with cap and base.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery plot corner post / memorial column",
+   "notes": ""
+  },
+  {
+   "id": "cf_broken_column_marble",
+   "sheet": "Tileset_71_MV.png",
+   "x": 8,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "Broken fluted grey marble column on square plinth (Victorian grave monument).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery grave monument",
+   "notes": ""
+  },
+  {
+   "id": "cf_broken_pedestal_marble",
+   "sheet": "Tileset_71_MV.png",
+   "x": 10,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "Ruined grey marble pedestal with tilted tablet top.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: old section",
+   "notes": ""
+  },
+  {
+   "id": "cf_stone_block_sandstone",
+   "sheet": "Tileset_71_MV.png",
+   "x": 2,
+   "y": 14,
+   "w": 2,
+   "h": 2,
+   "category": "statue",
+   "desc": "Low square sandstone block/plinth with shaded base (cube seat or monument base).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: plinth, stone bench or empty pedestal",
+   "notes": "Near-identical copies at x4,y14 and x6,y14."
+  },
+  {
+   "id": "cf_urn_maiden_basin_vines_marble",
+   "sheet": "Tileset_77_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "Grey marble urn-bearing maiden in a dry round basin, overgrown with green ivy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: overgrown older section memorial",
+   "notes": ""
+  },
+  {
+   "id": "cf_urn_maiden_basin_vines_sandstone",
+   "sheet": "Tileset_77_MV.png",
+   "x": 3,
+   "y": 0,
+   "w": 3,
+   "h": 6,
+   "category": "statue",
+   "desc": "Beige sandstone urn maiden in dry basin with ivy creeping up.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: overgrown memorial",
+   "notes": ""
+  },
+  {
+   "id": "cf_angel_praying_vines",
+   "sheet": "Tileset_77_MV.png",
+   "x": 1,
+   "y": 6,
+   "w": 5,
+   "h": 7,
+   "category": "statue",
+   "desc": "Large praying angel with spread wings on square pedestal, broad green ivy leaves around the base.",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ]
+   ],
+   "overhead_rows": 5,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: memorial on a hillside family plot",
+   "notes": "Base footprint cols 1-3. A second angel (cut off by sheet edge) starts right below - not included."
+  },
+  {
+   "id": "cf_grave_shovel_dirtpile",
+   "sheet": "Tileset_82_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Grey shovel stuck upright in a small mossy dirt pile.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: gravedigger working area",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_mound_plain",
+   "sheet": "Tileset_82_MV.png",
+   "x": 1,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Fresh oval dirt grave mound with moss flecks (top view, 1x2).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: fresh grave, pair with a headstone above it",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_mound_shovel",
+   "sheet": "Tileset_82_MV.png",
+   "x": 2,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Dirt grave mound with a shovel stuck in its top.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: freshly dug grave",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_mound_tall",
+   "sheet": "Tileset_82_MV.png",
+   "x": 3,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Taller heaped dirt grave mound, mossy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: fresh grave",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_mound_shovel_b",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 1,
+   "h": 3,
+   "category": "grave",
+   "desc": "Dirt grave mound with a shovel whose handle rises into the row above.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: freshly dug grave",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_mound_stone_cross",
+   "sheet": "Tileset_82_MV.png",
+   "x": 5,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Dirt grave mound with a small grey stone cross at its head.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: simple grave",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_tall_marble_plain",
+   "sheet": "Tileset_82_MV.png",
+   "x": 0,
+   "y": 3,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Tall grey marble headstone with rounded shoulders and moss streaks, stepped base.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: main dressing in headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_tall_marble_wreath",
+   "sheet": "Tileset_82_MV.png",
+   "x": 2,
+   "y": 3,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Tall grey marble tablet headstone with carved wreath medallion and moss.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_cross_marble",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "Small grey gothic headstone topped with a cross, arched niche.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_round_marble",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "Rounded-top grey marble headstone with carved circle/wreath, mossy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_tall_sandstone_plain",
+   "sheet": "Tileset_82_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Tall beige sandstone headstone with rounded shoulders, moss streaks.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_tall_sandstone_wreath",
+   "sheet": "Tileset_82_MV.png",
+   "x": 2,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Tall beige sandstone tablet with carved wreath, mossy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_cross_sandstone",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "Small beige gothic headstone topped with a cross.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_round_sandstone",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "grave",
+   "desc": "Rounded-top beige sandstone headstone with carved wreath.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: headstone rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_headstone_slate_cross_small",
+   "sheet": "Tileset_82_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Narrow dark slate headstone with carved cross, mossy (1 tile wide).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: dense older rows",
+   "notes": "Touches its twin at x1; tile split is clean."
+  },
+  {
+   "id": "cf_headstone_slate_panel_small",
+   "sheet": "Tileset_82_MV.png",
+   "x": 1,
+   "y": 12,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Narrow dark slate headstone with carved panel, mossy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: dense older rows",
+   "notes": ""
+  },
+  {
+   "id": "cf_wood_cross_marker_straight",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 11,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Upright weathered wooden cross grave marker.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: pauper/potter's field section",
+   "notes": ""
+  },
+  {
+   "id": "cf_wood_cross_marker_lean_left",
+   "sheet": "Tileset_82_MV.png",
+   "x": 3,
+   "y": 11,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Leaning wooden cross grave marker.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: neglected section",
+   "notes": ""
+  },
+  {
+   "id": "cf_wood_cross_marker_lean_right",
+   "sheet": "Tileset_82_MV.png",
+   "x": 5,
+   "y": 11,
+   "w": 1,
+   "h": 2,
+   "category": "grave",
+   "desc": "Wooden cross marker leaning the other way.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: neglected section",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_lantern_red",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 3,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small red hooded grave votive lantern.",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: at the foot of a headstone",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_candle_white",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 6,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small white pillar candle/votive.",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: dressing at a grave",
+   "notes": ""
+  },
+  {
+   "id": "cf_candelabra_iron_unlit",
+   "sheet": "Tileset_82_MV.png",
+   "x": 1,
+   "y": 9,
+   "w": 1,
+   "h": 3,
+   "category": "prop",
+   "desc": "Tall wrought-iron three-arm candelabra on round foot, unlit.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: chapel porch only",
+   "notes": ""
+  },
+  {
+   "id": "cf_candelabra_iron_lit",
+   "sheet": "Tileset_82_MV.png",
+   "x": 2,
+   "y": 9,
+   "w": 1,
+   "h": 3,
+   "category": "prop",
+   "desc": "Wrought-iron candelabra with lit yellow candles.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Spooky/Halloween dressing - avoid outdoors",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_slab_closed",
+   "sheet": "Tileset_82_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Flat sandstone ledger slab/lid lying over a grave pit in a stone frame (closed).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: flat ledger grave",
+   "notes": "Duplicate at x8,y3."
+  },
+  {
+   "id": "cf_grave_open_slab_slid",
+   "sheet": "Tileset_82_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 3,
+   "h": 3,
+   "category": "grave",
+   "desc": "Grave pit with its stone lid slid half off revealing an empty dark hole.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween/open grave - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_open_empty",
+   "sheet": "Tileset_82_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Open empty grave pit in stone frame.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Open grave - avoid (only for a gravedigging scene)",
+   "notes": ""
+  },
+  {
+   "id": "cf_grave_open_skeleton",
+   "sheet": "Tileset_82_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Open grave with cartoon skeleton lying inside.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": "More open-grave/bones variants at x10-13,y6-11."
+  },
+  {
+   "id": "cf_skull",
+   "sheet": "Tileset_82_MV.png",
+   "x": 15,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Cartoon skull.",
+   "era1960": "avoid",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_skeleton_small",
+   "sheet": "Tileset_82_MV.png",
+   "x": 15,
+   "y": 6,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Small cartoon skeleton.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_crow_right",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 11,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Dark grey crow standing, facing right.",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: ambient bird on a path or fence",
+   "notes": ""
+  },
+  {
+   "id": "cf_crow_left",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 12,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Dark grey crow facing left.",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: ambient bird",
+   "notes": ""
+  },
+  {
+   "id": "cf_bat_hanging",
+   "sheet": "Tileset_82_MV.png",
+   "x": 7,
+   "y": 9,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Hanging grey bat.",
+   "era1960": "avoid",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_jack_o_lantern",
+   "sheet": "Tileset_82_MV.png",
+   "x": 8,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Carved glowing jack-o-lantern pumpkin.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid (October porch dressing at most)",
+   "notes": "8 pumpkin variants at x8-15,y12-15."
+  },
+  {
+   "id": "cf_pumpkin_red_glow",
+   "sheet": "Tileset_82_MV.png",
+   "x": 14,
+   "y": 8,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Pumpkin with glowing red demonic face.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_dead_tree_small",
+   "sheet": "Tileset_82_MV.png",
+   "x": 0,
+   "y": 14,
+   "w": 2,
+   "h": 2,
+   "category": "tree",
+   "desc": "Small bare leafless tree, twisted brown branches.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: bare autumn/winter tree",
+   "notes": ""
+  },
+  {
+   "id": "cf_dead_tree_a",
+   "sheet": "Tileset_82_MV.png",
+   "x": 2,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "Bare leafless tree with spreading twiggy crown.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: bare tree among graves",
+   "notes": ""
+  },
+  {
+   "id": "cf_dead_tree_b",
+   "sheet": "Tileset_82_MV.png",
+   "x": 4,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "Bare leafless tree (variant).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: bare tree",
+   "notes": ""
+  },
+  {
+   "id": "cf_dead_tree_c",
+   "sheet": "Tileset_82_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "Bare leafless tree (variant).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: bare tree",
+   "notes": ""
+  },
+  {
+   "id": "cf_fresh_grave_pit",
+   "sheet": "Tileset_83_MV.png",
+   "x": 4,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Rectangular freshly-dug grave: brown dirt fill with mossy grass edging (top view).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: new burial plot",
+   "notes": "Flat; could be made walkable if used as a filled grave."
+  },
+  {
+   "id": "cf_coffin_gold_trim",
+   "sheet": "Tileset_83_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "Dark purple-grey hexagonal coffin with gold trim (lying on ground).",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween/vampire coffin - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_coffin_silver_trim",
+   "sheet": "Tileset_83_MV.png",
+   "x": 2,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "Dark coffin with silver trim.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_coffin_in_grave",
+   "sheet": "Tileset_83_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "grave",
+   "desc": "Gold-trim coffin set in a mossy dirt grave pit.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Open burial - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_coffin_skull_emblem",
+   "sheet": "Tileset_83_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "Dark coffin with silver trim and skull emblem.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": "9 more coffin colour/emblem variants at x8-15,y0-8."
+  },
+  {
+   "id": "cf_pumpkin_small_carved",
+   "sheet": "Tileset_83_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small orange carved jack-o-lantern.",
+   "era1960": "avoid",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": "Rows 0-7 x0-7 hold ~20 pumpkin variants."
+  },
+  {
+   "id": "cf_jack_o_lantern_tall",
+   "sheet": "Tileset_83_MV.png",
+   "x": 0,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Tall carved glowing jack-o-lantern.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_spooky_tree_jackolanterns",
+   "sheet": "Tileset_83_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 4,
+   "h": 4,
+   "category": "tree",
+   "desc": "Gnarled tree with a carved grinning face and jack-o-lanterns hanging from branches.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Halloween - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_railed_family_plot",
+   "sheet": "Tileset_84_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 4,
+   "h": 5,
+   "category": "fence",
+   "desc": "Square wrought-iron railing enclosure around a grave plot (top-down): spear-top palings on all four sides on a grey stone curb, empty interior.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: Victorian family plot - put 1-2 headstones/obelisk inside (interior cells (1,2),(2,2))",
+   "notes": "Interior transparent - draw grass under. No gate opening."
+  },
+  {
+   "id": "cf_gothic_gate_orb_4w",
+   "sheet": "Tileset_84_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 4,
+   "h": 5,
+   "category": "building_module",
+   "desc": "Gothic stone cemetery gateway: steep pediment with stone orb finial, iron grille lintel, two square mossy stone piers; open passage between piers (cols 1-2).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: main entrance gate on the street wall",
+   "notes": "Passage cells (1,4),(2,4) walkable; lintel/pediment drawn overhead. Touches neighbour gate at x4 (clean tile split)."
+  },
+  {
+   "id": "cf_gothic_gate_gem_4w",
+   "sheet": "Tileset_84_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 4,
+   "h": 5,
+   "category": "building_module",
+   "desc": "Gothic stone gateway like the orb gate but with a glowing red gem finial.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fantasy glowing gem - avoid (use orb version)",
+   "notes": ""
+  },
+  {
+   "id": "cf_gothic_gate_orb_4w_short",
+   "sheet": "Tileset_84_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "building_module",
+   "desc": "Shorter gothic stone gateway (4 rows): orb finial pediment, iron grille lintel, short piers.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: side/secondary gate",
+   "notes": ""
+  },
+  {
+   "id": "cf_gothic_gate_gem_4w_short",
+   "sheet": "Tileset_84_MV.png",
+   "x": 4,
+   "y": 4,
+   "w": 4,
+   "h": 4,
+   "category": "building_module",
+   "desc": "Short gothic gateway with glowing red gem finial.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fantasy - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_gothic_gate_orb_3w",
+   "sheet": "Tileset_84_MV.png",
+   "x": 8,
+   "y": 1,
+   "w": 3,
+   "h": 5,
+   "category": "building_module",
+   "desc": "Narrow gothic stone gateway (3 wide): orb finial pediment, grille lintel, piers at cols 0 and 2, 1-tile passage.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: pedestrian gate / chapel yard gate",
+   "notes": "Passage cell (1,4). Loose pier-base stubs at x8,y0 / x10-11,y0 / x13,y0 can extend piers one row."
+  },
+  {
+   "id": "cf_gothic_gate_gem_3w",
+   "sheet": "Tileset_84_MV.png",
+   "x": 11,
+   "y": 1,
+   "w": 3,
+   "h": 5,
+   "category": "building_module",
+   "desc": "Narrow gothic gateway with glowing red gem finial.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fantasy - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_gothic_chapel",
+   "sheet": "Tileset_84_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 5,
+   "h": 9,
+   "category": "building",
+   "desc": "Grey stone Gothic Revival chapel front: steep brown wood-shingle roof with iron cross finials, pinnacled buttress towers both sides, round rose window in front gable, pointed-arch doorway with iron gate and stone steps.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     8
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: cemetery chapel at the top of the hill",
+   "notes": "Receiving-vault wing (cf_receiving_vault_arch) attaches to its right side. Gates touch its left edge on the sheet (clean split). Top rows are mostly sky around the spire."
+  },
+  {
+   "id": "cf_receiving_vault_arch",
+   "sheet": "Tileset_84_MV.png",
+   "x": 13,
+   "y": 12,
+   "w": 3,
+   "h": 3,
+   "category": "building_module",
+   "desc": "Low grey stone wing with a wide pointed-arch dark opening and steps (vault/crypt entrance), mossy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     2
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: receiving vault set into the hillside",
+   "notes": "Attaches to the right of cf_gothic_chapel (abs x13). Wall continues past the sheet edge; usable standalone as a vault/mausoleum front."
+  },
+  {
+   "id": "cf_gothic_chapel_with_vault",
+   "sheet": "Tileset_84_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 8,
+   "h": 9,
+   "category": "building",
+   "desc": "Gothic chapel front plus attached arched receiving-vault wing on the right, one combined stamp.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     8
+    ],
+    [
+     6,
+     8
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: chapel + receiving vault complex",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_stonecurb_top",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 2,
+   "w": 4,
+   "h": 2,
+   "category": "fence",
+   "desc": "Top run of a modular wrought-iron spear fence on a beige stone curb, corner posts turning down at both ends.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: plot enclosure / boundary fence (north side)",
+   "notes": "Modular set: top (this) + side_l/side_r (repeat vertically to deepen) + bottom. Repeat middle cols 1-2 to widen. Sheet has 'modular' guide text inside the demo enclosure at x2-3,y4 - never stamp it."
+  },
+  {
+   "id": "cf_iron_fence_stonecurb_side_l",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 4,
+   "w": 1,
+   "h": 1,
+   "category": "fence",
+   "desc": "Left vertical side of the stone-curb iron fence (repeat vertically).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: plot enclosure west side",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_stonecurb_side_r",
+   "sheet": "Tileset_55_MV.png",
+   "x": 4,
+   "y": 4,
+   "w": 1,
+   "h": 1,
+   "category": "fence",
+   "desc": "Right vertical side of the stone-curb iron fence (repeat vertically).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: plot enclosure east side",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_stonecurb_bottom",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 5,
+   "w": 4,
+   "h": 2,
+   "category": "fence",
+   "desc": "Bottom/front run of the stone-curb iron fence, spear palings with corner posts.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: plot enclosure south side / street-front fence",
+   "notes": "Repeat middle cols 1-2 to widen."
+  },
+  {
+   "id": "cf_iron_fence_brickcurb_top",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 9,
+   "w": 4,
+   "h": 2,
+   "category": "fence",
+   "desc": "Top run of wrought-iron spear fence on an orange-brick curb, corner posts at ends.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: brick-based cemetery street fence / plot",
+   "notes": "Same modular layout as the stone-curb set; guide text at x2-3,y11 - don't stamp."
+  },
+  {
+   "id": "cf_iron_fence_brickcurb_side_l",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 11,
+   "w": 1,
+   "h": 1,
+   "category": "fence",
+   "desc": "Left vertical side of brick-curb iron fence.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery fence west side",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_brickcurb_side_r",
+   "sheet": "Tileset_55_MV.png",
+   "x": 4,
+   "y": 11,
+   "w": 1,
+   "h": 1,
+   "category": "fence",
+   "desc": "Right vertical side of brick-curb iron fence.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery fence east side",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_brickcurb_bottom",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 12,
+   "w": 4,
+   "h": 2,
+   "category": "fence",
+   "desc": "Bottom (front) run of brick-curb iron spear fence with corner posts.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: street-front fence along the cemetery",
+   "notes": "Repeat middle cols 1-2 to widen."
+  },
+  {
+   "id": "cf_iron_fence_plain_run",
+   "sheet": "Tileset_55_MV.png",
+   "x": 10,
+   "y": 2,
+   "w": 2,
+   "h": 1,
+   "category": "fence",
+   "desc": "Plain dark wrought-iron spear-paling fence run (no curb), horizontal.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: interior section fences; fairground/park railing",
+   "notes": "Repeat horizontally; tiles seamless."
+  },
+  {
+   "id": "cf_iron_fence_plain_run_long",
+   "sheet": "Tileset_55_MV.png",
+   "x": 1,
+   "y": 15,
+   "w": 4,
+   "h": 1,
+   "category": "fence",
+   "desc": "4-tile plain wrought-iron spear fence run (no curb).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery / park railing",
+   "notes": ""
+  },
+  {
+   "id": "cf_iron_fence_plain_vertical",
+   "sheet": "Tileset_55_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "fence",
+   "desc": "Vertical (north-south) run of plain iron fence seen edge-on: thin post line.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Prospect Hill Cemetery: side boundaries",
+   "notes": "Repeat vertically."
+  },
+  {
+   "id": "cf_wood_arch_sign_camping",
+   "sheet": "Tileset_22_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 4,
+   "category": "sign",
+   "desc": "Rustic wooden arch sign on two log posts, plank board reading 'Camping' with a tent icon.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fair campground entrance only (text reads 'Camping')",
+   "notes": "Posts at cols 1 and 5."
+  },
+  {
+   "id": "cf_picnic_table",
+   "sheet": "Tileset_22_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Wooden plank picnic table with attached benches (top view).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court / grove picnic area",
+   "notes": ""
+  },
+  {
+   "id": "cf_picnic_table_long",
+   "sheet": "Tileset_22_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "Long wooden picnic table with benches.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): midway eating area",
+   "notes": ""
+  },
+  {
+   "id": "cf_picnic_table_food",
+   "sheet": "Tileset_22_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Picnic table with plate of food and soda cans.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): eating area",
+   "notes": ""
+  },
+  {
+   "id": "cf_picnic_table_long_food",
+   "sheet": "Tileset_22_MV.png",
+   "x": 10,
+   "y": 2,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Long picnic table with jug, plates of food and drinks.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): eating area",
+   "notes": "Top row only holds a bottle tip."
+  },
+  {
+   "id": "cf_kerosene_lantern_red",
+   "sheet": "Tileset_22_MV.png",
+   "x": 4,
+   "y": 8,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small red kerosene camp lantern (unlit).",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): booth counter / tent dressing",
+   "notes": ""
+  },
+  {
+   "id": "cf_kerosene_lantern_red_lit",
+   "sheet": "Tileset_22_MV.png",
+   "x": 4,
+   "y": 9,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Red kerosene lantern glowing.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): evening midway booth lighting",
+   "notes": ""
+  },
+  {
+   "id": "cf_kerosene_lantern_brass_lit",
+   "sheet": "Tileset_22_MV.png",
+   "x": 5,
+   "y": 9,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Brass kerosene lantern glowing.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): evening booth lighting",
+   "notes": ""
+  },
+  {
+   "id": "cf_firewood_stack",
+   "sheet": "Tileset_22_MV.png",
+   "x": 5,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Stack of split firewood logs.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): behind livestock barns / concession",
+   "notes": ""
+  },
+  {
+   "id": "cf_log_bundle",
+   "sheet": "Tileset_22_MV.png",
+   "x": 4,
+   "y": 12,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Upright bundle of logs.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): rural dressing",
+   "notes": ""
+  },
+  {
+   "id": "cf_tree_stump_axe",
+   "sheet": "Tileset_22_MV.png",
+   "x": 0,
+   "y": 14,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Tree stump chopping block with an axe stuck in it.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): wood-chopping demo / farm area",
+   "notes": ""
+  },
+  {
+   "id": "cf_tree_stump",
+   "sheet": "Tileset_22_MV.png",
+   "x": 0,
+   "y": 15,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Plain tree stump.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s) / park",
+   "notes": ""
+  },
+  {
+   "id": "cf_camp_chair_green",
+   "sheet": "Tileset_22_MV.png",
+   "x": 3,
+   "y": 6,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Green folding camp chair.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): spectator chair",
+   "notes": ""
+  },
+  {
+   "id": "cf_motorhome_side",
+   "sheet": "Tileset_22_MV.png",
+   "x": 10,
+   "y": 5,
+   "w": 6,
+   "h": 4,
+   "category": "vehicle",
+   "desc": "White boxy motorhome/RV with spare tyre on roof and brown stripe, side view facing right.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibitor/carny parking lot",
+   "notes": "Late-60s/70s look; use sparingly. Other RV views at x8-9,y4-15 and x10-15,y11-14."
+  },
+  {
+   "id": "cf_canvas_tent_a_blue",
+   "sheet": "Tileset_23_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "building",
+   "desc": "Blue canvas A-frame tent with centre pole, tan guy-flaps, open triangular door.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     3
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibitor/4-H tent row",
+   "notes": ""
+  },
+  {
+   "id": "cf_canvas_tent_a_green",
+   "sheet": "Tileset_23_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 4,
+   "h": 4,
+   "category": "building",
+   "desc": "Green canvas A-frame tent with centre pole and open door.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     3
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibitor tent",
+   "notes": ""
+  },
+  {
+   "id": "cf_canvas_tent_a_beige",
+   "sheet": "Tileset_23_MV.png",
+   "x": 0,
+   "y": 7,
+   "w": 4,
+   "h": 4,
+   "category": "building",
+   "desc": "Natural beige canvas A-frame tent with open door.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     3
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): classic canvas exhibit tent",
+   "notes": ""
+  },
+  {
+   "id": "cf_canvas_wall_tent_blue",
+   "sheet": "Tileset_23_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 4,
+   "h": 3,
+   "category": "building",
+   "desc": "Blue canvas wall tent (cabin tent) seen from its closed side, window patch, wooden ridge pole.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibit tent / tent row back side",
+   "notes": ""
+  },
+  {
+   "id": "cf_canvas_wall_tent_green",
+   "sheet": "Tileset_23_MV.png",
+   "x": 4,
+   "y": 4,
+   "w": 4,
+   "h": 3,
+   "category": "building",
+   "desc": "Green canvas wall tent with window patch.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibit tent",
+   "notes": ""
+  },
+  {
+   "id": "cf_canvas_wall_tent_beige",
+   "sheet": "Tileset_23_MV.png",
+   "x": 4,
+   "y": 7,
+   "w": 4,
+   "h": 3,
+   "category": "building",
+   "desc": "Natural-canvas wall tent with patch.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): exhibit tent",
+   "notes": ""
+  },
+  {
+   "id": "cf_wood_kiosk_booth",
+   "sheet": "Tileset_23_MV.png",
+   "x": 10,
+   "y": 8,
+   "w": 2,
+   "h": 2,
+   "category": "building",
+   "desc": "Small wooden booth/kiosk with shingled gable roof on a grass base (2x2).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): ticket booth at the gate or small midway booth",
+   "notes": ""
+  },
+  {
+   "id": "cf_wood_kiosk_left_poster",
+   "sheet": "Tileset_23_MV.png",
+   "x": 8,
+   "y": 8,
+   "w": 1,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Left half of a wooden kiosk with a paper poster on its face.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): poster/notice booth",
+   "notes": "Place a right half (cf_wood_kiosk_right_poster) directly to its right. Alt left half with posters at x9,y8."
+  },
+  {
+   "id": "cf_wood_kiosk_right_poster",
+   "sheet": "Tileset_23_MV.png",
+   "x": 12,
+   "y": 8,
+   "w": 1,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Right half of a wooden kiosk with a paper poster.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): poster/notice booth",
+   "notes": "Alt right half with red/blue posters at x13,y8."
+  },
+  {
+   "id": "cf_notice_board_post",
+   "sheet": "Tileset_23_MV.png",
+   "x": 7,
+   "y": 10,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Wooden post with a paper notice board.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): schedule/price board beside booths",
+   "notes": ""
+  },
+  {
+   "id": "cf_signpost_arrows_a",
+   "sheet": "Tileset_23_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Wooden directional signpost with arrow boards.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): wayfinding to grandstand/barns/midway",
+   "notes": ""
+  },
+  {
+   "id": "cf_signpost_arrow_b",
+   "sheet": "Tileset_23_MV.png",
+   "x": 3,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Small wooden arrow signpost.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): wayfinding",
+   "notes": ""
+  },
+  {
+   "id": "cf_signpost_arrow_c",
+   "sheet": "Tileset_23_MV.png",
+   "x": 5,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Small wooden signpost (variant).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): wayfinding",
+   "notes": ""
+  },
+  {
+   "id": "cf_camp_lantern_yellow",
+   "sheet": "Tileset_23_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Yellow-framed caged camp lantern.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): tent/booth dressing",
+   "notes": "Red and blue variants at x1,y13 and x2,y13."
+  },
+  {
+   "id": "cf_log_bench",
+   "sheet": "Tileset_23_MV.png",
+   "x": 0,
+   "y": 11,
+   "w": 3,
+   "h": 1,
+   "category": "prop",
+   "desc": "Rustic bench made of split logs.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): seating near tents/barns",
+   "notes": ""
+  },
+  {
+   "id": "cf_campfire",
+   "sheet": "Tileset_23_MV.png",
+   "x": 12,
+   "y": 10,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Crackling campfire on a ring of logs.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): evening bonfire / campground",
+   "notes": ""
+  },
+  {
+   "id": "cf_cooking_tripod_pot",
+   "sheet": "Tileset_23_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "Iron tripod with a hanging cooking kettle.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): apple-butter/kettle-corn demonstration",
+   "notes": ""
+  },
+  {
+   "id": "cf_food_cart_pink_awning",
+   "sheet": "Tileset_31_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Wooden pushcart with pink-and-white striped canvas canopy on poles, empty counter, spoked wheels.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): midway food cart (cotton candy, lemonade)",
+   "notes": "Canopy touches the cart above on the sheet; tile split clean."
+  },
+  {
+   "id": "cf_food_cart_pink_awning_donuts",
+   "sheet": "Tileset_31_MV.png",
+   "x": 11,
+   "y": 2,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Pink striped-canopy pushcart with a donut display case and cooler.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): midway donut/funnel-cake cart",
+   "notes": ""
+  },
+  {
+   "id": "cf_food_cart_tan_awning",
+   "sheet": "Tileset_31_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Wooden pushcart with tan/brown striped canvas canopy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): peanut/popcorn cart",
+   "notes": ""
+  },
+  {
+   "id": "cf_food_cart_red_awning",
+   "sheet": "Tileset_31_MV.png",
+   "x": 3,
+   "y": 12,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Wooden pushcart with red-and-white striped canvas canopy.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): classic midway food cart",
+   "notes": ""
+  },
+  {
+   "id": "cf_hotdog_van_umbrella",
+   "sheet": "Tileset_31_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 6,
+   "h": 6,
+   "category": "vehicle",
+   "desc": "Grey step-van food truck with red 'HotDogs' sign, serving window, and a big red/yellow umbrella over its side.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food row (hot dog stand)",
+   "notes": "Umbrella overhangs top-right. Touches x6 kiosk pieces and carts below; tile split clean."
+  },
+  {
+   "id": "cf_menu_aframe_board_a",
+   "sheet": "Tileset_31_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Wooden A-frame chalkboard menu sign.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): in front of food stands",
+   "notes": ""
+  },
+  {
+   "id": "cf_menu_aframe_board_b",
+   "sheet": "Tileset_31_MV.png",
+   "x": 7,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Taller wooden-framed chalkboard menu sign.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food stand menu",
+   "notes": ""
+  },
+  {
+   "id": "cf_snack_display_stand",
+   "sheet": "Tileset_31_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Small wooden snack display with a basket of food on top.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): concession counter dressing",
+   "notes": ""
+  },
+  {
+   "id": "cf_food_table_small",
+   "sheet": "Tileset_31_MV.png",
+   "x": 10,
+   "y": 5,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Small wooden slat table with hot dog plate, fries and drink.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court table",
+   "notes": "Other variants at x11-12,y5 and x11-15,y7."
+  },
+  {
+   "id": "cf_slat_bench",
+   "sheet": "Tileset_31_MV.png",
+   "x": 8,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Long wooden slatted bench/crate.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court seating",
+   "notes": ""
+  },
+  {
+   "id": "cf_produce_cart_umbrella",
+   "sheet": "Tileset_32_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Wooden market cart with empty crates under a rainbow-striped umbrella, wooden wheels.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): farm-produce stand on the midway",
+   "notes": "Cart handle touches the next cart (clean tile split)."
+  },
+  {
+   "id": "cf_produce_cart_umbrella_veg",
+   "sheet": "Tileset_32_MV.png",
+   "x": 11,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Rainbow-umbrella market cart with flowers and green vegetables in crates.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): produce/flower stand",
+   "notes": ""
+  },
+  {
+   "id": "cf_produce_cart_umbrella_fruit",
+   "sheet": "Tileset_32_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Rainbow-umbrella market cart with fruit, eggplants and tomatoes in crates.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): produce stand",
+   "notes": ""
+  },
+  {
+   "id": "cf_flower_cart_umbrella",
+   "sheet": "Tileset_32_MV.png",
+   "x": 11,
+   "y": 4,
+   "w": 3,
+   "h": 5,
+   "category": "prop",
+   "desc": "Rainbow-umbrella cart full of flower buckets, with bouquet vases standing in front.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): flower show stand",
+   "notes": ""
+  },
+  {
+   "id": "cf_pizza_kiosk",
+   "sheet": "Tileset_32_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 4,
+   "h": 6,
+   "category": "building",
+   "desc": "Small pizza kiosk: giant pizza sign on a red roof, menu board, pizza-box counter.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food row (giant-pizza sign is cartoonish; use sparingly)",
+   "notes": "A pizza delivery scooter touches its right edge at x4 (excluded)."
+  },
+  {
+   "id": "cf_ice_cream_truck",
+   "sheet": "Tileset_32_MV.png",
+   "x": 0,
+   "y": 10,
+   "w": 7,
+   "h": 6,
+   "category": "vehicle",
+   "desc": "Teal-and-pink ice cream truck with a giant dropped cone on the roof, menu decals, serving window.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): ice cream stand",
+   "notes": "WARNING: relative cells (5,0),(6,0),(5,1),(6,1) hold a separate vendor-window sprite - skip those 4 cells when stamping. Cartoonish cone.",
+   "skip_cells": [
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ]
+   ]
+  },
+  {
+   "id": "cf_generator_portable",
+   "sheet": "Tileset_32_MV.png",
+   "x": 0,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Orange portable generator with cables.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Modern - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_swing_set_metal",
+   "sheet": "Tileset_34_MV.png",
+   "x": 5,
+   "y": 8,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "Blue metal-pipe swing set frame with two red swings and a rope ladder.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): kids' area / city park",
+   "notes": ""
+  },
+  {
+   "id": "cf_baby_swing",
+   "sheet": "Tileset_34_MV.png",
+   "x": 6,
+   "y": 3,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "Single blue-frame baby swing with orange bucket seat.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Park playground",
+   "notes": ""
+  },
+  {
+   "id": "cf_seesaw_log",
+   "sheet": "Tileset_34_MV.png",
+   "x": 6,
+   "y": 0,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Wooden log seesaw/balance beam with metal ends (top view).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Park playground",
+   "notes": ""
+  },
+  {
+   "id": "cf_floodlight_tower",
+   "sheet": "Tileset_35_MV.png",
+   "x": 12,
+   "y": 0,
+   "w": 2,
+   "h": 5,
+   "category": "prop",
+   "desc": "Tall steel floodlight tower with two banks of unlit lamps.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): grandstand/race-track lighting; ballfield",
+   "notes": ""
+  },
+  {
+   "id": "cf_floodlight_tower_lit",
+   "sheet": "Tileset_35_MV.png",
+   "x": 14,
+   "y": 0,
+   "w": 2,
+   "h": 5,
+   "category": "prop",
+   "desc": "Tall floodlight tower with bright lit lamp banks.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): night races / grandstand show lighting",
+   "notes": ""
+  },
+  {
+   "id": "cf_floodlight_pole_side",
+   "sheet": "Tileset_35_MV.png",
+   "x": 11,
+   "y": 5,
+   "w": 1,
+   "h": 5,
+   "category": "prop",
+   "desc": "Side-view floodlight pole with lamp cluster at top.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): track lighting along the rail",
+   "notes": "Lit twin at x15,y5."
+  },
+  {
+   "id": "cf_log_rail_bench",
+   "sheet": "Tileset_35_MV.png",
+   "x": 12,
+   "y": 6,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Peeled log beam on low metal brackets (log bench / rail).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): race-track infield rail, livestock ring rail, park bench",
+   "notes": "Chain several for a rail line; copies at y5,y7,y8."
+  },
+  {
+   "id": "cf_plank_tier_seating",
+   "sheet": "Tileset_35_MV.png",
+   "x": 10,
+   "y": 11,
+   "w": 4,
+   "h": 3,
+   "category": "prop",
+   "desc": "Stacked horizontal wooden plank tiers framed by posts - reads as small wooden bleachers/stepped seating from the front.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): grandstand / show-ring bleachers (place several side by side)",
+   "notes": "Flanked on the sheet by log-post pieces; same art repeats on sheets 36/37 at x8-15,y12-15."
+  },
+  {
+   "id": "cf_log_post_steps_l",
+   "sheet": "Tileset_35_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 2,
+   "h": 4,
+   "category": "prop",
+   "desc": "Row of four upright logs of stepped heights on metal feet.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): bleacher end / stepping posts",
+   "notes": "Left flank of plank tiers."
+  },
+  {
+   "id": "cf_log_post_steps_r",
+   "sheet": "Tileset_35_MV.png",
+   "x": 14,
+   "y": 10,
+   "w": 2,
+   "h": 4,
+   "category": "prop",
+   "desc": "Row of upright logs of stepped heights (mirror).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): bleacher end",
+   "notes": "Right flank of plank tiers."
+  },
+  {
+   "id": "cf_plank_bleacher_full",
+   "sheet": "Tileset_35_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 8,
+   "h": 4,
+   "category": "prop",
+   "desc": "Combined: plank tier seating flanked by stepped log posts.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): small grandstand / show-ring bleachers",
+   "notes": ""
+  },
+  {
+   "id": "cf_market_umbrella_blue",
+   "sheet": "Tileset_104_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Large open blue-and-white striped umbrella on a grey stand.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): shade over picnic tables / food court",
+   "notes": ""
+  },
+  {
+   "id": "cf_market_umbrella_green",
+   "sheet": "Tileset_104_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Large open green-and-white striped umbrella on stand.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court shade",
+   "notes": ""
+  },
+  {
+   "id": "cf_market_umbrella_white",
+   "sheet": "Tileset_104_MV.png",
+   "x": 9,
+   "y": 4,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Large open white/grey umbrella on stand.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court shade",
+   "notes": ""
+  },
+  {
+   "id": "cf_market_umbrella_orange",
+   "sheet": "Tileset_104_MV.png",
+   "x": 13,
+   "y": 4,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Large open orange-and-white striped umbrella on stand.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): midway shade",
+   "notes": ""
+  },
+  {
+   "id": "cf_umbrella_closed_green",
+   "sheet": "Tileset_104_MV.png",
+   "x": 12,
+   "y": 0,
+   "w": 1,
+   "h": 4,
+   "category": "prop",
+   "desc": "Closed green-and-white striped umbrella on stand.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): food court",
+   "notes": ""
+  },
+  {
+   "id": "cf_slat_roof_stall",
+   "sheet": "Tileset_104_MV.png",
+   "x": 8,
+   "y": 8,
+   "w": 3,
+   "h": 4,
+   "category": "building",
+   "desc": "Open wooden market stall: slatted plank roof on posts over a plank counter.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): midway game booth / concession stand",
+   "notes": "Copy with orange-lit base at x8,y12."
+  },
+  {
+   "id": "cf_slat_roof_stall_drinks",
+   "sheet": "Tileset_104_MV.png",
+   "x": 11,
+   "y": 8,
+   "w": 3,
+   "h": 4,
+   "category": "building",
+   "desc": "Wooden slat-roofed stall with pitcher, glasses and bottles on the counter.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): lemonade/root-beer stand",
+   "notes": "Copy at x11,y12."
+  },
+  {
+   "id": "cf_wooden_stool",
+   "sheet": "Tileset_104_MV.png",
+   "x": 14,
+   "y": 11,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small wooden slat stool.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): at stalls",
+   "notes": ""
+  },
+  {
+   "id": "cf_stage_deck",
+   "sheet": "Tileset_105_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 6,
+   "category": "other",
+   "desc": "Large wooden plank stage deck (top view) with dark steel front edge.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "York Fairgrounds (1960s): grandstand show stage / bandstand floor",
+   "notes": "Deck rows walkable; front edge row 5 blocks. Repeat plank rows to deepen. Col 7 holds only a few edge pixels."
+  },
+  {
+   "id": "cf_stage_raised",
+   "sheet": "Tileset_105_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 8,
+   "h": 6,
+   "category": "other",
+   "desc": "Raised wooden plank stage with steel front edge and lighter wood side face on the right and bottom.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     7,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "York Fairgrounds (1960s): grandstand stage facing the bleachers",
+   "notes": "Access via cf_stage_stairs at the front; deck interior walkable."
+  },
+  {
+   "id": "cf_stage_stairs",
+   "sheet": "Tileset_105_MV.png",
+   "x": 10,
+   "y": 11,
+   "w": 4,
+   "h": 3,
+   "category": "prop",
+   "desc": "Grey metal stage steps with side railings.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): steps up to the stage",
+   "notes": "Centre cols 1-2 are walkable stairs."
+  },
+  {
+   "id": "cf_crowd_barrier",
+   "sheet": "Tileset_105_MV.png",
+   "x": 13,
+   "y": 10,
+   "w": 2,
+   "h": 1,
+   "category": "fence",
+   "desc": "Grey metal crowd-control barrier.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "York Fairgrounds (1960s): queue lines at ticket booth / track edge",
+   "notes": "Variant at x11,y9 (2x2)."
+  },
+  {
+   "id": "cf_truss_arch",
+   "sheet": "Tileset_105_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 7,
+   "h": 7,
+   "category": "other",
+   "desc": "Aluminium lattice lighting-truss arch over a stage.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     6
+    ],
+    [
+     6,
+     6
+    ]
+   ],
+   "overhead_rows": 6,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Modern concert truss - avoid",
+   "notes": ""
+  },
+  {
+   "id": "cf_speaker_tripod",
+   "sheet": "Tileset_105_MV.png",
+   "x": 8,
+   "y": 9,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "PA speaker on tripod stand.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Modern - avoid",
+   "notes": ""
+  }
+ ]
+}

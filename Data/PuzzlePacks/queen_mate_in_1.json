@@ -1,0 +1,1206 @@
+{
+ "pack": "queen_mate_in_1",
+ "source": "Lichess puzzle database (CC0)",
+ "puzzles": [
+  {
+   "id": "4Z88z",
+   "name": "Queen mate in 1 #4Z88z",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "KQ6/2k5/1q6/8/8/8/8/8 b - - 0 67",
+   "objective_move": "b6b8",
+   "solution": [
+    "b6b8"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "5SDdX",
+   "name": "Queen mate in 1 #5SDdX",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6K1/4q1Q1/6k1/8/8/8/8/8 b - - 4 114",
+   "objective_move": "e7g7",
+   "solution": [
+    "e7g7"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "rPrRS",
+   "name": "Queen mate in 1 #rPrRS",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6QK/5k2/6q1/8/8/8/8/8 b - - 0 86",
+   "objective_move": "g6g8",
+   "solution": [
+    "g6g8"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "bM1ca",
+   "name": "Queen mate in 1 #bM1ca",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/5Kqk/5Qp1/8/8/8/8/8 w - - 4 59",
+   "objective_move": "f6g7",
+   "solution": [
+    "f6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "voKFZ",
+   "name": "Queen mate in 1 #voKFZ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/7p/8/8/P2qn3/Q5P1/6KP/8 w - - 2 36",
+   "objective_move": "a3f8",
+   "solution": [
+    "a3f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "GVx44",
+   "name": "Queen mate in 1 #GVx44",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "Q1q3k1/5ppp/8/8/8/8/6PP/7K w - - 0 51",
+   "objective_move": "a8c8",
+   "solution": [
+    "a8c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Nc9dD",
+   "name": "Queen mate in 1 #Nc9dD",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2k5/1pp3q1/7p/7P/8/2PKQ3/8/8 w - - 0 47",
+   "objective_move": "e3e8",
+   "solution": [
+    "e3e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "IFUOb",
+   "name": "Queen mate in 1 #IFUOb",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/7k/7P/4b1Q1/3p4/8/P5P1/3q1R1K b - - 2 45",
+   "objective_move": "d1f1",
+   "solution": [
+    "d1f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Iq09n",
+   "name": "Queen mate in 1 #Iq09n",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6pp/p7/1p6/8/4Q1P1/1q3PKP/8 w - - 0 31",
+   "objective_move": "e3e8",
+   "solution": [
+    "e3e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "VqUMV",
+   "name": "Queen mate in 1 #VqUMV",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2Q2B1k/6p1/7p/5p2/7P/6PK/8/q6B b - - 0 37",
+   "objective_move": "a1h1",
+   "solution": [
+    "a1h1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "0G534",
+   "name": "Queen mate in 1 #0G534",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6rk/4P1pp/8/8/8/8/P5RP/3qQ1K1 b - - 0 33",
+   "objective_move": "d1e1",
+   "solution": [
+    "d1e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "GuhoY",
+   "name": "Queen mate in 1 #GuhoY",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2Q5/6pk/7p/8/8/5P2/6PP/3qR2K b - - 2 44",
+   "objective_move": "d1e1",
+   "solution": [
+    "d1e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "KLy2i",
+   "name": "Queen mate in 1 #KLy2i",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/P7/3p4/3Pp3/4Pb2/8/2Q5/q4B1K b - - 0 55",
+   "objective_move": "a1f1",
+   "solution": [
+    "a1f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "RIYfE",
+   "name": "Queen mate in 1 #RIYfE",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/6k1/1q3p2/8/2pP2P1/3nQ3/1PB5/1K6 b - - 13 42",
+   "objective_move": "b6b2",
+   "solution": [
+    "b6b2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "aHYpu",
+   "name": "Queen mate in 1 #aHYpu",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/2bq3k/6pp/8/8/7P/Q5P1/3R3K b - - 0 42",
+   "objective_move": "d7d1",
+   "solution": [
+    "d7d1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "E32Cg",
+   "name": "Queen mate in 1 #E32Cg",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/5q2/p7/4P3/1Q1P4/8/PP5P/7K b - - 0 44",
+   "objective_move": "f7f1",
+   "solution": [
+    "f7f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "8cMIo",
+   "name": "Queen mate in 1 #8cMIo",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5r1k/1p4p1/7p/8/8/6QP/q7/6RK w - - 0 37",
+   "objective_move": "g3g7",
+   "solution": [
+    "g3g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "BFOqg",
+   "name": "Queen mate in 1 #BFOqg",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4r2k/4N2p/1P3pp1/P7/7P/8/4KQ2/2q5 w - - 1 47",
+   "objective_move": "f2f6",
+   "solution": [
+    "f2f6"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "cNEGr",
+   "name": "Queen mate in 1 #cNEGr",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2Q5/1N2k2p/6p1/8/P2b4/6P1/5q1P/5Q1K b - - 0 49",
+   "objective_move": "f2f1",
+   "solution": [
+    "f2f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "kbekj",
+   "name": "Queen mate in 1 #kbekj",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/6p1/7p/p1p5/P7/3P4/6PP/q2Q3K b - - 2 35",
+   "objective_move": "a1d1",
+   "solution": [
+    "a1d1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "r1jU2",
+   "name": "Queen mate in 1 #r1jU2",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "Q1q3k1/5ppp/8/8/8/6P1/3b1P1P/5BK1 w - - 0 42",
+   "objective_move": "a8c8",
+   "solution": [
+    "a8c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "tQCNW",
+   "name": "Queen mate in 1 #tQCNW",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5q1k/p6p/2p3p1/2p5/8/8/2r3PP/5QK1 w - - 0 30",
+   "objective_move": "f1f8",
+   "solution": [
+    "f1f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "CoRCi",
+   "name": "Queen mate in 1 #CoRCi",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4Qq1k/p5p1/6Pp/4P3/7K/P6R/3r4/8 w - - 3 49",
+   "objective_move": "e8f8",
+   "solution": [
+    "e8f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Gj7Kb",
+   "name": "Queen mate in 1 #Gj7Kb",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/p7/k1K4P/1q1Q4 w - - 0 52",
+   "objective_move": "d1b1",
+   "solution": [
+    "d1b1"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "LuS56",
+   "name": "Queen mate in 1 #LuS56",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1rk1qQ2/p1p5/2p5/2N5/1PP5/P7/K7/8 w - - 1 45",
+   "objective_move": "f8e8",
+   "solution": [
+    "f8e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "N8IkB",
+   "name": "Queen mate in 1 #N8IkB",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/p3q1kp/5pp1/3B4/P2Q4/8/6PP/6K1 b - - 0 42",
+   "objective_move": "e7e1",
+   "solution": [
+    "e7e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ReoZL",
+   "name": "Queen mate in 1 #ReoZL",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5q1k/1p4pp/p7/P7/4Q1P1/1P6/7P/7K b - - 0 35",
+   "objective_move": "f8f1",
+   "solution": [
+    "f8f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "c41pA",
+   "name": "Queen mate in 1 #c41pA",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2Qq3k/7p/1p3p1P/8/8/6PK/5r2/8 w - - 2 49",
+   "objective_move": "c8d8",
+   "solution": [
+    "c8d8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "CGGgJ",
+   "name": "Queen mate in 1 #CGGgJ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7K/6Q1/5q1k/8/8/8/8/8 b - - 2 67",
+   "objective_move": "f6g7",
+   "solution": [
+    "f6g7"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "xUs0O",
+   "name": "Queen mate in 1 #xUs0O",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1q5k/2R3pp/8/8/p7/1r5P/6PK/Q7 w - - 18 48",
+   "objective_move": "a1g7",
+   "solution": [
+    "a1g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "kNjkX",
+   "name": "Queen mate in 1 #kNjkX",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/7p/5p2/3p1Kpk/8/2Pr1P2/7r/7Q w - - 4 39",
+   "objective_move": "h1h2",
+   "solution": [
+    "h1h2"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "0ttAK",
+   "name": "Queen mate in 1 #0ttAK",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3Q4/1p3pkp/p7/1q2R3/5P2/6P1/1P5P/7K b - - 0 41",
+   "objective_move": "b5f1",
+   "solution": [
+    "b5f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "5k34b",
+   "name": "Queen mate in 1 #5k34b",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4q1k1/p4pp1/2p4p/8/3B4/8/P1Q3PP/6K1 b - - 0 27",
+   "objective_move": "e8e1",
+   "solution": [
+    "e8e1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Gf4Ia",
+   "name": "Queen mate in 1 #Gf4Ia",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/3q3k/1Q4p1/p1p5/1p6/1P5P/P4PP1/5K2 b - - 0 45",
+   "objective_move": "d7d1",
+   "solution": [
+    "d7d1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "MJxWl",
+   "name": "Queen mate in 1 #MJxWl",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k1r4/ppp5/5Q2/2P2P2/1P6/q6p/8/5R1K w - - 0 32",
+   "objective_move": "f6d8",
+   "solution": [
+    "f6d8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "RCcVK",
+   "name": "Queen mate in 1 #RCcVK",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k2/1p3pq1/p3p3/4P1r1/5P2/8/P7/3Q3K w - - 0 42",
+   "objective_move": "d1d8",
+   "solution": [
+    "d1d8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "UGtay",
+   "name": "Queen mate in 1 #UGtay",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/1p4rk/p2p3p/8/3Q1P2/2B2KP1/7P/1q6 w - - 0 39",
+   "objective_move": "d4g7",
+   "solution": [
+    "d4g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "V2o5Q",
+   "name": "Queen mate in 1 #V2o5Q",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1RQ2b1k/5q1p/6p1/8/3PP3/2P5/6PP/7K b - - 2 35",
+   "objective_move": "f7f1",
+   "solution": [
+    "f7f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "adjAJ",
+   "name": "Queen mate in 1 #adjAJ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/p5rp/1p6/8/3Q3R/P2P4/1P1q2BK/8 b - - 6 37",
+   "objective_move": "d2g2",
+   "solution": [
+    "d2g2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "uQ1VB",
+   "name": "Queen mate in 1 #uQ1VB",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/p5pp/8/2p1p3/Q1Pr3b/8/6K1/8 w - - 3 36",
+   "objective_move": "a4e8",
+   "solution": [
+    "a4e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ujgmI",
+   "name": "Queen mate in 1 #ujgmI",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4r1k1/5ppp/5b2/1Q6/3q4/B6P/5PP1/6K1 w - - 0 28",
+   "objective_move": "b5e8",
+   "solution": [
+    "b5e8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "7nCJj",
+   "name": "Queen mate in 1 #7nCJj",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "Q4b1k/8/p2p4/2pP4/2P5/6P1/7P/4qB1K b - - 3 41",
+   "objective_move": "e1f1",
+   "solution": [
+    "e1f1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "CmGG7",
+   "name": "Queen mate in 1 #CmGG7",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1Q6/5pk1/4pp2/7p/8/6PK/5P2/q6Q b - - 0 46",
+   "objective_move": "a1h1",
+   "solution": [
+    "a1h1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "QOCjQ",
+   "name": "Queen mate in 1 #QOCjQ",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/p7/3r4/2p5/5N1P/1P3qPQ/P4b1K/8 w - - 3 44",
+   "objective_move": "h3c8",
+   "solution": [
+    "h3c8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "YBuJI",
+   "name": "Queen mate in 1 #YBuJI",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "rk2r3/1p6/p3q3/5p2/1Q5P/P1P5/8/1RK5 w - - 0 40",
+   "objective_move": "b4b7",
+   "solution": [
+    "b4b7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ZNnSF",
+   "name": "Queen mate in 1 #ZNnSF",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "R7/8/2p5/p1kp3q/1p6/3B4/PPP5/1K1R4 b - - 7 43",
+   "objective_move": "h5d1",
+   "solution": [
+    "h5d1"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "cED3H",
+   "name": "Queen mate in 1 #cED3H",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/3q3p/1p4p1/pPp5/4P3/7P/6P1/5Q1K w - - 0 41",
+   "objective_move": "f1f8",
+   "solution": [
+    "f1f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "cj0vx",
+   "name": "Queen mate in 1 #cj0vx",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5n1k/1N5p/7r/3pP2q/PQ1P4/6K1/6P1/8 w - - 0 45",
+   "objective_move": "b4f8",
+   "solution": [
+    "b4f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "gC3KL",
+   "name": "Queen mate in 1 #gC3KL",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1Q3q1k/7p/5p2/4pP2/1p6/7P/2r2PP1/6K1 w - - 2 35",
+   "objective_move": "b8f8",
+   "solution": [
+    "b8f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "q9oXC",
+   "name": "Queen mate in 1 #q9oXC",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "queen_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3Q1r1k/p5pp/2p5/3p4/1P4P1/P3q3/6K1/8 w - - 2 37",
+   "objective_move": "d8f8",
+   "solution": [
+    "d8f8"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The queen delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "queen_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  }
+ ]
+}

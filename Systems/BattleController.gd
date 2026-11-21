@@ -20,7 +20,26 @@ var pending_promotion_move: String = ""
 
 # PGN State
 var fullmove_number = 1
-var pgn_history = ""
+var san_list: Array = []   # every move in SAN, in order (used when saving the game as PGN)
+var pgn_history = "":
+	set(value):
+		pgn_history = value
+		if value == "":
+			san_list.clear()   # puzzle scripts reset the history by assigning ""
+
+# Game record (for the saved PGN)
+var game_start_unix: int = 0
+var game_result: String = "*"
+var game_termination: String = "Unterminated"
+
+# Opponent chatter
+const START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+const BLUNDER_CP = 250       # a move this much worse than the best one counts as a blunder
+const INACCURACY_CP = 120
+const OUTRO_WAIT_SECONDS = 3.5   # how long the opponent's last words stay up before the rematch prompt
+var dialogue: BotDialogue = null
+var player_display_name: String = "Player"
+var opponent_display_name: String = "Computer"
 
 # Puzzle State
 var is_puzzle_mode = false
@@ -49,7 +68,7 @@ func setup_battle_scene():
 	# 1. Initialize State
 	if config.mode == MatchConfig.Mode.PUZZLE:
 		current_fen = config.puzzle_fen if config.puzzle_fen != "" else "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
-		is_player_white = true
+		is_player_white = side_from_fen(current_fen)   # the player takes whichever side is to move
 		is_puzzle_mode = true
 	else:
 		current_fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
@@ -85,6 +104,9 @@ func setup_battle_scene():
 		add_child(game_ui_node)
 		game_ui_node.connect("draw_requested", _on_draw_requested)
 		game_ui_node.connect("resign_requested", _on_resign_requested)
+		game_ui_node.connect("save_requested", _on_save_requested)
+		game_ui_node.set_player_is_white(is_player_white)
+		game_ui_node.set_save_enabled(not is_puzzle_mode)
 		
 	# 4. Engine Link
 	chess_engine = GameManager.chess_engine
@@ -97,6 +119,8 @@ func setup_battle_scene():
 		chess_engine.connect("LegalMovesReceived", on_legal_moves_updated)
 	if not chess_engine.is_connected("AiMoveReceived", process_ai_move):
 		chess_engine.connect("AiMoveReceived", process_ai_move)
+	if chess_engine.has_signal("MoveAnalyzed") and not chess_engine.is_connected("MoveAnalyzed", _on_move_analyzed):
+		chess_engine.connect("MoveAnalyzed", _on_move_analyzed)
 	
 	# 5. Bot Setup (Wrapped to prevent crashes hiding the board)
 	if config.bot_profile:
@@ -108,11 +132,31 @@ func setup_battle_scene():
 				set_bot(bot)
 				_targetElo = config.bot_profile.elo
 				bot_difficulty_ms = 800
+				if chess_engine and chess_engine.has_method("SetEloStrength"):
+					chess_engine.call("SetEloStrength", _targetElo)
 	
+	# 5b. Names, portrait and the opponent's opening line
+	game_start_unix = int(Time.get_unix_time_from_system())
+	player_display_name = GameState.player_name
+	if config.bot_profile:
+		opponent_display_name = config.bot_profile.bot_name
+		dialogue = BotDialogue.new(config.bot_profile.dialogue_path, opponent_display_name, player_display_name)
+		if game_ui_node:
+			game_ui_node.set_opponent(opponent_display_name, config.bot_profile.avatar)
+	elif not is_puzzle_mode:
+		opponent_display_name = "Computer"
+	if game_ui_node and not is_puzzle_mode:
+		var white_name = player_display_name if is_player_white else opponent_display_name
+		var black_name = opponent_display_name if is_player_white else player_display_name
+		game_ui_node.set_players(white_name, black_name)
+
 	# 6. Final UI Updates
 	if game_ui_node:
 		game_ui_node.update_pgn("")
-		game_ui_node.update_status("White to Move" if is_player_white else "Computer Thinking...")
+		if is_puzzle_mode:
+			game_ui_node.update_status("White to Move" if is_player_white else "Black to Move")
+		else:
+			game_ui_node.update_status("White to Move" if is_player_white else "Computer Thinking...")
 		game_ui_node.set_instruction(config.puzzle_instruction if is_puzzle_mode else "") 
 		game_ui_node.enable_buttons()
 
@@ -121,8 +165,11 @@ func setup_battle_scene():
 		print("BattleController: Executing Safety Redraw with FEN: ", current_fen)
 		board_node.place_pieces_from_fen(current_fen)
 
+	if dialogue:
+		_say(dialogue.pick("intro"))
+
 	# 8. Start Turn
-	is_players_turn = is_player_white
+	is_players_turn = is_player_white or is_puzzle_mode   # in a puzzle the player always moves first
 	if is_players_turn:
 		# Small delay for engine safety
 		if chess_engine.has_method("RequestLegalMoves"):
@@ -131,6 +178,23 @@ func setup_battle_scene():
 	else:
 		print("BattleController: Requesting AI Move (Internal)")
 		request_ai_move_internal(current_fen)
+
+# True if White is to move in this FEN (a puzzle is played from the side that is to move).
+func side_from_fen(fen: String) -> bool:
+	var parts = fen.split(" ")
+	return not (parts.size() > 1 and parts[1] == "b")
+
+# Puzzles may start with either colour to move. Call this when a new puzzle position is loaded:
+# the player takes that side and the board turns to show it from their point of view.
+func set_player_side(white: bool):
+	is_player_white = white
+	if board_node and board_node.has_method("set_flipped"):
+		board_node.set_flipped(not white)
+	if game_ui_node and game_ui_node.has_method("set_player_is_white"):
+		game_ui_node.set_player_is_white(white)
+
+func set_player_side_from_fen(fen: String):
+	set_player_side(side_from_fen(fen))
 
 func set_bot(bot_instance: Node):
 	if active_bot:
@@ -160,6 +224,8 @@ func _request_engine_move_only(fen: String):
 func redraw_board_from_fen(fen: String):
 	if board_node:
 		board_node.place_pieces_from_fen(fen)
+		if board_node.has_method("set_last_move"):
+			board_node.set_last_move("", "")   # callers mark the new last move after redrawing
 	else:
 		printerr("BattleController ERROR: board_node is null during redraw_board_from_fen")
 
@@ -238,6 +304,7 @@ func handle_player_move(uci_move: String):
 		return
 	
 	var san = chess_engine.call("GetMoveSan", current_fen, uci_move)
+	var fen_before = current_fen
 	var new_fen = chess_engine.call("ApplyMove", current_fen, uci_move)
 	
 	if new_fen != current_fen:
@@ -245,11 +312,13 @@ func handle_player_move(uci_move: String):
 		is_players_turn = false
 		_record_move_pgn(san, is_player_white)
 		redraw_board_from_fen(current_fen)
+		_mark_last_move(uci_move)
 		
 		if is_puzzle_mode:
 			if _check_puzzle_success(uci_move):
 				return
 		
+		_after_move("player", fen_before, uci_move, san)
 		_check_game_status()
 		if is_battle_active:
 			request_ai_move_internal(current_fen)
@@ -274,6 +343,7 @@ func process_ai_move(uci_move: String):
 	if uci_move == "" or not is_battle_active or is_players_turn: return
 	
 	var san = chess_engine.call("GetMoveSan", current_fen, uci_move)
+	var fen_before = current_fen
 	var new_fen = chess_engine.call("ApplyMove", current_fen, uci_move)
 	
 	if new_fen != current_fen:
@@ -281,6 +351,8 @@ func process_ai_move(uci_move: String):
 		is_players_turn = true
 		_record_move_pgn(san, not is_player_white)
 		redraw_board_from_fen(current_fen)
+		_mark_last_move(uci_move)
+		_after_move("bot", fen_before, uci_move, san)
 		_check_game_status()
 		if is_battle_active:
 			chess_engine.call("RequestLegalMoves", current_fen)
@@ -289,7 +361,13 @@ func process_ai_move(uci_move: String):
 				game_ui_node.update_status(turn_text)
 
 func _record_move_pgn(san_move: String, is_white: bool):
-	if is_white:
+	san_list.append(san_move)
+	var starts_with_black = (not is_white) and (pgn_history == "" or pgn_history.ends_with("\n"))
+	if starts_with_black:
+		# a puzzle (or game) that begins with Black to move: "1... e5"
+		pgn_history += "%d... %s\n" % [fullmove_number, san_move]
+		fullmove_number += 1
+	elif is_white:
 		pgn_history += "%d. %s " % [fullmove_number, san_move]
 	else:
 		pgn_history += "%s\n" % san_move
@@ -303,7 +381,10 @@ func _check_game_status():
 		
 	var status = chess_engine.call("GetGameStatus", current_fen)
 	if status == "Checkmate":
-		var content = "Checkmate! " + ("White Wins" if not is_players_turn else "Black Wins")
+		# The side that just moved delivered mate: the player if it is no longer the player's turn.
+		var player_won = not is_players_turn
+		var white_wins = (player_won == is_player_white)
+		var content = "Checkmate! " + ("White Wins" if white_wins else "Black Wins")
 		_end_game(content)
 	elif status == "Stalemate":
 		_end_game("Stalemate! Draw.")
@@ -312,6 +393,7 @@ func _check_game_status():
 
 func _end_game(reason: String):
 	is_battle_active = false
+	_set_result_from_reason(reason)
 	if game_ui_node: 
 		game_ui_node.update_status(reason)
 		game_ui_node.disable_buttons()
@@ -319,10 +401,19 @@ func _end_game(reason: String):
 	var config = GameState.current_match_config
 	if config and config.bot_profile:
 		var player_lost = ("Black Wins" in reason and is_player_white) or ("White Wins" in reason and not is_player_white)
+		var player_won = ("White Wins" in reason and is_player_white) or ("Black Wins" in reason and not is_player_white)
 		if player_lost:
 			GameState.bobby_should_taunt = true
 		
-		await get_tree().create_timer(1.5).timeout
+		# The opponent's last words, Punch-Out style, before the rematch prompt
+		if dialogue:
+			var event = "outro_draw"
+			if reason.begins_with("Resigned"): event = "outro_resign"
+			elif player_lost: event = "outro_bot_wins"
+			elif player_won: event = "outro_player_wins"
+			_say(dialogue.pick(event))
+		
+		await get_tree().create_timer(OUTRO_WAIT_SECONDS).timeout
 		
 		# SAFE SIGNAL HANDLING
 		if not DialogManager.dialog_choice_made.is_connected(_on_dialog_choice):
@@ -356,3 +447,88 @@ func _on_resign_requested():
 func _close_dialog_after_delay(delay: float):
 	await get_tree().create_timer(delay).timeout
 	DialogManager.close_dialog()
+
+
+# ---------------------------------------------------------------- opponent chatter
+
+func _say(text: String):
+	if text != "" and game_ui_node and game_ui_node.has_method("say"):
+		game_ui_node.say(text)
+
+func _mark_last_move(uci_move: String):
+	if board_node and board_node.has_method("set_last_move") and uci_move.length() >= 4:
+		board_node.set_last_move(uci_move.substr(0, 2), uci_move.substr(2, 2))
+
+func _piece_count(fen: String) -> int:
+	var n = 0
+	for c in fen.split(" ")[0]:
+		if c.to_lower() != c.to_upper():   # letters are pieces; digits and "/" are not
+			n += 1
+	return n
+
+# Called after every move in a bot game: quick reactions (capture, check, promotion) now,
+# and a shallow engine check of the move for the "that was a blunder" reactions later.
+func _after_move(mover: String, fen_before: String, uci_move: String, san: String):
+	if dialogue == null or is_puzzle_mode:
+		return
+	dialogue.tick()
+	if not san.ends_with("#"):   # checkmate gets the end-of-game line instead
+		var event = ""
+		if "=" in san: event = mover + "_promote"
+		elif san.ends_with("+"): event = mover + "_check"
+		elif _piece_count(current_fen) < _piece_count(fen_before): event = mover + "_capture"
+		if event != "":
+			_say(dialogue.pick(event))
+	if chess_engine and chess_engine.has_method("AnalyzeMove"):
+		chess_engine.call("AnalyzeMove", fen_before, uci_move, mover)
+
+func _on_move_analyzed(tag: String, _uci_move: String, loss_cp: int, best_cp: int):
+	if dialogue == null or not is_battle_active:
+		return
+	var event = ""
+	if tag == "player":
+		if loss_cp >= BLUNDER_CP: event = "player_blunder"
+		elif loss_cp >= INACCURACY_CP: event = "player_inaccuracy"
+		elif loss_cp <= 5 and best_cp >= 150: event = "player_good"
+	elif tag == "bot":
+		if loss_cp >= BLUNDER_CP: event = "bot_blunder"
+	if event != "":
+		_say(dialogue.pick(event))
+
+# ---------------------------------------------------------------- saving the game
+
+func _set_result_from_reason(reason: String):
+	game_termination = "Normal"
+	if "White Wins" in reason:
+		game_result = "1-0"
+	elif "Black Wins" in reason:
+		game_result = "0-1"
+	elif reason.begins_with("Resigned"):
+		game_result = "0-1" if is_player_white else "1-0"   # the player resigned
+	elif reason == "Success!":
+		game_result = "*"
+		game_termination = "Unterminated"
+	else:
+		game_result = "1/2-1/2"   # stalemate, draw, draw agreed
+
+func _build_pgn_meta() -> Dictionary:
+	var config = GameState.current_match_config
+	var bot_elo = config.bot_profile.elo if (config and config.bot_profile) else "?"
+	var player_elo = int(round(GameState.player_rating))
+	return {
+		"white": player_display_name if is_player_white else opponent_display_name,
+		"black": opponent_display_name if is_player_white else player_display_name,
+		"white_elo": player_elo if is_player_white else bot_elo,
+		"black_elo": bot_elo if is_player_white else player_elo,
+		"result": game_result,
+		"termination": game_termination,
+		"start_unix": game_start_unix,
+		"start_fen": START_FEN,
+	}
+
+func _on_save_requested():
+	var meta = _build_pgn_meta()
+	var text = PgnWriter.build(meta, san_list)
+	var res = PgnWriter.save(text, meta["white"], meta["black"])
+	if game_ui_node:
+		game_ui_node.show_save_result(res["ok"], res["path"] if res["ok"] else res["error"])

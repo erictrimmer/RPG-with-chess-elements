@@ -1,36 +1,39 @@
 extends Node2D
 
 var player_node
-var pawn_tutor_npc
 var bobby_npc
+var pawn_lesson_prop
 var player_saved_position = Vector2.ZERO
 var current_npc_interaction = null
 
 func _ready():
 	# Find player and NPC nodes
 	player_node = get_node_or_null("Player")
-	pawn_tutor_npc = get_node_or_null("PawnTutor")
 	bobby_npc = get_node_or_null("BobbyNPC")
+	pawn_lesson_prop = get_node_or_null("PawnLessonProp")
 	var bot_200_npc = get_node_or_null("Bot200NPC")
-	
+
 	if not player_node:
 		printerr("Player node not found! Make sure there's a node named 'Player' in the scene.")
 		# Don't return, allow other logic (might be running test scene)
-	
-	if pawn_tutor_npc:
-		print("Found PawnTutor: ", pawn_tutor_npc.get_script())
-		if pawn_tutor_npc.has_signal("interaction_requested"):
-			pawn_tutor_npc.interaction_requested.connect(func(type): _on_npc_interaction(type, "pawn_tutor"))
-		else:
-			printerr("PawnTutor doesn't have interaction_requested signal!")
-		
+
 	if bobby_npc:
 		print("Found BobbyNPC: ", bobby_npc.get_script())
 		if bobby_npc.has_signal("interaction_requested"):
 			bobby_npc.interaction_requested.connect(func(type): _on_npc_interaction(type, "bobby"))
 		else:
 			printerr("BobbyNPC doesn't have interaction_requested signal!")
-			
+
+	if pawn_lesson_prop:
+		print("Found PawnLessonProp: ", pawn_lesson_prop.interaction_id)
+		if pawn_lesson_prop.has_signal("interaction_requested"):
+			pawn_lesson_prop.interaction_requested.connect(func(id):
+				if id == "pawn_lesson":
+					_on_npc_interaction("show_initial", "pawn_lesson_prop")
+			)
+		if pawn_lesson_prop.has_signal("player_exited_range"):
+			pawn_lesson_prop.player_exited_range.connect(func(): _on_npc_interaction("close_dialog", "pawn_lesson_prop"))
+
 	if bot_200_npc:
 		if bot_200_npc.has_signal("interaction_requested"):
 			bot_200_npc.interaction_requested.connect(func(type): _on_npc_interaction(type, "bot_200"))
@@ -48,7 +51,7 @@ func _ready():
 	
 	# Show Welcome Dialog
 	if GameState.get_tutorial_state("pawn_tutorial") == "not_started":
-		DialogManager.show_dialog("Welcome to the Pawn's Journey Demo! Use WASD to move and Space to talk to pieces. Try talking to the Pawn Tutor first!", ["Got it!"])
+		DialogManager.show_dialog("Welcome to the Pawn's Journey Demo! Use WASD to move and Space to talk to pieces. Try interacting with the pawn piece first!", ["Got it!"])
 
 	# Configure Player Camera Limits for single screen
 	if player_node:
@@ -104,7 +107,7 @@ func _on_npc_interaction(interaction_type: String, npc_id: String):
 			current_npc_interaction = null
 
 func _on_dialog_choice(choice: String):
-	if current_npc_interaction == "pawn_tutor":
+	if current_npc_interaction == "pawn_lesson_prop":
 		match choice:
 			"Yes":
 				start_pawn_tutorial()
@@ -222,13 +225,9 @@ func check_world_return_state():
 	
 	match tutorial_state:
 		"completed":
-			if pawn_tutor_npc:
-				pawn_tutor_npc.set_dialog_state(pawn_tutor_npc.DialogState.COMPLETED)
 			# Reset state
 			GameState.set_tutorial_state("pawn_tutorial", "not_started")
 		"failed":
-			if pawn_tutor_npc:
-				pawn_tutor_npc.set_dialog_state(pawn_tutor_npc.DialogState.FAILED)
 			# Reset state
 			GameState.set_tutorial_state("pawn_tutorial", "not_started")
 	

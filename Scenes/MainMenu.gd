@@ -3,7 +3,7 @@ extends Control
 # Scene paths
 const SCENE_MAIN     = "res://Scenes/Main.tscn"
 const SCENE_DOWNTOWN = "res://Scenes/Downtown.tscn"
-const SCENE_PAWN_TUT = "res://Scenes/Puzzles/PawnTutorial.tscn"
+const SCENE_PAWN_TUT = "res://Scenes/Puzzles/Pawns/PawnTutorial.tscn"
 
 # How many seconds to wait before auto-showing the menu
 const TITLE_DISPLAY_TIME := 10.0

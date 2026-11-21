@@ -1,0 +1,2593 @@
+{
+ "group": "storefront",
+ "sheets_reviewed": [
+  "Tileset_2_MV.png",
+  "Tileset_3_MV.png",
+  "Tileset_8_MV.png",
+  "Tileset_9_MV.png",
+  "Tileset_11_MV.png",
+  "Tileset_12_MV.png",
+  "Tileset_43_MV.png",
+  "Tileset_44_MV.png",
+  "Tileset_45_MV.png",
+  "Tileset_46_MV.png",
+  "Tileset_47_MV.png",
+  "Tileset_48_MV.png",
+  "Tileset_114_MV.png",
+  "Tileset_115_MV.png",
+  "Tileset_116_MV.png",
+  "Tileset_117_MV.png",
+  "Tileset_118_MV.png"
+ ],
+ "sheet_notes": {
+  "Tileset_2_MV.png": "Street props (signal heads, crosswalk sign poles, benches, 3 striped vendor carts, manholes, lamp posts, stone pedestal) + tan-brick flat-roof apartment modules (x10-15). Tan building x0-5 rows 9-15 runs off-sheet; lit signal-head variants not catalogued.",
+  "Tileset_3_MV.png": "Teal apartment (complete, x0-5 rows 0-10) + grey apartment modules (x8-13, roof off-sheet); satellite dishes (avoid, skipped), bus-stop signs, side-view benches.",
+  "Tileset_8_MV.png": "Trees with planters (x0-7), grey-stone 2-floor modules and brown stucco building modules (x8-13); big roof at x0-5 rows 13-15 is off-sheet.",
+  "Tileset_9_MV.png": "Brown stucco building kit: roofs, plain walls, door floors, window / flower-box overlay decals (x7-11), and a complete derelict building (x8-13 rows 5-15).",
+  "Tileset_11_MV.png": "Three complete small one-storey 'STORE' buildings (5x8) with striped awnings.",
+  "Tileset_12_MV.png": "Complete 'MARKET' grocery (7x9) with striped awnings; the second market and x8-14 rows 0-1 are cut by sheet edges.",
+  "Tileset_43_MV.png": "Five 5x3 framed billboards, a 'YOUR AD HERE' wall sign, red-brick wall textures (x8-15); stone-pier brick pieces rows 2-8 not catalogued (assembly unclear).",
+  "Tileset_44_MV.png": "KEY SHEET: six 7x4 red-brick UPPER-FLOOR modules; stack freely above a sheet-45 ground floor; top row of every floor has stone coping = cornice. x8-15 rows 8-15 are loose 1-column fragments, not catalogued.",
+  "Tileset_45_MV.png": "KEY SHEET: four 7x3 red-brick GROUND-FLOOR modules (x0-6) that stack under sheet-44 floors, plus themed shop fronts (x9-13 5-wide; Plume x9-15 7-wide). Columns x8 and x15, and x0-7 rows 12-15, are fragments.",
+  "Tileset_46_MV.png": "More shop fronts: 7-wide toy / shuttered, 5-wide toy / music / vacant, music-store sign + front, gun-store sign. x0 column and hollow frames are fragments.",
+  "Tileset_47_MV.png": "Complete 7x5 bakery, butcher, bait shop (2 sign rows + 3 facade rows). Hollow 'frame' variants and the top-cut butcher (x8-14 rows 0-3) not catalogued.",
+  "Tileset_48_MV.png": "Ice-cream parlour (good), Fitness gym (avoid), patio props (A-frames, cafe table), three clotheslines. Hollow frame variants skipped.",
+  "Tileset_114_MV.png": "Beige ashlar stone building roof + upper facade (ground floor off-sheet), concrete garage with roll-up door, rooftop props, glass skylight.",
+  "Tileset_115_MV.png": "Fire-escape tenement (complete), fire-escape overlay parts (balconies, ladder, stairs), shuttered-window decals, narrow 3-wide wall strips.",
+  "Tileset_116_MV.png": "Hardware store with red/cream striped awning (complete), narrow grey back building, rooftop HVAC units, small pipe/clutter decals.",
+  "Tileset_117_MV.png": "Two narrow 3-wide rowhouses with stoops, a columned stoop module, grey back building with cat; x0-2 rows 12-15 roof runs off-sheet.",
+  "Tileset_118_MV.png": "Fire-escape tenement with skylight (complete) and six striped fabric awnings (blue/red; 3.5, 4.5 and 8 wide)."
+ },
+ "prefabs": [
+  {
+   "id": "sf_brick_upper_4tall_windows",
+   "sheet": "Tileset_44_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "red-brick upper storey: 4 tall narrow sash windows, teal dentil frieze top and bottom, grey coping on top row, beige sill ledge on bottom row, dark teal corner pilasters",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "typical 2nd/3rd floor of a downtown commercial block",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_upper_ornate_3windows",
+   "sheet": "Tileset_44_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "ornate red-brick upper storey: wide paired window / narrow window / wide paired window, recessed brick panels, teal-and-red decorative frieze top and bottom",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "upper floor of a bank, hotel or the fanciest block on Market St",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_upper_balcony",
+   "sheet": "Tileset_44_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "red-brick upper storey: two small windows flanking a double window, long grey stone balcony/planter ledge across the lower half",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "upper floor; balcony reads as hotel/apartment over shops",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_arched_window_floor",
+   "sheet": "Tileset_44_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "rusticated red-brick storey dominated by a huge round-arched multi-pane window, teal brackets under a heavy cornice, warm stone plinth on the bottom row",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "grand floor (bank hall, theatre, lodge); its stone plinth lets it double as a doorless 4-row ground floor",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_upper_teal_bay",
+   "sheet": "Tileset_44_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "red-brick upper storey with a central teal-painted ornamental bay framing a large triple window, a teal-framed sash window each side",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "feature floor over a corner shop",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_upper_8windows",
+   "sheet": "Tileset_44_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 7,
+   "h": 4,
+   "category": "building_module",
+   "desc": "red-brick upper storey with two rows of 4 small square windows (8 total), teal frieze top and bottom",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "office/apartment floors above shops; good 3rd/4th floor",
+   "notes": "7x4 UPPER-FLOOR module; repeat vertically for extra storeys. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_ground_smallpane_glassdoor",
+   "sheet": "Tileset_45_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 3,
+   "category": "building_module",
+   "desc": "red-brick ground floor: wide multi-pane (5x3 small panes) shop window at left, tall double glass doors with grey kick panels at right",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "general store / office ground floor",
+   "notes": "7x3 GROUND-FLOOR module. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_ground_atm",
+   "sheet": "Tileset_45_MV.png",
+   "x": 0,
+   "y": 3,
+   "w": 7,
+   "h": 3,
+   "category": "building_module",
+   "desc": "red-brick ground floor: ATM machine in grey surround at left, recessed entry with teal columns under a canopy in the middle, window at right",
+   "era1960": "avoid",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "only if the ATM is hidden",
+   "notes": "7x3 ground-floor module; ATM is post-1970. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_ground_arched_door",
+   "sheet": "Tileset_45_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 7,
+   "h": 3,
+   "category": "building_module",
+   "desc": "red-brick ground floor: long horizontal window with two basement grates below at left, round-arched stone doorway with double wooden doors at right, small plaque above",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "bank, post office, hotel or lodge entrance",
+   "notes": "7x3 ground-floor module. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_ground_teal_entrance",
+   "sheet": "Tileset_45_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 7,
+   "h": 3,
+   "category": "building_module",
+   "desc": "red-brick ground floor with full-height teal pilasters at both edges, two teal-framed sash windows, central wooden panel door in a teal surround with stone steps",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "apartment entrance between shops, boarding house, doctor's office",
+   "notes": "7x3 ground-floor module (verified stacked under sheet-44 floors). BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_brick_ground_edge_left",
+   "sheet": "Tileset_45_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 1,
+   "h": 3,
+   "category": "building_module",
+   "desc": "1x3 column: teal full-height pilaster on red brick (left edge of the teal-entrance ground floor)",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "filler column",
+   "notes": "Put left of a 5-wide shop front; pair with sf_brick_ground_edge_right to make 7 wide."
+  },
+  {
+   "id": "sf_brick_ground_edge_right",
+   "sheet": "Tileset_45_MV.png",
+   "x": 6,
+   "y": 9,
+   "w": 1,
+   "h": 3,
+   "category": "building_module",
+   "desc": "1x3 column: teal full-height pilaster on red brick (right edge of the teal-entrance ground floor)",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "filler column",
+   "notes": "Put right of a 5-wide shop front; 1 + 5 + 1 = 7 matches sheet-44 upper floors."
+  },
+  {
+   "id": "sf_shop_plume_7w",
+   "sheet": "Tileset_45_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 7,
+   "h": 3,
+   "category": "building",
+   "desc": "7-wide shop front: grey 'Plume' sign with feather, white hens/birds and flowers in the window, double glass doors at right, teal pilasters",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "pet / bird / millinery shop",
+   "notes": "7x3 ground-floor shop front; stacks directly under sheet-44 floors. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_shop_closed_bakedgoods",
+   "sheet": "Tileset_45_MV.png",
+   "x": 9,
+   "y": 3,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front with a white 'CLOSED' banner, loaves and rolls in the window, glass door at right",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "closed shop / bakery after hours",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_groove_clothes",
+   "sheet": "Tileset_45_MV.png",
+   "x": 9,
+   "y": 6,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front with dark 'Groove' sign, three mannequins in caps and jackets in the window",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "clothing / menswear store",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_coolies_hair",
+   "sheet": "Tileset_45_MV.png",
+   "x": 9,
+   "y": 9,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front with 'Coolies' sign, three mannequin heads with hairstyles in the window",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "barber / beauty salon / hat shop",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_danger_extreme",
+   "sheet": "Tileset_45_MV.png",
+   "x": 9,
+   "y": 12,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front with yellow 'DANGER' sign, green boards and a helmet in the window (extreme-sports look)",
+   "era1960": "avoid",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "modern skate/extreme sports shop",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_toy_bimbum_7w",
+   "sheet": "Tileset_46_MV.png",
+   "x": 1,
+   "y": 0,
+   "w": 7,
+   "h": 3,
+   "category": "building",
+   "desc": "7-wide shop front: colourful 'BimBum' sign, frog/turnip/tiger plush toys in the window, double glass doors at right",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "toy store / five-and-dime",
+   "notes": "7x3 ground-floor shop front; stacks under sheet-44 floors. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_shop_shuttered_closed_7w",
+   "sheet": "Tileset_46_MV.png",
+   "x": 1,
+   "y": 3,
+   "w": 7,
+   "h": 3,
+   "category": "building",
+   "desc": "7-wide shop front closed up: 'CLOSED' banner, grey roll-down shutters over window and door",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "closed / vacant shop",
+   "notes": "7x3 ground-floor shop front. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_shop_toy_bimbum_5w",
+   "sheet": "Tileset_46_MV.png",
+   "x": 1,
+   "y": 7,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide 'BimBum' toy shop front with plush toys in window and glass door",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "toy store",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_music_piano",
+   "sheet": "Tileset_46_MV.png",
+   "x": 1,
+   "y": 10,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front, red interior with an upright piano and a tuba in the window, no sign",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "music / instrument store",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless). No sign - add an awning or sf_music_store_sign above."
+  },
+  {
+   "id": "sf_shop_music_guitars",
+   "sheet": "Tileset_46_MV.png",
+   "x": 1,
+   "y": 13,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide shop front with electric guitars, amp and drum in the window, no sign",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "music store (rock'n'roll guitars)",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_shop_vacant_blank_sign",
+   "sheet": "Tileset_46_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 5,
+   "h": 3,
+   "category": "building",
+   "desc": "5-wide empty shop front: bare grey interior, blank dark-grey sign board above the window",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "vacant / for-rent storefront; blank board can take a custom label",
+   "notes": "5 wide x 3 tall ground-floor shop front (display window + glass door in right column). To sit under a 7-wide sheet-44 floor, put sf_brick_ground_edge_left at its left and sf_brick_ground_edge_right at its right (1+5+1 = 7, verified seamless)."
+  },
+  {
+   "id": "sf_music_store_sign",
+   "sheet": "Tileset_46_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 5,
+   "h": 2,
+   "category": "sign",
+   "desc": "big oval sign shaped like a black vinyl record with blue-and-yellow 'MUSIC STORE' panels",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "record shop sign",
+   "notes": "Wall-sign overlay; stamp over the bottom 2 rows of the floor above a shop front (see sf_music_store_complete)."
+  },
+  {
+   "id": "sf_music_store_front",
+   "sheet": "Tileset_46_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 7,
+   "h": 3,
+   "category": "building",
+   "desc": "7-wide brick shop front: two large display windows with faint record decals and a central glass door, teal pilasters",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "record / music shop ground floor",
+   "notes": "7x3 ground-floor shop front; stacks under sheet-44 floors. BRICK MAIN-STREET SYSTEM (sheets 44/45/46/47/48): pieces are 7 tiles wide (5-wide shop fronts excepted). Build bottom-up: one 7x3 ground floor (sheet 45 x0-6, or a 7-wide shop front) at street level, then any number of 7x4 upper floors (sheet 44) stacked directly on top with no gap and the same x. Each 44 floor carries its own grey stone coping on its top row and a beige sill ledge on its bottom row, so the TOPMOST floor's top row IS the cornice/roof cap - there is no separate roof piece for this set (no 3/4 roof surface is drawn; back the building against the next block, or add a flat roof from another set if a roof must show)."
+  },
+  {
+   "id": "sf_music_store_complete",
+   "sheet": "Tileset_46_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 7,
+   "h": 5,
+   "category": "building",
+   "desc": "music store: vinyl-record 'MUSIC STORE' sign (upper-left) above the 7-wide two-window brick shop front",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     4
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "record shop on main street",
+   "notes": "7x5: top 2 rows are a transparent-backed sign, bottom 3 rows are the 7x3 ground-floor facade. To stack sheet-44 upper floors above, place the floor so its bottom 2 rows coincide with this prefab's top 2 rows (prefab_y = floor_y + 2) and draw this prefab on a layer ABOVE the floor - the sign then hangs over the floor's lower wall (verified visually). As a one-storey shop, something (roof/wall) must fill behind the sign's transparent pixels."
+  },
+  {
+   "id": "sf_gun_store_sign",
+   "sheet": "Tileset_46_MV.png",
+   "x": 9,
+   "y": 8,
+   "w": 5,
+   "h": 2,
+   "category": "sign",
+   "desc": "beige 'GUN STORE' sign board with a large black pistol on top",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "sporting goods / gun shop (tone check for family game)",
+   "notes": "Wall-sign overlay; bottom row includes a strip of brick facade top. The facade below it on the sheet is a hollow frame (not catalogued)."
+  },
+  {
+   "id": "sf_bakery_complete",
+   "sheet": "Tileset_47_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 5,
+   "category": "building",
+   "desc": "bakery: giant bread loaf + cheese wedge on a brown 'Bakery' sign, brick front with pastry display racks and white double glass doors, green base",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     5,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Main St bakery",
+   "notes": "7x5: top 2 rows are a transparent-backed sign, bottom 3 rows are the 7x3 ground-floor facade. To stack sheet-44 upper floors above, place the floor so its bottom 2 rows coincide with this prefab's top 2 rows (prefab_y = floor_y + 2) and draw this prefab on a layer ABOVE the floor - the sign then hangs over the floor's lower wall (verified visually). As a one-storey shop, something (roof/wall) must fill behind the sign's transparent pixels."
+  },
+  {
+   "id": "sf_butcher_complete",
+   "sheet": "Tileset_47_MV.png",
+   "x": 0,
+   "y": 10,
+   "w": 7,
+   "h": 5,
+   "category": "building",
+   "desc": "butcher: big steak sign with crossed cleavers and green 'BUTCHERY' board, brick front with two display windows (red trays) and two panel doors",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     4
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Main St butcher",
+   "notes": "7x5: top 2 rows are a transparent-backed sign, bottom 3 rows are the 7x3 ground-floor facade. To stack sheet-44 upper floors above, place the floor so its bottom 2 rows coincide with this prefab's top 2 rows (prefab_y = floor_y + 2) and draw this prefab on a layer ABOVE the floor - the sign then hangs over the floor's lower wall (verified visually). As a one-storey shop, something (roof/wall) must fill behind the sign's transparent pixels."
+  },
+  {
+   "id": "sf_bait_shop_complete",
+   "sheet": "Tileset_47_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 7,
+   "h": 5,
+   "category": "building",
+   "desc": "bait & tackle: leaping red fish on a fishing line over a teal 'BAIT SHOP' board, brick front with small side windows, glass door between two windows",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "bait shop near Codorus Creek",
+   "notes": "7x5: top 2 rows are a transparent-backed sign, bottom 3 rows are the 7x3 ground-floor facade. To stack sheet-44 upper floors above, place the floor so its bottom 2 rows coincide with this prefab's top 2 rows (prefab_y = floor_y + 2) and draw this prefab on a layer ABOVE the floor - the sign then hangs over the floor's lower wall (verified visually). As a one-storey shop, something (roof/wall) must fill behind the sign's transparent pixels."
+  },
+  {
+   "id": "sf_ice_cream_parlor",
+   "sheet": "Tileset_48_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 5,
+   "category": "building",
+   "desc": "ice-cream parlour: giant cone over a blue 'ICE CREAM' sign, blue/white striped awnings over two windows, white door, green base",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "soda fountain / ice-cream parlour",
+   "notes": "7x5: top 2 rows are a transparent-backed sign, bottom 3 rows are the 7x3 ground-floor facade. To stack sheet-44 upper floors above, place the floor so its bottom 2 rows coincide with this prefab's top 2 rows (prefab_y = floor_y + 2) and draw this prefab on a layer ABOVE the floor - the sign then hangs over the floor's lower wall (verified visually). As a one-storey shop, something (roof/wall) must fill behind the sign's transparent pixels."
+  },
+  {
+   "id": "sf_fitness_gym",
+   "sheet": "Tileset_48_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 7,
+   "h": 4,
+   "category": "building",
+   "desc": "gym: giant dumbbell over blue/orange 'FITNESS' sign, big glass windows and glass doors",
+   "era1960": "avoid",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     5,
+     3
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "modern gym",
+   "notes": "Top row is sign; bottom 3 rows facade. A few top pixels of the dumbbell sit in row 7 (shared with junk) and are clipped."
+  },
+  {
+   "id": "sf_aframe_menu_board_pink",
+   "sheet": "Tileset_48_MV.png",
+   "x": 1,
+   "y": 5,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "pink sandwich-board (A-frame) menu sign with ice-cream picture",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk outside diner / ice-cream shop",
+   "notes": ""
+  },
+  {
+   "id": "sf_aframe_menu_board_blue",
+   "sheet": "Tileset_48_MV.png",
+   "x": 5,
+   "y": 5,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "blue sandwich-board (A-frame) menu sign with ice-cream picture",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk outside diner",
+   "notes": ""
+  },
+  {
+   "id": "sf_cafe_table_set",
+   "sheet": "Tileset_48_MV.png",
+   "x": 2,
+   "y": 5,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "small round wooden cafe table with two wooden chairs",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk cafe / soda-fountain patio",
+   "notes": ""
+  },
+  {
+   "id": "sf_laundry_line_poles",
+   "sheet": "Tileset_48_MV.png",
+   "x": 9,
+   "y": 1,
+   "w": 7,
+   "h": 3,
+   "category": "prop",
+   "desc": "clothesline between two wall brackets with white, blue and pink shirts",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "alley between tenements (overhead)",
+   "notes": "Overhead decoration; draw above player across an alley."
+  },
+  {
+   "id": "sf_laundry_line_a",
+   "sheet": "Tileset_48_MV.png",
+   "x": 10,
+   "y": 4,
+   "w": 5,
+   "h": 2,
+   "category": "prop",
+   "desc": "sagging clothesline with tan, white, striped and blue shirts",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "alley overhead",
+   "notes": ""
+  },
+  {
+   "id": "sf_laundry_line_b",
+   "sheet": "Tileset_48_MV.png",
+   "x": 10,
+   "y": 6,
+   "w": 5,
+   "h": 2,
+   "category": "prop",
+   "desc": "sagging clothesline with blue/white shirts, grey towel and tan shirt",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "alley overhead",
+   "notes": ""
+  },
+  {
+   "id": "sf_store_green_roof",
+   "sheet": "Tileset_11_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 5,
+   "h": 8,
+   "category": "building",
+   "desc": "small one-storey store: flat green roof with parapet, red walls, grey 'STORE' sign over the door, green/white striped awning over a display window",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "corner grocery / drugstore / five-and-dime",
+   "notes": "Complete building incl. 3/4 flat roof (rows 0-4) and front (rows 5-7); brick plinth at base."
+  },
+  {
+   "id": "sf_store_tan_roof",
+   "sheet": "Tileset_11_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 5,
+   "h": 8,
+   "category": "building",
+   "desc": "small one-storey store: flat tan roof, grey-brown walls, 'STORE' sign, maroon/white striped awning over the window",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "corner grocery / drugstore / five-and-dime",
+   "notes": "Complete building incl. 3/4 flat roof (rows 0-4) and front (rows 5-7); brick plinth at base."
+  },
+  {
+   "id": "sf_store_olive_roof",
+   "sheet": "Tileset_11_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 5,
+   "h": 8,
+   "category": "building",
+   "desc": "small one-storey store: flat olive roof, light-blue walls, 'STORE' sign, orange/white striped awning over the window",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "corner grocery / drugstore / five-and-dime",
+   "notes": "Complete building incl. 3/4 flat roof (rows 0-4) and front (rows 5-7); brick plinth at base."
+  },
+  {
+   "id": "sf_market_grocery",
+   "sheet": "Tileset_12_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 9,
+   "category": "building",
+   "desc": "one-storey grocery: flat olive roof, big grey 'MARKET' sign on the roof edge, two orange/white striped awnings over windows, central green door, blue walls on brick plinth",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     8
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "neighbourhood grocery / A&P-style market",
+   "notes": "Complete building with roof. The beige-roof MARKET below (rows 9-15) runs off-sheet - not catalogued."
+  },
+  {
+   "id": "sf_billboard_hungry",
+   "sheet": "Tileset_43_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 5,
+   "h": 3,
+   "category": "sign",
+   "desc": "billboard: orange 'are you HUNGRY?' burger ad in a grey steel frame",
+   "era1960": "ok",
+   "solid": "bottom:1",
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "roadside / rooftop / blank-wall advertising",
+   "notes": "5x3 framed billboard with stubby feet on the bottom row. If wall-mounted use solid [] and overhead 0."
+  },
+  {
+   "id": "sf_billboard_petwash",
+   "sheet": "Tileset_43_MV.png",
+   "x": 0,
+   "y": 3,
+   "w": 5,
+   "h": 3,
+   "category": "sign",
+   "desc": "billboard: pink 'pet wash' ad with a dog in suds",
+   "era1960": "ok",
+   "solid": "bottom:1",
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "roadside / rooftop / blank-wall advertising",
+   "notes": "5x3 framed billboard with stubby feet on the bottom row. If wall-mounted use solid [] and overhead 0."
+  },
+  {
+   "id": "sf_billboard_car",
+   "sheet": "Tileset_43_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 5,
+   "h": 3,
+   "category": "sign",
+   "desc": "billboard: cartoon yellow car ad on blue",
+   "era1960": "ok",
+   "solid": "bottom:1",
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "roadside / rooftop / blank-wall advertising",
+   "notes": "5x3 framed billboard with stubby feet on the bottom row. If wall-mounted use solid [] and overhead 0."
+  },
+  {
+   "id": "sf_billboard_blank",
+   "sheet": "Tileset_43_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 5,
+   "h": 3,
+   "category": "sign",
+   "desc": "empty billboard frame (transparent centre, no panel)",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "roadside / rooftop / blank-wall advertising",
+   "notes": "5x3 framed billboard with stubby feet on the bottom row. If wall-mounted use solid [] and overhead 0."
+  },
+  {
+   "id": "sf_billboard_pizza",
+   "sheet": "Tileset_43_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 5,
+   "h": 3,
+   "category": "sign",
+   "desc": "billboard: red/green 'PIZZA' ad with a pizza slice",
+   "era1960": "ok",
+   "solid": "bottom:1",
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "roadside / rooftop / blank-wall advertising",
+   "notes": "5x3 framed billboard with stubby feet on the bottom row. If wall-mounted use solid [] and overhead 0."
+  },
+  {
+   "id": "sf_billboard_your_ad_here",
+   "sheet": "Tileset_43_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 5,
+   "h": 2,
+   "category": "sign",
+   "desc": "dark wall sign 'YOUR AD HERE' in white and lime",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "advert panel on a wall",
+   "notes": "Wall-sign overlay."
+  },
+  {
+   "id": "sf_brick_wall_panel_plain",
+   "sheet": "Tileset_43_MV.png",
+   "x": 8,
+   "y": 9,
+   "w": 7,
+   "h": 6,
+   "category": "wall",
+   "desc": "plain dark-red brick wall panel, 7 wide, grey horizontal stone band across row 2, dark edge trim",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "windowless side / rear / party wall of a brick block, alley wall",
+   "notes": "Matches the 7-wide brick system width."
+  },
+  {
+   "id": "sf_tan_ground_door_steps",
+   "sheet": "Tileset_2_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "tan-brick ground floor: dark cornice band, door with orange curtains and stone steps at left, two small windows right",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "rowhouse / small apartment ground floor",
+   "notes": "6x3; the part above is on another sheet."
+  },
+  {
+   "id": "sf_tan_apartment_complete",
+   "sheet": "Tileset_2_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 6,
+   "h": 11,
+   "category": "building",
+   "desc": "tan-brick 3-storey flat-roofed apartment: cream-edged flat roof, two window-band floors, entrance floor with iron balconies, double glass door and wide steps",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "1950s-60s apartment block on a side street",
+   "notes": "Rows 0-3 roof, 4-5 and 6-7 upper floors (2 rows each, repeatable), 8-10 entrance floor."
+  },
+  {
+   "id": "sf_tan_apartment_roof",
+   "sheet": "Tileset_2_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 6,
+   "h": 4,
+   "category": "roof_module",
+   "desc": "flat roof of tan apartment: cream parapet edging, khaki surface, brown cornice band on bottom row",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": "Top cap of the tan apartment stack."
+  },
+  {
+   "id": "sf_tan_apartment_floor",
+   "sheet": "Tileset_2_MV.png",
+   "x": 10,
+   "y": 7,
+   "w": 6,
+   "h": 2,
+   "category": "building_module",
+   "desc": "tan-brick upper floor: two windows and a long central window band, beige sill ledge",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Repeatable 6x2 floor between roof and entrance floor."
+  },
+  {
+   "id": "sf_tan_apartment_entrance",
+   "sheet": "Tileset_2_MV.png",
+   "x": 10,
+   "y": 11,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "tan-brick entrance floor: two small iron balconies, canopy, double glass doors over wide grey steps",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": "Street-level module of the tan apartment stack."
+  },
+  {
+   "id": "sf_vendor_cart_candy",
+   "sheet": "Tileset_2_MV.png",
+   "x": 5,
+   "y": 0,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "pink/white striped-awning vendor cart full of candy, pink wheels, push handles at right",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street vendor at fair, park or Continental Square",
+   "notes": ""
+  },
+  {
+   "id": "sf_vendor_cart_toys",
+   "sheet": "Tileset_2_MV.png",
+   "x": 5,
+   "y": 3,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "pink/white striped-awning vendor cart with toys, pinwheels and flags",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street vendor at fair, park or Continental Square",
+   "notes": ""
+  },
+  {
+   "id": "sf_vendor_cart_empty",
+   "sheet": "Tileset_2_MV.png",
+   "x": 5,
+   "y": 6,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "pink/white striped-awning vendor cart with empty counter, lantern at left",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street vendor at fair, park or Continental Square",
+   "notes": ""
+  },
+  {
+   "id": "sf_bench_wood_small",
+   "sheet": "Tileset_2_MV.png",
+   "x": 0,
+   "y": 7,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "short wooden slat park bench with dark iron ends",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk / park",
+   "notes": ""
+  },
+  {
+   "id": "sf_bench_wood_long",
+   "sheet": "Tileset_2_MV.png",
+   "x": 2,
+   "y": 7,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "long wooden slat park bench with dark iron ends",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk / park / bus stop",
+   "notes": ""
+  },
+  {
+   "id": "sf_signal_pole_crosswalk_sign",
+   "sheet": "Tileset_2_MV.png",
+   "x": 4,
+   "y": 1,
+   "w": 1,
+   "h": 5,
+   "category": "prop",
+   "desc": "grey pole with dark traffic-signal head on top and a blue pedestrian-crossing sign",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     4
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street corner",
+   "notes": ""
+  },
+  {
+   "id": "sf_street_lamp_lantern",
+   "sheet": "Tileset_2_MV.png",
+   "x": 9,
+   "y": 7,
+   "w": 1,
+   "h": 4,
+   "category": "prop",
+   "desc": "tall dark iron lamp post with an ornate lantern head",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalks",
+   "notes": ""
+  },
+  {
+   "id": "sf_lantern_head_ornate",
+   "sheet": "Tileset_2_MV.png",
+   "x": 8,
+   "y": 7,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "ornate iron lantern head (no pole)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "wall lamp beside doors",
+   "notes": ""
+  },
+  {
+   "id": "sf_bollard_light",
+   "sheet": "Tileset_2_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "short bollard lamp with orange glow",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "plaza path lighting",
+   "notes": ""
+  },
+  {
+   "id": "sf_manhole_light",
+   "sheet": "Tileset_2_MV.png",
+   "x": 9,
+   "y": 5,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "round light-grey manhole cover",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street surface",
+   "notes": ""
+  },
+  {
+   "id": "sf_manhole_brown",
+   "sheet": "Tileset_2_MV.png",
+   "x": 9,
+   "y": 6,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "round rusty-brown manhole cover",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street surface",
+   "notes": ""
+  },
+  {
+   "id": "sf_trash_bag",
+   "sheet": "Tileset_2_MV.png",
+   "x": 1,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "grey tied garbage bag",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "alleys, curbside",
+   "notes": ""
+  },
+  {
+   "id": "sf_wall_vent_grate",
+   "sheet": "Tileset_2_MV.png",
+   "x": 8,
+   "y": 9,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "small barred metal vent grate",
+   "era1960": "ok",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "wall / foundation detail",
+   "notes": ""
+  },
+  {
+   "id": "sf_stone_shrine_pedestal",
+   "sheet": "Tileset_2_MV.png",
+   "x": 6,
+   "y": 11,
+   "w": 2,
+   "h": 3,
+   "category": "statue",
+   "desc": "grey stone monument/pedestal with lantern-like top and plaque",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "square / park memorial",
+   "notes": ""
+  },
+  {
+   "id": "sf_teal_apartment_complete",
+   "sheet": "Tileset_3_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 6,
+   "h": 11,
+   "category": "building",
+   "desc": "teal-walled 3-storey flat-roofed apartment: teal roof with cream parapet, brown eave, two window-band floors, entrance floor with balconies, double door and steps",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "mid-century apartment at the edge of downtown",
+   "notes": "Rows 0-3 roof, 4-5 & 6-7 floors (repeatable 6x2), 8-10 entrance. Same system as tan apartment on sheet 2."
+  },
+  {
+   "id": "sf_teal_apartment_floor",
+   "sheet": "Tileset_3_MV.png",
+   "x": 0,
+   "y": 11,
+   "w": 6,
+   "h": 2,
+   "category": "building_module",
+   "desc": "teal upper floor with window band and two wall vents",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Repeatable floor for teal apartment."
+  },
+  {
+   "id": "sf_grey_apartment_floor",
+   "sheet": "Tileset_3_MV.png",
+   "x": 8,
+   "y": 1,
+   "w": 6,
+   "h": 2,
+   "category": "building_module",
+   "desc": "grey concrete upper floor with window band and cream ledges",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Grey apartment system; its roof is on another sheet."
+  },
+  {
+   "id": "sf_grey_apartment_entrance",
+   "sheet": "Tileset_3_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "grey concrete entrance floor: balconies, canopy, double glass doors, wide steps",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_bus_stop_sign",
+   "sheet": "Tileset_3_MV.png",
+   "x": 14,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "blue bus-stop sign on a grey pole",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "bus stop",
+   "notes": ""
+  },
+  {
+   "id": "sf_bench_side_wood",
+   "sheet": "Tileset_3_MV.png",
+   "x": 14,
+   "y": 6,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "pair of wooden slat benches seen from the side",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park / waiting area",
+   "notes": ""
+  },
+  {
+   "id": "sf_grey_stone_upper_floor",
+   "sheet": "Tileset_8_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "grey stone upper floor: brown cornice band on top, four windows incl. a wide central one",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Pairs with sf_grey_stone_ground_floor below it."
+  },
+  {
+   "id": "sf_grey_stone_ground_floor",
+   "sheet": "Tileset_8_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "grey stone ground floor: brown cornice band, door with orange curtains and steps at left, two windows right",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "rowhouse / office",
+   "notes": ""
+  },
+  {
+   "id": "sf_brown_roof_satellite",
+   "sheet": "Tileset_8_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 6,
+   "h": 4,
+   "category": "roof_module",
+   "desc": "flat tan roof with parapet, grey AC box and a satellite dish",
+   "era1960": "avoid",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": "Satellite dish = modern; use the floors only."
+  },
+  {
+   "id": "sf_brown_upper_floor",
+   "sheet": "Tileset_8_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "brown stucco upper floor with tan pilasters, two double windows with sills",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_brown_ground_floor",
+   "sheet": "Tileset_8_MV.png",
+   "x": 8,
+   "y": 13,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "brown stucco ground floor: orange door in centre, two windows with blue flower boxes",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "shopkeeper's house / rowhouse",
+   "notes": "Stack sf_brown_upper_floor above."
+  },
+  {
+   "id": "sf_tree_round",
+   "sheet": "Tileset_8_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 2,
+   "h": 3,
+   "category": "tree",
+   "desc": "small round deciduous tree with grass tuft",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "street tree",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_round_planter",
+   "sheet": "Tileset_8_MV.png",
+   "x": 2,
+   "y": 0,
+   "w": 2,
+   "h": 4,
+   "category": "tree",
+   "desc": "small round deciduous tree in a round stone planter",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalk tree",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_square_planter",
+   "sheet": "Tileset_8_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 2,
+   "h": 4,
+   "category": "tree",
+   "desc": "small round tree in a square concrete grass planter",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "plaza tree",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_large",
+   "sheet": "Tileset_8_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "larger leafy deciduous tree with grass tufts",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park / street",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_large_planter",
+   "sheet": "Tileset_8_MV.png",
+   "x": 3,
+   "y": 4,
+   "w": 3,
+   "h": 5,
+   "category": "tree",
+   "desc": "larger leafy tree in a round stone planter",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "downtown sidewalk",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_large_square_planter",
+   "sheet": "Tileset_8_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "large leafy tree in a square concrete grass planter",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "plaza",
+   "notes": ""
+  },
+  {
+   "id": "sf_tree_grove_cluster",
+   "sheet": "Tileset_8_MV.png",
+   "x": 3,
+   "y": 9,
+   "w": 3,
+   "h": 4,
+   "category": "tree",
+   "desc": "dense strip of overlapping leafy trees, canopies cut flat at left and right edges",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "park edge / tree line",
+   "notes": "Edges are cut straight - designed to repeat horizontally as a continuous tree line."
+  },
+  {
+   "id": "sf_newspaper_box",
+   "sheet": "Tileset_8_MV.png",
+   "x": 6,
+   "y": 7,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "small tan newspaper vending box",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "sidewalk corner",
+   "notes": ""
+  },
+  {
+   "id": "sf_derelict_building",
+   "sheet": "Tileset_9_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 6,
+   "h": 11,
+   "category": "building",
+   "desc": "abandoned two-storey stucco building: crumbling flat roof with holes, cracked walls, broken windows, battered orange door",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "rundown warehouse / bad side of town",
+   "notes": ""
+  },
+  {
+   "id": "sf_stucco_roof",
+   "sheet": "Tileset_9_MV.png",
+   "x": 2,
+   "y": 2,
+   "w": 5,
+   "h": 5,
+   "category": "roof_module",
+   "desc": "flat stucco roof with raised tan parapet edge",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": "Top of the brown stucco set (5 wide)."
+  },
+  {
+   "id": "sf_stucco_wall_plain",
+   "sheet": "Tileset_9_MV.png",
+   "x": 2,
+   "y": 7,
+   "w": 5,
+   "h": 3,
+   "category": "building_module",
+   "desc": "plain brown stucco upper wall with tan ledge at bottom",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Decorate with window decals sf_window_flowerbox_*."
+  },
+  {
+   "id": "sf_stucco_ground_door",
+   "sheet": "Tileset_9_MV.png",
+   "x": 2,
+   "y": 10,
+   "w": 5,
+   "h": 3,
+   "category": "building_module",
+   "desc": "brown stucco ground floor with an orange door with small window",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_stucco_ground_two_doors",
+   "sheet": "Tileset_9_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 6,
+   "h": 3,
+   "category": "building_module",
+   "desc": "brown stucco ground floor, 6 wide, two orange doors",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_window_flowerbox_red",
+   "sheet": "Tileset_9_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "small window with red-flower window box (wall overlay)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Overlay on a wall tile."
+  },
+  {
+   "id": "sf_window_flowerbox_blue",
+   "sheet": "Tileset_9_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 1,
+   "h": 1,
+   "category": "decal",
+   "desc": "small window with blue-flower window box (wall overlay)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Overlay on a wall tile."
+  },
+  {
+   "id": "sf_stone_roof_parapet",
+   "sheet": "Tileset_114_MV.png",
+   "x": 0,
+   "y": 1,
+   "w": 7,
+   "h": 7,
+   "category": "roof_module",
+   "desc": "flat grey roof of a beige-stone building, crenellated stone parapet with dentils all round",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": "Sits directly above sf_stone_upper_arched (as on sheet)."
+  },
+  {
+   "id": "sf_stone_upper_arched",
+   "sheet": "Tileset_114_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 7,
+   "h": 5,
+   "category": "building_module",
+   "desc": "beige ashlar stone 2-storey facade: stone urns on cornice, two arched-top windows per floor, heavy stone ledge at bottom",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "bank / courthouse annex / hotel upper floors",
+   "notes": "Upper part only; ground floor (rows 13-15+) continues onto another sheet."
+  },
+  {
+   "id": "sf_garage_rollup",
+   "sheet": "Tileset_114_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 5,
+   "h": 8,
+   "category": "building",
+   "desc": "small flat-roofed concrete garage / loading dock: grey roof with vents, ribbed roll-up shutter door",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "service garage, warehouse dock in alleys",
+   "notes": ""
+  },
+  {
+   "id": "sf_bench_slat",
+   "sheet": "Tileset_114_MV.png",
+   "x": 13,
+   "y": 3,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "small wooden slat bench, top view",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_rooftop_ac_unit",
+   "sheet": "Tileset_114_MV.png",
+   "x": 14,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "grey rooftop air-conditioning unit with fan grille",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "rooftops",
+   "notes": ""
+  },
+  {
+   "id": "sf_fire_escape_tenement",
+   "sheet": "Tileset_115_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 5,
+   "h": 16,
+   "category": "building",
+   "desc": "narrow 4-storey beige-brick tenement, flat roof, iron fire escapes zig-zagging down the front, potted plant, brick-paved base",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "tenement / walk-up behind main street",
+   "notes": "Bottom row may continue onto the next sheet."
+  },
+  {
+   "id": "sf_fire_escape_balcony_a",
+   "sheet": "Tileset_115_MV.png",
+   "x": 4,
+   "y": 11,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "iron fire-escape balcony landing (overlay)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Overlay on a wall."
+  },
+  {
+   "id": "sf_fire_escape_balcony_b",
+   "sheet": "Tileset_115_MV.png",
+   "x": 4,
+   "y": 14,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "iron fire-escape balcony landing (overlay)",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": "Overlay on a wall."
+  },
+  {
+   "id": "sf_fire_escape_ladder",
+   "sheet": "Tileset_115_MV.png",
+   "x": 13,
+   "y": 5,
+   "w": 1,
+   "h": 3,
+   "category": "decal",
+   "desc": "iron fire-escape ladder",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_fire_escape_stairs_a",
+   "sheet": "Tileset_115_MV.png",
+   "x": 13,
+   "y": 9,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "diagonal iron fire-escape stair",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "",
+   "notes": ""
+  },
+  {
+   "id": "sf_potted_plant_small",
+   "sheet": "Tileset_115_MV.png",
+   "x": 15,
+   "y": 5,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "small potted green plant",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "window ledges, stoops",
+   "notes": ""
+  },
+  {
+   "id": "sf_hardware_store",
+   "sheet": "Tileset_116_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 8,
+   "h": 9,
+   "category": "building",
+   "desc": "hardware store: flat roof with AC fan units, big red 'HARDWARE' sign with giant hammer, red/cream striped awning over shop windows",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     3,
+     8
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Main St hardware store",
+   "notes": "Complete one-storey store incl. roof."
+  },
+  {
+   "id": "sf_narrow_stucco_house",
+   "sheet": "Tileset_116_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 6,
+   "h": 12,
+   "category": "building",
+   "desc": "narrow light-grey building: flat roof with tall antenna pipe, porthole window, balcony window, copper drainpipes",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "alley / back building",
+   "notes": ""
+  },
+  {
+   "id": "sf_rooftop_fan_unit_a",
+   "sheet": "Tileset_116_MV.png",
+   "x": 8,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "large grey rooftop HVAC fan unit",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "rooftops / back alleys",
+   "notes": ""
+  },
+  {
+   "id": "sf_rooftop_fan_unit_b",
+   "sheet": "Tileset_116_MV.png",
+   "x": 11,
+   "y": 13,
+   "w": 2,
+   "h": 3,
+   "category": "prop",
+   "desc": "large grey rooftop HVAC fan unit",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "rooftops / back alleys",
+   "notes": ""
+  },
+  {
+   "id": "sf_narrow_rowhouse_a",
+   "sheet": "Tileset_117_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 3,
+   "h": 12,
+   "category": "building",
+   "desc": "narrow 3-wide grey-brick rowhouse: flat roof with chimney pots and roof hatch, shuttered windows, columned stoop with steps",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "rowhouse / walk-up",
+   "notes": ""
+  },
+  {
+   "id": "sf_narrow_rowhouse_b",
+   "sheet": "Tileset_117_MV.png",
+   "x": 3,
+   "y": 0,
+   "w": 3,
+   "h": 12,
+   "category": "building",
+   "desc": "narrow 3-wide grey-brick rowhouse: flat roof, three floors of wooden-shuttered windows, columned stoop with steps, drainpipe",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "rowhouse / walk-up",
+   "notes": ""
+  },
+  {
+   "id": "sf_stoop_portico",
+   "sheet": "Tileset_117_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "building_module",
+   "desc": "columned stoop: door with canopy, two stone columns and steps",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     2
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "entrance for brick walls",
+   "notes": ""
+  },
+  {
+   "id": "sf_backstreet_house_cat",
+   "sheet": "Tileset_117_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 6,
+   "h": 12,
+   "category": "building",
+   "desc": "grey back building with tall antenna, porthole and balcony windows, drainpipes, black cat on the stoop and trash can",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "back alley",
+   "notes": "Bottom row may continue on next sheet."
+  },
+  {
+   "id": "sf_fire_escape_tenement_skylight",
+   "sheet": "Tileset_118_MV.png",
+   "x": 1,
+   "y": 0,
+   "w": 5,
+   "h": 16,
+   "category": "building",
+   "desc": "beige-brick tenement with glass skylight on flat roof, iron fire escapes and stairs on the facade, potted plant, brick base with steps",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "tenement / walk-up",
+   "notes": "Bottom row may continue onto the next sheet."
+  },
+  {
+   "id": "sf_awning_blue_4",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 1,
+   "w": 5,
+   "h": 2,
+   "category": "sign",
+   "desc": "blue/cream striped fabric awning, about 4.5 tiles wide",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  },
+  {
+   "id": "sf_awning_red_4",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 5,
+   "h": 2,
+   "category": "sign",
+   "desc": "red/cream striped fabric awning, about 4.5 tiles wide",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  },
+  {
+   "id": "sf_awning_blue_3",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 5,
+   "w": 4,
+   "h": 2,
+   "category": "sign",
+   "desc": "blue/cream striped fabric awning, about 3.5 tiles wide",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  },
+  {
+   "id": "sf_awning_red_3",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 7,
+   "w": 4,
+   "h": 2,
+   "category": "sign",
+   "desc": "red/cream striped fabric awning, about 3.5 tiles wide",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  },
+  {
+   "id": "sf_awning_blue_long",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 9,
+   "w": 8,
+   "h": 2,
+   "category": "sign",
+   "desc": "long blue/cream striped awning in two sections",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  },
+  {
+   "id": "sf_awning_red_long",
+   "sheet": "Tileset_118_MV.png",
+   "x": 8,
+   "y": 11,
+   "w": 8,
+   "h": 2,
+   "category": "sign",
+   "desc": "long red/cream striped awning in two sections",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "over shop windows on main street",
+   "notes": "Wall-mounted awning overlay: stamp on the facade over a ground-floor window (straddling the ground floor's top row / floor above). Not solid; draw above player."
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "pack": "knight_mate_in_1",
+ "source": "Lichess puzzle database (CC0)",
+ "puzzles": [
+  {
+   "id": "7ez5q",
+   "name": "Knight mate in 1 #7ez5q",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7Q/8/8/2P5/1n6/1k6/p7/K7 b - - 0 51",
+   "objective_move": "b4c2",
+   "solution": [
+    "b4c2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "yGlzD",
+   "name": "Knight mate in 1 #yGlzD",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/P7/1K2N3/8/8/8/8/7q w - - 0 64",
+   "objective_move": "e6c7",
+   "solution": [
+    "e6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "bSaf3",
+   "name": "Knight mate in 1 #bSaf3",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/R7/1p6/3k4/1P2nB2/P5p1/6Pp/7K b - - 0 53",
+   "objective_move": "e4f2",
+   "solution": [
+    "e4f2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "LkoMA",
+   "name": "Knight mate in 1 #LkoMA",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5Q2/8/8/8/8/1k2n3/p7/K7 b - - 0 60",
+   "objective_move": "e3c2",
+   "solution": [
+    "e3c2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "jkU82",
+   "name": "Knight mate in 1 #jkU82",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3N2nk/6p1/5pP1/5P2/5K2/8/8/8 w - - 21 74",
+   "objective_move": "d8f7",
+   "solution": [
+    "d8f7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "KZwBw",
+   "name": "Knight mate in 1 #KZwBw",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "knight_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/pp1N1p2/5Pkp/P3P1n1/6K1/1P6/8 w - - 0 42",
+   "objective_move": "d6f7",
+   "solution": [
+    "d6f7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The knight delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "knight_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  }
+ ]
+}

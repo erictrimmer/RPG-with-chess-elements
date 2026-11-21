@@ -1,0 +1,80 @@
+{
+  "intro": [
+	"Let's see what you've got, {player}.",
+	"Good luck. You'll need it.",
+	"Ready when you are.",
+	"Show me your best opening."
+  ],
+  "player_capture": [
+	"Hey, that was mine!",
+	"Fine. Take it. See what it costs you.",
+	"Hm. I'll want that one back.",
+	"Not bad. Not bad at all."
+  ],
+  "bot_capture": [
+	"Thanks for the gift.",
+	"I'll take that.",
+	"Mine now.",
+	"You should have guarded that piece."
+  ],
+  "player_check": [
+	"Check? Cute. I'll handle it.",
+	"Careful, you're poking the bear.",
+	"My king is fine. Probably."
+  ],
+  "bot_check": [
+	"Check! Better do something about that.",
+	"Watch your king, {player}.",
+	"Knock knock. Your king is in check."
+  ],
+  "player_promote": [
+	"A new queen already? Impressive.",
+	"Okay, now you're just showing off."
+  ],
+  "bot_promote": [
+	"Look at that, a brand new queen.",
+	"Promotion! Thank you very much."
+  ],
+  "player_blunder": [
+	"Oh no. Did you see what that does?",
+	"Tip: look at what I can capture before you move.",
+	"I think you just dropped something important.",
+	"That was a gift. Thanks!",
+	"Check every piece I can attack before you move. Just a hint."
+  ],
+  "player_inaccuracy": [
+	"Hm. There was a better move there.",
+	"Interesting choice. Risky.",
+	"Slow down and look for threats first."
+  ],
+  "player_good": [
+	"Good move. I didn't love seeing that.",
+	"Okay, you can play.",
+	"That was sharp."
+  ],
+  "bot_blunder": [
+	"Oops. Forget you saw that.",
+	"That wasn't supposed to happen.",
+	"Okay, okay. A little mistake."
+  ],
+  "outro_bot_wins": [
+	"Good game. Study your mistakes and come back.",
+	"Checkmate. Want another go?",
+	"Better luck next time, {player}."
+  ],
+  "outro_player_wins": [
+	"You got me. Well played.",
+	"Okay, that one's yours. Rematch?",
+	"Good game, {player}. I'll be ready next time."
+  ],
+  "outro_draw": [
+	"A draw. Neither of us blinked.",
+	"Honestly, I'll take it.",
+	"Call it even. For now."
+  ],
+  "outro_resign": [
+	"Giving up already?",
+	"Smart to know when you're beaten.",
+	"Come back when you've practiced."
+  ]
+}

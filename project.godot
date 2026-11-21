@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pawn's Journey"
-run/main_scene="res://Scenes/MainMenu.tscn"
+run/main_scene="res://Scenes/demo.tscn"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 
 [autoload]
@@ -26,9 +26,8 @@ QuestManager="*res://Systems/QuestManager.gd"
 
 [display]
 
-window/size/viewport_width=320
-window/size/viewport_height=180
-window/size/mode="windowed"
+window/size/viewport_width=480
+window/size/viewport_height=270
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"

@@ -1,0 +1,53 @@
+{
+  "intro": [
+	"I only play the best moves.",
+	"Let's go, {player}. Try to keep up.",
+	"Don't blink. Seriously."
+  ],
+  "player_capture": [
+	"A pawn? Please. I've got plenty.",
+	"Enjoy it. That's the last thing you'll take.",
+	"Lucky grab."
+  ],
+  "bot_capture": [
+	"Too slow!",
+	"Another one for Bobby.",
+	"Hope that wasn't your favorite piece."
+  ],
+  "player_check": [
+	"Check? Ha. Cute.",
+	"You think that scares me?"
+  ],
+  "bot_check": [
+	"Check! Run, king, run!",
+	"Your king looks nervous, {player}."
+  ],
+  "player_blunder": [
+	"Oh wow. You really did that?",
+	"Always check what I'm attacking, {player}. Free lesson from me.",
+	"My grandmother would've seen that. And she's a goldfish.",
+	"Thanks for the gift!"
+  ],
+  "player_good": [
+	"Hm. Not bad. Don't let it go to your head.",
+	"Okay. You surprised me. A little."
+  ],
+  "bot_blunder": [
+	"That was on purpose. Obviously.",
+	"Okay, that was a mistake. Don't get used to it."
+  ],
+  "outro_bot_wins": [
+	"Checkmate. Told you I only play the best moves.",
+	"Good game. For a beginner.",
+	"Come back after you've studied, {player}."
+  ],
+  "outro_player_wins": [
+	"You play well. For now.",
+	"...Rematch. Right now.",
+	"Fine. You win this one."
+  ],
+  "outro_resign": [
+	"Resigning already? I was just warming up.",
+	"Smart move. Ha!"
+  ]
+}

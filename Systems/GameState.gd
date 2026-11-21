@@ -1,6 +1,7 @@
 extends Node
 
 # Persistent state for the game
+var player_name: String = "Player" # shown on the battle screen and written into saved PGN files
 var player_rating: float = 400.0
 var games_played: int = 0
 var is_rating_established: bool = false
@@ -40,3 +41,5 @@ func get_saved_player_position() -> Vector2:
 var pending_world_dialog: String = "" # e.g. "bobby_gg"
 var bobby_should_taunt: bool = false # Set to true when player loses/gives up to Bobby
 
+# Drill batches: batch id -> index of the puzzle to resume at (kept while the game runs)
+var drill_progress: Dictionary = {}

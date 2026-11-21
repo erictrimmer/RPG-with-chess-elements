@@ -16,7 +16,7 @@ var puzzle_success_text: String = ""
 var puzzle_instruction: String = ""
 
 # --- Metadata ---
-var return_scene_path: String = "res://Scenes/world.tscn"
+var return_scene_path: String = "res://Scenes/demo.tscn" # same scene as GameManager.WORLD_SCENE
 var reward_id: String = ""
 
 # Factory methods for easy creation

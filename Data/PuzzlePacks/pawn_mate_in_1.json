@@ -1,0 +1,942 @@
+{
+ "pack": "pawn_mate_in_1",
+ "source": "Lichess puzzle database (CC0)",
+ "puzzles": [
+  {
+   "id": "2it5A",
+   "name": "Pawn mate in 1 #2it5A",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "r6k/7P/6PK/8/8/8/8/8 w - - 0 62",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "fhioZ",
+   "name": "Pawn mate in 1 #fhioZ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k6/1P6/1KP5/8/8/8/8/7q w - - 0 64",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "BEsu0",
+   "name": "Pawn mate in 1 #BEsu0",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/2kp4/2p5/2K1R3 b - - 0 61",
+   "objective_move": "d3d2",
+   "solution": [
+    "d3d2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "N73bp",
+   "name": "Pawn mate in 1 #N73bp",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k6/1P6/1KPn4/8/8/8/8/8 w - - 0 69",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Uk8J7",
+   "name": "Pawn mate in 1 #Uk8J7",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/5pk1/6p1/2R3K1 b - - 0 65",
+   "objective_move": "f3f2",
+   "solution": [
+    "f3f2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "ekq8c",
+   "name": "Pawn mate in 1 #ekq8c",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7k/7P/6PK/5b2/8/8/8/8 w - - 0 64",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "lpHP2",
+   "name": "Pawn mate in 1 #lpHP2",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4r2k/7P/6PK/8/8/8/8/8 w - - 0 66",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "KRmh3",
+   "name": "Pawn mate in 1 #KRmh3",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5r1k/7P/6PK/5P2/8/8/8/8 w - - 0 63",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "pcvZJ",
+   "name": "Pawn mate in 1 #pcvZJ",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/P7/KP6/2b5/8/8/8/8 w - - 0 58",
+   "objective_move": "b6b7",
+   "solution": [
+    "b6b7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "NfcCH",
+   "name": "Pawn mate in 1 #NfcCH",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/7P/8/8/8/3kp1P1/3p4/3K4 b - - 0 52",
+   "objective_move": "e3e2",
+   "solution": [
+    "e3e2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "U0gVK",
+   "name": "Pawn mate in 1 #U0gVK",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6P1/6KP/8/8/8/8/2q5 w - - 0 64",
+   "objective_move": "h6h7",
+   "solution": [
+    "h6h7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "uhROt",
+   "name": "Pawn mate in 1 #uhROt",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/P7/KP6/2b5/7p/7P/8/8 w - - 0 76",
+   "objective_move": "b6b7",
+   "solution": [
+    "b6b7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "drO80",
+   "name": "Pawn mate in 1 #drO80",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/5B2/6pk/7p/7K b - - 0 61",
+   "objective_move": "g3g2",
+   "solution": [
+    "g3g2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "umPpQ",
+   "name": "Pawn mate in 1 #umPpQ",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5k2/5P2/p3PK2/8/1p6/8/1p6/8 w - - 0 52",
+   "objective_move": "e6e7",
+   "solution": [
+    "e6e7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "dmW4r",
+   "name": "Pawn mate in 1 #dmW4r",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "7Q/8/8/8/8/5kp1/5p2/5K2 b - - 0 69",
+   "objective_move": "g3g2",
+   "solution": [
+    "g3g2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "oCOJO",
+   "name": "Pawn mate in 1 #oCOJO",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "2k1r3/2P5/2KP4/8/8/8/8/8 w - - 0 73",
+   "objective_move": "d6d7",
+   "solution": [
+    "d6d7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "THbZe",
+   "name": "Pawn mate in 1 #THbZe",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k1r5/P7/KP6/8/8/8/8/8 w - - 0 77",
+   "objective_move": "b6b7",
+   "solution": [
+    "b6b7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "GJDwu",
+   "name": "Pawn mate in 1 #GJDwu",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1r5k/7P/p5PK/P3p3/8/8/8/8 w - - 0 57",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "a3j8t",
+   "name": "Pawn mate in 1 #a3j8t",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6Q1/8/8/8/8/4kp2/4p3/4K3 b - - 0 49",
+   "objective_move": "f3f2",
+   "solution": [
+    "f3f2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "HMpMu",
+   "name": "Pawn mate in 1 #HMpMu",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3r3k/7P/6PK/8/3p4/8/8/8 w - - 0 64",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "r7AUK",
+   "name": "Pawn mate in 1 #r7AUK",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6P1/5PK1/8/8/2b5/8/8 w - - 3 75",
+   "objective_move": "f6f7",
+   "solution": [
+    "f6f7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "gmvgd",
+   "name": "Pawn mate in 1 #gmvgd",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k2r3/1P6/1KP5/8/8/8/8/8 w - - 0 69",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "P1YGx",
+   "name": "Pawn mate in 1 #P1YGx",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/6kp/6p1/6K1/5PPP/8/8 b - - 0 47",
+   "objective_move": "h6h5",
+   "solution": [
+    "h6h5"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "EGHuG",
+   "name": "Pawn mate in 1 #EGHuG",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/6p1/8/8/5pk1/6p1/R5K1 b - - 3 73",
+   "objective_move": "f3f2",
+   "solution": [
+    "f3f2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "b7Whd",
+   "name": "Pawn mate in 1 #b7Whd",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/6P1/5PK1/3n4/8/8/p7/8 w - - 2 51",
+   "objective_move": "f6f7",
+   "solution": [
+    "f6f7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "psDAH",
+   "name": "Pawn mate in 1 #psDAH",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "1k6/1P4p1/1KP1p2p/5p2/5P2/8/7P/3q4 w - - 0 46",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "PRYUB",
+   "name": "Pawn mate in 1 #PRYUB",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P4/2PK4/8/8/5p2/5P2/1q6 w - - 0 47",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "kuVvY",
+   "name": "Pawn mate in 1 #kuVvY",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4Q3/8/8/1p6/1P6/6pk/7p/7K b - - 0 75",
+   "objective_move": "g3g2",
+   "solution": [
+    "g3g2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "bTWz4",
+   "name": "Pawn mate in 1 #bTWz4",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "k7/P5p1/KP3b2/8/8/8/8/3q4 w - - 3 64",
+   "objective_move": "b6b7",
+   "solution": [
+    "b6b7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "cfwnR",
+   "name": "Pawn mate in 1 #cfwnR",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P4/3KP3/8/1n6/pP3b2/P7/8 w - - 0 48",
+   "objective_move": "e6e7",
+   "solution": [
+    "e6e7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "DoJ5t",
+   "name": "Pawn mate in 1 #DoJ5t",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P4/2PK4/p5p1/P7/8/7p/8 w - - 0 53",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "4cZ8F",
+   "name": "Pawn mate in 1 #4cZ8F",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/8/8/8/6pk/7p/5R1K b - - 0 78",
+   "objective_move": "g3g2",
+   "solution": [
+    "g3g2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "2yCjF",
+   "name": "Pawn mate in 1 #2yCjF",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "5r1k/7P/6PK/8/8/8/8/8 w - - 0 85",
+   "objective_move": "g6g7",
+   "solution": [
+    "g6g7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Dq6td",
+   "name": "Pawn mate in 1 #Dq6td",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "6k1/2b3P1/5PK1/1p2p3/3qP3/8/8/2q5 w - - 0 56",
+   "objective_move": "f6f7",
+   "solution": [
+    "f6f7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "YQAhT",
+   "name": "Pawn mate in 1 #YQAhT",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P4/3KP3/p5p1/P5P1/8/8/5q2 w - - 0 42",
+   "objective_move": "e6e7",
+   "solution": [
+    "e6e7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "4o1tq",
+   "name": "Pawn mate in 1 #4o1tq",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "3k4/3P2pp/2PK1p2/5P2/8/8/7P/q7 w - - 0 40",
+   "objective_move": "c6c7",
+   "solution": [
+    "c6c7"
+   ],
+   "instruction": "White to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "27D0i",
+   "name": "Pawn mate in 1 #27D0i",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/4P3/8/4P3/8/kp4P1/p6P/K7 b - - 0 53",
+   "objective_move": "b3b2",
+   "solution": [
+    "b3b2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "Jp7EE",
+   "name": "Pawn mate in 1 #Jp7EE",
+   "elo_min": 249,
+   "elo_max": 649,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "8/8/6B1/7p/5P1P/kp4P1/p7/K7 b - - 1 39",
+   "objective_move": "b3b2",
+   "solution": [
+    "b3b2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 399,
+   "source": "lichess puzzle database (CC0)"
+  },
+  {
+   "id": "6xpyJ",
+   "name": "Pawn mate in 1 #6xpyJ",
+   "elo_min": 250,
+   "elo_max": 650,
+   "theme": "pawn_mate_in_1",
+   "difficulty": "easy",
+   "fen": "4Q3/8/8/4P3/7p/2kp3P/2p3P1/2K5 b - - 0 53",
+   "objective_move": "d3d2",
+   "solution": [
+    "d3d2"
+   ],
+   "instruction": "Black to move. Deliver checkmate in one move!",
+   "success_text": "Checkmate! The pawn delivers mate.",
+   "hint": "Find the check where the king has no escape and nothing can block or capture.",
+   "tags": [
+    "mate_in_1",
+    "pawn_mate",
+    "elementary"
+   ],
+   "mirrored": false,
+   "rating": 400,
+   "source": "lichess puzzle database (CC0)"
+  }
+ ]
+}

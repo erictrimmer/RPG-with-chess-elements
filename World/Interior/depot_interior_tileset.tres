@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Interiors/Room_Builder_Floors_16x16.png" id="1_ogl8u"]
+[ext_resource type="Texture2D" path="res://Assets/Interiors/Room_Builder_Walls_16x16.png" id="2_7x1qd"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1cdx"]
+texture = ExtResource("1_ogl8u")
+5:20/0 = 0
+5:21/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7vd4p"]
+texture = ExtResource("2_7x1qd")
+11:24/0 = 0
+11:25/0 = 0
+12:24/0 = 0
+12:25/0 = 0
+13:24/0 = 0
+13:25/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_x1cdx")
+sources/1 = SubResource("TileSetAtlasSource_7vd4p")

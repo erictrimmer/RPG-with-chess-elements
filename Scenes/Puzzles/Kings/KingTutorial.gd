@@ -75,7 +75,7 @@ func _on_resign_requested():
 
 func return_to_world(result: String):
 	GameState.set_tutorial_state("king_tutorial", result)
-	get_tree().change_scene_to_file("res://Scenes/world.tscn")
+	GameManager.go_to_world()
 
 func handle_player_move(uci_move: String):
 	if not is_battle_active or not is_players_turn or not chess_engine: return

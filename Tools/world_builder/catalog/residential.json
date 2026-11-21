@@ -1,0 +1,7500 @@
+{
+ "group": "residential",
+ "sheets_reviewed": [
+  "Tileset_13_MV.png",
+  "Tileset_14_MV.png",
+  "Tileset_15_MV.png",
+  "Tileset_18_MV.png",
+  "Tileset_24_MV.png",
+  "Tileset_73_MV.png",
+  "Tileset_74_MV.png",
+  "Tileset_126_MV.png",
+  "Tileset_128_MV.png",
+  "Tileset_141_MV.png",
+  "Tileset_168_MV.png",
+  "Tileset_169_MV.png",
+  "Tileset_170_MV.png"
+ ],
+ "sheet_notes": {
+  "Tileset_13_MV.png": "Red-roof gabled clapboard house 8x13 (0,0); porch furniture, wall/door strips, flower planters (cols 8-15); red roof overlays (dormer, solar panel, chimney, side window) in rows 13-15.",
+  "Tileset_14_MV.png": "Orange-roof house complete at (0,0); dark-brown house split into lower body (8,0 8x10) + rooftop (0,13 8x3); orange/brown roof overlays at (8..15,10..15).",
+  "Tileset_15_MV.png": "Blue-roof house complete at (0,0); maroon house split into lower body (8,0) + rooftop (0,13); maroon/blue roof overlays at (8..15,10..15).",
+  "Tileset_18_MV.png": "Not real cottages: plastic kids' playhouses (4 colours, each with a roofless 2-row variant below), picnic blankets/basket/coolers, two netted trampolines (8,8 / 11,8, modern - skipped), spring-rider toys, tree stump.",
+  "Tileset_24_MV.png": "House trailers: small 5x7, medium 7x7, long trailer (8,2) cut at the sheet edge (close with end-cap column 6,9); loose window/wall swap pieces, shrubs and a porch deck fragment.",
+  "Tileset_73_MV.png": "Two small coops/sheds (red, blue), wooden pergola, tan X-lattice rail fence pieces; rest is potted plants and crop growth stages (cols 8-15 and rows 9-15).",
+  "Tileset_74_MV.png": "Greenhouse pieces: glass gable end with door, empty frame, glazed end with plants, potting-shed facade; potting benches, pots, watering cans, raised-bed planks.",
+  "Tileset_126_MV.png": "Muted palette. Plank-roof warehouse 8x9 (right wing cut flush), loose wall/door modules at (0..6,9..15), low rail fence, large grey industrial unit with antenna.",
+  "Tileset_128_MV.png": "Muted palette. Warehouse 'No3' 8x12 with optional annex (8,0 3x7), low rail fence (9,10), spare roof piece at (0,12).",
+  "Tileset_141_MV.png": "Muted palette. One big timber house with slate roof and veranda filling the entire 16x16 sheet.",
+  "Tileset_168_MV.png": "Muted palette. Farm shed with red corrugated roof, small open shed, water-pump windmill; also a cluttered farmhouse corner with solar panel (8,0, skipped), generator boxes and two pump/dispenser units (skipped), corrugated ramp pieces.",
+  "Tileset_169_MV.png": "Muted palette. Corrugated-metal two-storey house in two parts (upper 15x12 + ground floor 8x2), plus small racks, pots and stools.",
+  "Tileset_170_MV.png": "Muted palette. Rustic split-rail fence set (corral demo 7x6, straight runs at rows 11-14, end posts), signposts, hanging signs, two entrance arches, three cellar hatches. Row 15 and cols 2/4 rows 8-10 are partial fence cells (skipped)."
+ },
+ "prefabs": [
+  {
+   "id": "rr_house_gable_red",
+   "sheet": "Tileset_13_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 13,
+   "category": "building",
+   "desc": "Two-storey gabled clapboard house, red wooden plank roof with centre ridge, cream siding, round attic window, small front gable over the entry, upper-right balcony door with railing, ground-floor front door at left with doormat, covered wooden front porch with railings and a 3-tile opening left of the railing",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     4,
+     12
+    ],
+    [
+     5,
+     12
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     7,
+     12
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Residential blocks on the edges of downtown (frame houses typical of older York streets).",
+   "notes": "Porch floor cells (1..3, 11..12) are walkable; the entry gap is left of the railing. Same layout in every colour variant (rr_house_gable_*). Roof overlays (rr_roof_dormer_*, rr_roof_chimney_*) can be stamped onto the roof planes."
+  },
+  {
+   "id": "rr_house_gable_orange",
+   "sheet": "Tileset_14_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 13,
+   "category": "building",
+   "desc": "Two-storey gabled clapboard house, orange wooden plank roof with centre ridge, cream siding, round attic window, small front gable over the entry, upper-right balcony door with railing, ground-floor front door at left with doormat, covered wooden front porch with railings and a 3-tile opening left of the railing",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     4,
+     12
+    ],
+    [
+     5,
+     12
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     7,
+     12
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Residential blocks on the edges of downtown (frame houses typical of older York streets).",
+   "notes": "Porch floor cells (1..3, 11..12) are walkable; the entry gap is left of the railing. Same layout in every colour variant (rr_house_gable_*). Roof overlays (rr_roof_dormer_*, rr_roof_chimney_*) can be stamped onto the roof planes."
+  },
+  {
+   "id": "rr_house_gable_blue",
+   "sheet": "Tileset_15_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 13,
+   "category": "building",
+   "desc": "Two-storey gabled clapboard house, blue wooden plank roof with centre ridge, cream siding, round attic window, small front gable over the entry, upper-right balcony door with railing, ground-floor front door at left with doormat, covered wooden front porch with railings and a 3-tile opening left of the railing",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     4,
+     12
+    ],
+    [
+     5,
+     12
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     7,
+     12
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Residential blocks on the edges of downtown (frame houses typical of older York streets).",
+   "notes": "Porch floor cells (1..3, 11..12) are walkable; the entry gap is left of the railing. Same layout in every colour variant (rr_house_gable_*). Roof overlays (rr_roof_dormer_*, rr_roof_chimney_*) can be stamped onto the roof planes."
+  },
+  {
+   "id": "rr_house_gable_brown_lower",
+   "sheet": "Tileset_14_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 8,
+   "h": 10,
+   "category": "building_module",
+   "desc": "Lower body of the gabled clapboard house with a dark brown plank roof: roof planes at top, cream gable with round window, balcony, front door, wooden porch with railing.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Residential blocks on downtown edges (colour variant).",
+   "notes": "Lower 10 rows of the same gabled house; the roof is cut flat at the top. ALWAYS stamp rr_house_gable_brown_rooftop (8x3) directly above it (rooftop at y-3, same x) to complete an 8x13 house. Porch cells (1..3, 8..9) walkable."
+  },
+  {
+   "id": "rr_house_gable_brown_rooftop",
+   "sheet": "Tileset_14_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 8,
+   "h": 3,
+   "category": "roof_module",
+   "desc": "Triangular roof peak (top 3 rows) in brown planks with ridge line; completes rr_house_gable_brown_lower.",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Top of the split house variant.",
+   "notes": "Place at (X, Y-3) where rr_house_gable_brown_lower is at (X, Y)."
+  },
+  {
+   "id": "rr_house_gable_maroon_lower",
+   "sheet": "Tileset_15_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 8,
+   "h": 10,
+   "category": "building_module",
+   "desc": "Lower body of the gabled clapboard house with a dark maroon plank roof: roof planes at top, cream gable with round window, balcony, front door, wooden porch with railing.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     7
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Residential blocks on downtown edges (colour variant).",
+   "notes": "Lower 10 rows of the same gabled house; the roof is cut flat at the top. ALWAYS stamp rr_house_gable_maroon_rooftop (8x3) directly above it (rooftop at y-3, same x) to complete an 8x13 house. Porch cells (1..3, 8..9) walkable."
+  },
+  {
+   "id": "rr_house_gable_maroon_rooftop",
+   "sheet": "Tileset_15_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 8,
+   "h": 3,
+   "category": "roof_module",
+   "desc": "Triangular roof peak (top 3 rows) in maroon planks with ridge line; completes rr_house_gable_maroon_lower.",
+   "era1960": "good",
+   "solid": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Top of the split house variant.",
+   "notes": "Place at (X, Y-3) where rr_house_gable_maroon_lower is at (X, Y)."
+  },
+  {
+   "id": "rr_roof_dormer_red",
+   "sheet": "Tileset_13_MV.png",
+   "x": 0,
+   "y": 13,
+   "w": 2,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Small gabled dormer with cream siding and round porthole window on red roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_chimney_red",
+   "sheet": "Tileset_13_MV.png",
+   "x": 5,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Dark grey metal chimney / stove-pipe cap on red roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_dormer_orange",
+   "sheet": "Tileset_14_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 2,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Small gabled dormer with cream siding and round porthole window on orange roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_chimney_orange",
+   "sheet": "Tileset_14_MV.png",
+   "x": 10,
+   "y": 10,
+   "w": 1,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Dark grey metal chimney / stove-pipe cap on orange roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_dormer_brown",
+   "sheet": "Tileset_14_MV.png",
+   "x": 8,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Small gabled dormer with cream siding and round porthole window on brown roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_chimney_brown",
+   "sheet": "Tileset_14_MV.png",
+   "x": 10,
+   "y": 12,
+   "w": 1,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Dark grey metal chimney / stove-pipe cap on brown roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_dormer_maroon",
+   "sheet": "Tileset_15_MV.png",
+   "x": 11,
+   "y": 10,
+   "w": 2,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Small gabled dormer with cream siding and round porthole window on maroon roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_chimney_maroon",
+   "sheet": "Tileset_15_MV.png",
+   "x": 13,
+   "y": 10,
+   "w": 1,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Dark grey metal chimney / stove-pipe cap on maroon roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_dormer_blue",
+   "sheet": "Tileset_15_MV.png",
+   "x": 11,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Small gabled dormer with cream siding and round porthole window on blue roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_roof_chimney_blue",
+   "sheet": "Tileset_15_MV.png",
+   "x": 13,
+   "y": 12,
+   "w": 1,
+   "h": 2,
+   "category": "roof_module",
+   "desc": "Dark grey metal chimney / stove-pipe cap on blue roof planks.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Variety on house roofs.",
+   "notes": "Overlay stamped onto a roof plane of the matching-colour rr_house_gable_* house (its background is roof planks of that colour)."
+  },
+  {
+   "id": "rr_porch_rocking_chair",
+   "sheet": "Tileset_13_MV.png",
+   "x": 10,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Wooden rocking chair with tall slatted back, front view.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front porches, general store porch, fairground grandstand.",
+   "notes": "Place on porch floor cells."
+  },
+  {
+   "id": "rr_porch_bench",
+   "sheet": "Tileset_13_MV.png",
+   "x": 11,
+   "y": 0,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Wooden porch settee/bench with two beige cushions.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porches, park/fairground seating.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_plant_tall",
+   "sheet": "Tileset_13_MV.png",
+   "x": 9,
+   "y": 0,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Tall green shrub in a terracotta pot.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porch and doorway dressing.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_plant_small",
+   "sheet": "Tileset_13_MV.png",
+   "x": 8,
+   "y": 1,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small bushy plant in a terracotta pot.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porch steps, shop doorways.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_shrub_round",
+   "sheet": "Tileset_13_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Small round topiary shrub in a brown pot.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porch / doorway dressing.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_cypress",
+   "sheet": "Tileset_13_MV.png",
+   "x": 13,
+   "y": 1,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Narrow cypress/conifer in a small pot.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porch / doorway dressing.",
+   "notes": ""
+  },
+  {
+   "id": "rr_wood_ladder",
+   "sheet": "Tileset_13_MV.png",
+   "x": 8,
+   "y": 3,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Short grey-railed wooden ladder, front view (lean against a wall).",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Leaning on a house or barn wall, fairground setup.",
+   "notes": "Bottom ~10 px of the rect are empty; place against a wall face."
+  },
+  {
+   "id": "rr_wall_door_lamps",
+   "sheet": "Tileset_13_MV.png",
+   "x": 9,
+   "y": 2,
+   "w": 3,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Cream clapboard wall section: brown front door with window in the middle, a brass and a white wall lamp on each side.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     1
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "Swap-in front door section for the clapboard houses.",
+   "notes": "Matches the cream siding of rr_house_gable_*; stamp over a ground-floor wall to add/move a door. Rows 4..6 below it on the sheet are further wall/lamp strips."
+  },
+  {
+   "id": "rr_wall_open_doorway",
+   "sheet": "Tileset_13_MV.png",
+   "x": 9,
+   "y": 5,
+   "w": 3,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Cream clapboard wall section with a dark open doorway (no door) and wall lamps either side.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     1
+    ]
+   ],
+   "needs_ground": false,
+   "york_use": "Open shed/workshop door in the clapboard style.",
+   "notes": "Same siding as rr_house_gable_*."
+  },
+  {
+   "id": "rr_flower_planter_red",
+   "sheet": "Tileset_13_MV.png",
+   "x": 12,
+   "y": 4,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Low wooden planter box full of red flowers.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front yards, porch edges, cemetery gate, fairground beds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_flower_planter_purple",
+   "sheet": "Tileset_13_MV.png",
+   "x": 12,
+   "y": 6,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Low wooden planter box full of purple flowers.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front yards, porch edges, cemetery gate, fairground beds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_flower_planter_pink",
+   "sheet": "Tileset_13_MV.png",
+   "x": 8,
+   "y": 7,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Low wooden planter box full of pink flowers.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front yards, porch edges, cemetery gate, fairground beds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_flower_planter_white",
+   "sheet": "Tileset_13_MV.png",
+   "x": 10,
+   "y": 7,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Low wooden planter box full of white flowers.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front yards, porch edges, cemetery gate, fairground beds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_flower_planter_yellow",
+   "sheet": "Tileset_13_MV.png",
+   "x": 12,
+   "y": 7,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Low wooden planter box full of yellow flowers.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front yards, porch edges, cemetery gate, fairground beds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_window_box_ledge",
+   "sheet": "Tileset_13_MV.png",
+   "x": 14,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Wall ledge carrying two window flower boxes (white/yellow and red flowers) with a brown sill strip.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": false,
+   "york_use": "Under ground-floor windows of houses and shops.",
+   "notes": "Wall decoration: stamp on a facade (top row holds only a 2 px rim). Sheet rows 5 and 7 (x 14) hold more colour pairs."
+  },
+  {
+   "id": "rr_playhouse_green",
+   "sheet": "Tileset_18_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 4,
+   "h": 5,
+   "category": "building",
+   "desc": "Child-size plastic playhouse: red gabled roof with a round roof window, green walls, two open window holes, red arched double door.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "(Modern plastic toy) - only if a back yard needs a kids' playhouse.",
+   "notes": "Moulded-plastic toy look. The 2-row piece directly below each one on the sheet is a roofless variant."
+  },
+  {
+   "id": "rr_playhouse_yellow",
+   "sheet": "Tileset_18_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 4,
+   "h": 5,
+   "category": "building",
+   "desc": "Child-size plastic playhouse: red gabled roof with a round roof window, yellow walls, two open window holes, red arched double door.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "(Modern plastic toy) - only if a back yard needs a kids' playhouse.",
+   "notes": "Moulded-plastic toy look. The 2-row piece directly below each one on the sheet is a roofless variant."
+  },
+  {
+   "id": "rr_playhouse_beige",
+   "sheet": "Tileset_18_MV.png",
+   "x": 0,
+   "y": 7,
+   "w": 4,
+   "h": 5,
+   "category": "building",
+   "desc": "Child-size plastic playhouse: red gabled roof with a round roof window, beige walls, two open window holes, red arched double door.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "(Modern plastic toy) - only if a back yard needs a kids' playhouse.",
+   "notes": "Moulded-plastic toy look. The 2-row piece directly below each one on the sheet is a roofless variant."
+  },
+  {
+   "id": "rr_playhouse_tan",
+   "sheet": "Tileset_18_MV.png",
+   "x": 4,
+   "y": 7,
+   "w": 4,
+   "h": 5,
+   "category": "building",
+   "desc": "Child-size plastic playhouse: red gabled roof with a round roof window, tan walls, two open window holes, red arched double door.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "(Modern plastic toy) - only if a back yard needs a kids' playhouse.",
+   "notes": "Moulded-plastic toy look. The 2-row piece directly below each one on the sheet is a roofless variant."
+  },
+  {
+   "id": "rr_picnic_blanket_blue",
+   "sheet": "Tileset_18_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "Blue checked picnic blanket with tan border, empty.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_blanket_pink",
+   "sheet": "Tileset_18_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "Pink polka-dot picnic blanket, empty.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_blanket_blue_lunch",
+   "sheet": "Tileset_18_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "Blue picnic blanket with wicker basket, bottles, tomatoes, knife, croissants and a red food tin.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_blanket_pink_lunch",
+   "sheet": "Tileset_18_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 3,
+   "h": 2,
+   "category": "decal",
+   "desc": "Pink picnic blanket with sandwiches, fruit, basket and bread.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_blanket_blue_small",
+   "sheet": "Tileset_18_MV.png",
+   "x": 11,
+   "y": 4,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "Small blue picnic blanket with bottles, baguette and fruit.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_blanket_pink_small",
+   "sheet": "Tileset_18_MV.png",
+   "x": 11,
+   "y": 6,
+   "w": 2,
+   "h": 2,
+   "category": "decal",
+   "desc": "Small pink picnic blanket with yellow cooler, bottle and food.",
+   "era1960": "good",
+   "solid": [],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground lawns, park by Codorus Creek, church picnics.",
+   "notes": "Walkable ground decal (items included in the art)."
+  },
+  {
+   "id": "rr_picnic_basket",
+   "sheet": "Tileset_18_MV.png",
+   "x": 13,
+   "y": 0,
+   "w": 2,
+   "h": 1,
+   "category": "prop",
+   "desc": "Open wicker picnic basket with lid.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Picnics at the fairgrounds or park.",
+   "notes": ""
+  },
+  {
+   "id": "rr_cooler_blue",
+   "sheet": "Tileset_18_MV.png",
+   "x": 13,
+   "y": 2,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Blue picnic cooler box with white handle.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Picnics, fair vendors.",
+   "notes": ""
+  },
+  {
+   "id": "rr_cooler_yellow",
+   "sheet": "Tileset_18_MV.png",
+   "x": 14,
+   "y": 2,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Yellow picnic cooler box with handle.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Picnics, fair vendors.",
+   "notes": ""
+  },
+  {
+   "id": "rr_tree_stump_mushrooms",
+   "sheet": "Tileset_18_MV.png",
+   "x": 4,
+   "y": 14,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "Large cut tree stump with spreading roots, red mushrooms and grass tufts.",
+   "era1960": "ok",
+   "solid": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Cemetery edge, creek bank, fairground woods.",
+   "notes": ""
+  },
+  {
+   "id": "rr_trailer_small",
+   "sheet": "Tileset_24_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 5,
+   "h": 7,
+   "category": "building",
+   "desc": "Mobile home / house trailer: grey corrugated low-pitch roof, white horizontal siding, a window each side of the door, roof vent, tan front door with 3-step metal stairs, brown skirting with dark shrubs.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Trailer court on the industrial edge near Codorus Creek, fairground caretaker's trailer.",
+   "notes": "Steps (2,5),(2,6) walkable."
+  },
+  {
+   "id": "rr_trailer_medium",
+   "sheet": "Tileset_24_MV.png",
+   "x": 0,
+   "y": 9,
+   "w": 7,
+   "h": 7,
+   "category": "building",
+   "desc": "Mobile home / house trailer: grey corrugated low-pitch roof, white horizontal siding, small window left, two windows right, tan front door with 3-step metal stairs, brown skirting with dark shrubs.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Trailer court, carnival worker housing at the fairgrounds.",
+   "notes": "Steps (2,5),(2,6) walkable."
+  },
+  {
+   "id": "rr_trailer_long_left",
+   "sheet": "Tileset_24_MV.png",
+   "x": 8,
+   "y": 2,
+   "w": 8,
+   "h": 7,
+   "category": "building_module",
+   "desc": "Mobile home / house trailer: grey corrugated low-pitch roof, white horizontal siding, row of windows and a wall-mounted fan unit, tan front door with 3-step metal stairs, brown skirting with dark shrubs.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     4
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Long trailer for a trailer court.",
+   "notes": "Right end is cut off at the sheet edge: ALWAYS stamp rr_trailer_end_cap (1x7) immediately to its right (x+8, same y). Steps (2,5),(2,6) walkable."
+  },
+  {
+   "id": "rr_trailer_end_cap",
+   "sheet": "Tileset_24_MV.png",
+   "x": 6,
+   "y": 9,
+   "w": 1,
+   "h": 7,
+   "category": "building_module",
+   "desc": "Right end column of a trailer: roof edge, siding end, skirting and shrub.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Closes rr_trailer_long_left.",
+   "notes": "Taken from the right end of rr_trailer_medium; same 7-row height as all trailers."
+  },
+  {
+   "id": "rr_shed_coop_red",
+   "sheet": "Tileset_73_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "building",
+   "desc": "Small red board-and-batten shed / chicken coop with shingled gable roof, grey trim and a small dark arched hatch.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground livestock area (poultry coop), back yards, farm edge.",
+   "notes": "Hatch is animal-sized, no player door."
+  },
+  {
+   "id": "rr_shed_coop_blue",
+   "sheet": "Tileset_73_MV.png",
+   "x": 3,
+   "y": 0,
+   "w": 3,
+   "h": 4,
+   "category": "building",
+   "desc": "Small blue board-and-batten shed / chicken coop with shingled gable roof and small arched hatch.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground livestock area, back yards.",
+   "notes": "Colour variant of rr_shed_coop_red."
+  },
+  {
+   "id": "rr_pergola_wood",
+   "sheet": "Tileset_73_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 4,
+   "h": 4,
+   "category": "prop",
+   "desc": "Tan wooden pergola/arbour: slatted roof on beams with brackets, two square posts.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground garden/flower show, cemetery entrance arbour, back gardens.",
+   "notes": "Walk-under structure: only the two post feet are solid, top 3 rows draw above the player. The slat strip at sheet (4,4) w4 h1 is extra roof slats."
+  },
+  {
+   "id": "rr_fence_lattice_pen",
+   "sheet": "Tileset_73_MV.png",
+   "x": 4,
+   "y": 5,
+   "w": 3,
+   "h": 3,
+   "category": "fence",
+   "desc": "Tan wooden rail fence with X-lattice panels forming a tiny closed 3x3 rectangle (corner posts, middle post, rails).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Show-ring / display pen at the fairgrounds, garden edging.",
+   "notes": "Tiling: col 0 = left corner/end post, col 1 = rail with a centre post (repeat to lengthen), col 2 = right corner post; row 0 = back rail, row 1 = side posts only (repeat vertically to deepen), row 2 = front rail with post feet. A 3-wide slice of row 2 works as a free-standing straight run."
+  },
+  {
+   "id": "rr_fence_lattice_run2",
+   "sheet": "Tileset_73_MV.png",
+   "x": 0,
+   "y": 8,
+   "w": 2,
+   "h": 1,
+   "category": "fence",
+   "desc": "Short free-standing lattice rail fence: post, X-braced rail, post.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Garden / flower-bed edging, fairground queue lines.",
+   "notes": "Self-contained 2-tile segment with a post at each end; place segments side by side for longer runs (double posts at the joins)."
+  },
+  {
+   "id": "rr_fence_lattice_run3",
+   "sheet": "Tileset_73_MV.png",
+   "x": 2,
+   "y": 8,
+   "w": 3,
+   "h": 1,
+   "category": "fence",
+   "desc": "Free-standing lattice rail fence: three posts with two X-braced rail panels.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Garden edging, fairground paths.",
+   "notes": "Self-contained 3-tile run."
+  },
+  {
+   "id": "rr_potted_sunflower",
+   "sheet": "Tileset_73_MV.png",
+   "x": 10,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Tall sunflower in a terracotta pot.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_sunflower_a",
+   "sheet": "Tileset_73_MV.png",
+   "x": 12,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Sunflower growing from the ground, medium.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_sunflower_b",
+   "sheet": "Tileset_73_MV.png",
+   "x": 13,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Tall sunflower growing from the ground.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_flower_tall_red",
+   "sheet": "Tileset_73_MV.png",
+   "x": 5,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Tall red and yellow flower (canna/gladiolus) in the ground.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_hollyhock",
+   "sheet": "Tileset_73_MV.png",
+   "x": 6,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Pink hollyhock spike in a terracotta pot.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_red_flower",
+   "sheet": "Tileset_73_MV.png",
+   "x": 2,
+   "y": 13,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Red and yellow tall flower in a terracotta pot.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_marigold",
+   "sheet": "Tileset_73_MV.png",
+   "x": 10,
+   "y": 3,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Terracotta pot with a big bunch of yellow-orange marigolds.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show at the fairgrounds, porches, farm garden.",
+   "notes": ""
+  },
+  {
+   "id": "rr_potted_bush",
+   "sheet": "Tileset_73_MV.png",
+   "x": 1,
+   "y": 10,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Wide terracotta pot with a leafy green plant.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Porches, greenhouses.",
+   "notes": ""
+  },
+  {
+   "id": "rr_crop_plant",
+   "sheet": "Tileset_73_MV.png",
+   "x": 13,
+   "y": 12,
+   "w": 1,
+   "h": 1,
+   "category": "prop",
+   "desc": "Leafy green crop plant growing from soil.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Farm plots and garden rows at the fairgrounds; repeat in rows.",
+   "notes": "Sheet columns 11-13 hold growth stages of many crops."
+  },
+  {
+   "id": "rr_greenhouse_front",
+   "sheet": "Tileset_74_MV.png",
+   "x": 4,
+   "y": 0,
+   "w": 4,
+   "h": 6,
+   "category": "building",
+   "desc": "Gable end of a glass greenhouse: steel frame, pale glazing panes, ridge spine, red door with window at the bottom centre.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Fairground horticulture building, nursery on the town edge.",
+   "notes": "Door straddles relative columns 1-2 on the bottom row."
+  },
+  {
+   "id": "rr_potting_shed_front",
+   "sheet": "Tileset_74_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 4,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Low potting-shed facade: grey frame, frosted panels, red door in the middle.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     2,
+     1
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Garden shop / greenhouse entrance.",
+   "notes": "Flat 2-row facade with no roof; put a roof or wall above it."
+  },
+  {
+   "id": "rr_greenhouse_glass_end",
+   "sheet": "Tileset_74_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 4,
+   "h": 4,
+   "category": "building_module",
+   "desc": "Glass greenhouse gable seen from outside with pots, shelves and plants visible through the panes.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Back/side of a greenhouse in the fairground horticulture area.",
+   "notes": "No door; pairs with rr_greenhouse_front as the opposite end."
+  },
+  {
+   "id": "rr_plant_bench_flowers",
+   "sheet": "Tileset_74_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 4,
+   "h": 2,
+   "category": "prop",
+   "desc": "Wooden bench with four terracotta pots: white daisies, seedling, pink hollyhock, red tulip.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show stalls at the fairgrounds, nursery, porch.",
+   "notes": ""
+  },
+  {
+   "id": "rr_plant_pot_sunflower_box",
+   "sheet": "Tileset_74_MV.png",
+   "x": 12,
+   "y": 6,
+   "w": 1,
+   "h": 2,
+   "category": "prop",
+   "desc": "Sunflower in a terracotta pot on a small wooden stand.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower show, porches.",
+   "notes": ""
+  },
+  {
+   "id": "rr_plant_buckets_white",
+   "sheet": "Tileset_74_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Low wooden stand with two blue buckets of white daisies.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Flower vendor at the fair, market stall.",
+   "notes": ""
+  },
+  {
+   "id": "rr_bench_watering_cans",
+   "sheet": "Tileset_74_MV.png",
+   "x": 13,
+   "y": 9,
+   "w": 3,
+   "h": 2,
+   "category": "prop",
+   "desc": "Wooden bench with two blue watering cans, a trowel and a potted green plant.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Greenhouse / garden shed dressing.",
+   "notes": ""
+  },
+  {
+   "id": "rr_warehouse_plank_a",
+   "sheet": "Tileset_126_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 9,
+   "category": "building",
+   "desc": "Weathered plank warehouse (muted grey-brown palette): tall vertical-board roof, pale plastered wall with a brown-framed door and two lattice windows, lower right wing with barred window, concrete apron and steps.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     6
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Industrial strip / storage sheds along Codorus Creek, rail yard.",
+   "notes": "Right wing ends flush at the rect edge (sheet is modular) - butt it against another building or a wall. Apron/steps (1..2, 7..8) walkable."
+  },
+  {
+   "id": "rr_warehouse_no3",
+   "sheet": "Tileset_128_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 8,
+   "h": 12,
+   "category": "building",
+   "desc": "Larger weathered plank warehouse: tall vertical-board roof, pale wall with lamp, brown 'No3' sign, door and two lattice windows, right-hand wing with barred window and steps.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     3,
+     11
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     9
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Numbered creek-side warehouse in the industrial area (No. 3).",
+   "notes": "Optional rr_warehouse_no3_annex (3x7) attaches directly to its right at the same y. Steps (1..2, 10..11) walkable."
+  },
+  {
+   "id": "rr_warehouse_no3_annex",
+   "sheet": "Tileset_128_MV.png",
+   "x": 8,
+   "y": 0,
+   "w": 3,
+   "h": 7,
+   "category": "building_module",
+   "desc": "Small two-storey annex for warehouse No3: plank roof strip, pale wall with lattice windows, notice board.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Office annex of the creek warehouse.",
+   "notes": "Place at (X+8, Y) next to rr_warehouse_no3 at (X, Y); its lower-left column continues the main wing."
+  },
+  {
+   "id": "rr_fence_low_rail_a",
+   "sheet": "Tileset_126_MV.png",
+   "x": 9,
+   "y": 2,
+   "w": 7,
+   "h": 2,
+   "category": "fence",
+   "desc": "Low thin wooden rail fence: one rail on short posts (muted palette).",
+   "era1960": "ok",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Yard boundary around creek warehouses.",
+   "notes": "Right end post connects upward (corner) on the sheet; rail spans the whole width."
+  },
+  {
+   "id": "rr_fence_low_rail_b",
+   "sheet": "Tileset_128_MV.png",
+   "x": 9,
+   "y": 10,
+   "w": 7,
+   "h": 1,
+   "category": "fence",
+   "desc": "Low thin wooden rail fence, single row, posts every tile.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Warehouse yard boundary, creek bank railing.",
+   "notes": "Repeat side by side for longer runs."
+  },
+  {
+   "id": "rr_industrial_unit",
+   "sheet": "Tileset_126_MV.png",
+   "x": 8,
+   "y": 4,
+   "w": 8,
+   "h": 11,
+   "category": "building",
+   "desc": "Large grey metal industrial block: flat roof with vents and a panel antenna mast, side pipe, crate-marked hatch, ground-floor control doors.",
+   "era1960": "avoid",
+   "solid": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Only as a utility/pump house in the industrial area, and only if the modern antenna does not matter.",
+   "notes": "The 1-px antenna tip pokes 5 px into row y-1 and is clipped. Reads sci-fi/modern."
+  },
+  {
+   "id": "rr_house_large_wood",
+   "sheet": "Tileset_141_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "category": "building",
+   "desc": "Big two-storey timber house (muted palette): steep grey slate main gable with attic window and side dormer, cream/peach upper storey with French doors and twin windows, wraparound covered veranda with balustrade on the ground floor, single-storey left wing with slate roof, front door, porch and wooden steps.",
+   "era1960": "good",
+   "solid": [
+    [
+     9,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     11,
+     1
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     9,
+     2
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     11,
+     2
+    ],
+    [
+     12,
+     2
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     9,
+     3
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     11,
+     3
+    ],
+    [
+     12,
+     3
+    ],
+    [
+     13,
+     3
+    ],
+    [
+     14,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     12,
+     4
+    ],
+    [
+     13,
+     4
+    ],
+    [
+     14,
+     4
+    ],
+    [
+     15,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     9,
+     5
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     11,
+     5
+    ],
+    [
+     12,
+     5
+    ],
+    [
+     13,
+     5
+    ],
+    [
+     14,
+     5
+    ],
+    [
+     15,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     9,
+     6
+    ],
+    [
+     10,
+     6
+    ],
+    [
+     11,
+     6
+    ],
+    [
+     12,
+     6
+    ],
+    [
+     13,
+     6
+    ],
+    [
+     14,
+     6
+    ],
+    [
+     15,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     7
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     12,
+     7
+    ],
+    [
+     13,
+     7
+    ],
+    [
+     14,
+     7
+    ],
+    [
+     15,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     8
+    ],
+    [
+     10,
+     8
+    ],
+    [
+     11,
+     8
+    ],
+    [
+     12,
+     8
+    ],
+    [
+     13,
+     8
+    ],
+    [
+     14,
+     8
+    ],
+    [
+     15,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     10,
+     9
+    ],
+    [
+     11,
+     9
+    ],
+    [
+     12,
+     9
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     14,
+     9
+    ],
+    [
+     15,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     11,
+     10
+    ],
+    [
+     12,
+     10
+    ],
+    [
+     13,
+     10
+    ],
+    [
+     14,
+     10
+    ],
+    [
+     15,
+     10
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     11
+    ],
+    [
+     12,
+     11
+    ],
+    [
+     13,
+     11
+    ],
+    [
+     14,
+     11
+    ],
+    [
+     15,
+     11
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     5,
+     12
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     7,
+     12
+    ],
+    [
+     8,
+     12
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     13,
+     12
+    ],
+    [
+     14,
+     12
+    ],
+    [
+     15,
+     12
+    ],
+    [
+     4,
+     13
+    ],
+    [
+     5,
+     13
+    ],
+    [
+     6,
+     13
+    ],
+    [
+     7,
+     13
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     13
+    ],
+    [
+     14,
+     13
+    ],
+    [
+     15,
+     13
+    ],
+    [
+     4,
+     14
+    ],
+    [
+     5,
+     14
+    ],
+    [
+     6,
+     14
+    ],
+    [
+     7,
+     14
+    ],
+    [
+     8,
+     14
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     11,
+     14
+    ],
+    [
+     12,
+     14
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     14,
+     14
+    ],
+    [
+     15,
+     14
+    ],
+    [
+     4,
+     15
+    ],
+    [
+     5,
+     15
+    ],
+    [
+     6,
+     15
+    ],
+    [
+     7,
+     15
+    ],
+    [
+     8,
+     15
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     15
+    ],
+    [
+     13,
+     15
+    ],
+    [
+     14,
+     15
+    ],
+    [
+     15,
+     15
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [
+    [
+     1,
+     10
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Prominent residence (doctor's/mayor's house) on a residential edge of downtown, or fairground administration house.",
+   "notes": "Fills the whole sheet. Entry is through the left wing: steps/porch cells (1..4, 11..12) walkable, door at (1,10)."
+  },
+  {
+   "id": "rr_farm_shed_red_roof",
+   "sheet": "Tileset_168_MV.png",
+   "x": 1,
+   "y": 4,
+   "w": 7,
+   "h": 9,
+   "category": "building",
+   "desc": "Long farm shed / barn (muted palette): rusty red corrugated roof in two tiers, small roof hatch and TV aerial, plank walls with windows and a striped awning.",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Livestock barn / exhibit shed at the York Fairgrounds, farm building on the town edge.",
+   "notes": "No visible door on this face; the side edges are flat. The aerial occupies the top-left 2 rows."
+  },
+  {
+   "id": "rr_shed_open_front",
+   "sheet": "Tileset_168_MV.png",
+   "x": 8,
+   "y": 7,
+   "w": 3,
+   "h": 3,
+   "category": "building",
+   "desc": "Small wooden shed bay with corrugated eave, orange plank door leaf and a dark open bay.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Tool shed, livestock stall, fairground storage.",
+   "notes": "Open bay but solid (not enterable)."
+  },
+  {
+   "id": "rr_windmill_water_pump",
+   "sheet": "Tileset_168_MV.png",
+   "x": 12,
+   "y": 7,
+   "w": 4,
+   "h": 7,
+   "category": "prop",
+   "desc": "Farm water-pumping windmill: multi-blade grey metal wheel on a timber lattice tower.",
+   "era1960": "good",
+   "solid": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ]
+   ],
+   "overhead_rows": 4,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground agricultural section, farm edges of the map.",
+   "notes": "Wheel (top 4 rows) draws above the player."
+  },
+  {
+   "id": "rr_tin_house_upper",
+   "sheet": "Tileset_169_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 15,
+   "h": 12,
+   "category": "building_module",
+   "desc": "Upper part of a two-storey corrugated-metal house (muted palette, Japanese-rural style): grey tiled roofs with ridge caps, corrugated walls, wooden windows, chimney board, wooden awning strip along the bottom-left.",
+   "era1960": "ok",
+   "solid": [
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     11,
+     0
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     8,
+     1
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     10,
+     1
+    ],
+    [
+     11,
+     1
+    ],
+    [
+     12,
+     1
+    ],
+    [
+     13,
+     1
+    ],
+    [
+     14,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     9,
+     2
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     11,
+     2
+    ],
+    [
+     12,
+     2
+    ],
+    [
+     13,
+     2
+    ],
+    [
+     14,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     9,
+     3
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     11,
+     3
+    ],
+    [
+     12,
+     3
+    ],
+    [
+     13,
+     3
+    ],
+    [
+     14,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     12,
+     4
+    ],
+    [
+     13,
+     4
+    ],
+    [
+     14,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     9,
+     5
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     11,
+     5
+    ],
+    [
+     12,
+     5
+    ],
+    [
+     13,
+     5
+    ],
+    [
+     14,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     9,
+     6
+    ],
+    [
+     10,
+     6
+    ],
+    [
+     11,
+     6
+    ],
+    [
+     12,
+     6
+    ],
+    [
+     13,
+     6
+    ],
+    [
+     14,
+     6
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     7
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     12,
+     7
+    ],
+    [
+     13,
+     7
+    ],
+    [
+     14,
+     7
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     8
+    ],
+    [
+     10,
+     8
+    ],
+    [
+     11,
+     8
+    ],
+    [
+     12,
+     8
+    ],
+    [
+     13,
+     8
+    ],
+    [
+     14,
+     8
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     10,
+     9
+    ],
+    [
+     11,
+     9
+    ],
+    [
+     12,
+     9
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     14,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     11,
+     10
+    ],
+    [
+     12,
+     10
+    ],
+    [
+     13,
+     10
+    ],
+    [
+     14,
+     10
+    ],
+    [
+     0,
+     11
+    ],
+    [
+     1,
+     11
+    ],
+    [
+     2,
+     11
+    ],
+    [
+     3,
+     11
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     11,
+     11
+    ],
+    [
+     12,
+     11
+    ],
+    [
+     13,
+     11
+    ],
+    [
+     14,
+     11
+    ]
+   ],
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Rough industrial/rural dwelling along the creek; use sparingly.",
+   "notes": "Needs rr_tin_house_ground (8x2) stamped directly below its left half (x, y+12). The right half bottoms out at row 11."
+  },
+  {
+   "id": "rr_tin_house_ground",
+   "sheet": "Tileset_169_MV.png",
+   "x": 0,
+   "y": 12,
+   "w": 8,
+   "h": 2,
+   "category": "building_module",
+   "desc": "Ground floor of the tin house: wooden window frames and a pale sliding door.",
+   "era1960": "ok",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [
+    [
+     5,
+     1
+    ]
+   ],
+   "needs_ground": true,
+   "york_use": "Completes rr_tin_house_upper.",
+   "notes": "Place at (X, Y+12) under rr_tin_house_upper at (X, Y)."
+  },
+  {
+   "id": "rr_rack_crates",
+   "sheet": "Tileset_169_MV.png",
+   "x": 8,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Low two-tier wooden rack with orange crates/boxes.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Warehouse yard, market stall back.",
+   "notes": ""
+  },
+  {
+   "id": "rr_rack_pots",
+   "sheet": "Tileset_169_MV.png",
+   "x": 10,
+   "y": 12,
+   "w": 2,
+   "h": 2,
+   "category": "prop",
+   "desc": "Two-tier wooden rack holding pots and jars.",
+   "era1960": "ok",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Warehouse yard, farm stand.",
+   "notes": ""
+  },
+  {
+   "id": "rr_fence_rustic_pen",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 6,
+   "category": "fence",
+   "desc": "Closed rectangular corral of rustic split-rail fence: back run, two side runs, front run.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     5
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Livestock pen at the fairgrounds, farm corral.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. 9-slice: top run = rows 0-1, side runs = rows 2-3 (cols 0-1 left, 5-6 right), front run = rows 4-5. Widen by repeating column 3 (in rows 0-1 and 4-5); deepen by repeating rows 2-3. To add a gate, cut the front run and finish the gap with rr_fence_rustic_end_left / _end_right."
+  },
+  {
+   "id": "rr_fence_rustic_top_run",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 0,
+   "w": 7,
+   "h": 2,
+   "category": "fence",
+   "desc": "Back (top) run of the rustic corral with corner posts at both ends.",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Back edge of pens / boundary fences.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Column 3 is a repeatable middle cell; columns 0-1 and 5-6 are corners that turn downward."
+  },
+  {
+   "id": "rr_fence_rustic_front_run",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 4,
+   "w": 7,
+   "h": 2,
+   "category": "fence",
+   "desc": "Front (bottom) run of the rustic corral with corner posts at both ends.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Front edge of pens.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Column 3 is a repeatable middle cell; ends turn upward into the side runs."
+  },
+  {
+   "id": "rr_fence_rustic_side_left",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "fence",
+   "desc": "Left side run of the rustic corral (vertical, staggered posts).",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Vertical fence lines.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Repeat vertically between the top-run and front-run corners."
+  },
+  {
+   "id": "rr_fence_rustic_side_right",
+   "sheet": "Tileset_170_MV.png",
+   "x": 5,
+   "y": 2,
+   "w": 2,
+   "h": 2,
+   "category": "fence",
+   "desc": "Right side run of the rustic corral (vertical, staggered posts).",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Vertical fence lines.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Repeat vertically between the corners."
+  },
+  {
+   "id": "rr_fence_rustic_straight",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 11,
+   "w": 5,
+   "h": 2,
+   "category": "fence",
+   "desc": "Free-standing straight rustic split-rail fence: end post, three middle posts, end post.",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground boundaries, cemetery edge, field edges.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Tiling: left end = (0,11) 1x2, middle = rr_fence_rustic_mid (repeat any number), right end = (4,11) 1x2. A second identical run sits at (0,13)."
+  },
+  {
+   "id": "rr_fence_rustic_mid",
+   "sheet": "Tileset_170_MV.png",
+   "x": 2,
+   "y": 11,
+   "w": 1,
+   "h": 2,
+   "category": "fence",
+   "desc": "One repeatable middle cell of the rustic split-rail fence (post + rails both sides).",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Lengthening straight runs.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. Repeat horizontally; cap with rr_fence_rustic_end_left/right."
+  },
+  {
+   "id": "rr_fence_rustic_end_left",
+   "sheet": "Tileset_170_MV.png",
+   "x": 0,
+   "y": 6,
+   "w": 1,
+   "h": 2,
+   "category": "fence",
+   "desc": "Rustic fence end post with rails going right (left end / gate post).",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Left end of a run or left side of a gate gap.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. "
+  },
+  {
+   "id": "rr_fence_rustic_end_right",
+   "sheet": "Tileset_170_MV.png",
+   "x": 6,
+   "y": 6,
+   "w": 1,
+   "h": 2,
+   "category": "fence",
+   "desc": "Rustic fence end post with rails going left (right end / gate post).",
+   "era1960": "good",
+   "solid": "bottom:1",
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Right end of a run or right side of a gate gap.",
+   "notes": "Rustic split-rail fence (muted grey-brown palette). Each fence cell is 1 wide x 2 tall: upper tile = post tops, lower tile = post with two rails. No swinging gate exists on these sheets; leave a 1-2 tile gap between an end_right and end_left pair, or use rr_entrance_arch_*."
+  },
+  {
+   "id": "rr_signpost_arrows_red",
+   "sheet": "Tileset_170_MV.png",
+   "x": 9,
+   "y": 1,
+   "w": 2,
+   "h": 2,
+   "category": "sign",
+   "desc": "Wooden direction signpost with two arrow boards (red marks).",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground paths, cemetery lanes, creek trail.",
+   "notes": ""
+  },
+  {
+   "id": "rr_signpost_arrows_plain",
+   "sheet": "Tileset_170_MV.png",
+   "x": 9,
+   "y": 3,
+   "w": 2,
+   "h": 2,
+   "category": "sign",
+   "desc": "Wooden direction signpost with two blank arrow boards.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground paths, cemetery lanes, creek trail.",
+   "notes": ""
+  },
+  {
+   "id": "rr_signpost_board_red",
+   "sheet": "Tileset_170_MV.png",
+   "x": 11,
+   "y": 1,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Small wooden post with a notice board painted with a red symbol.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Trail markers, fair notices, 'Keep Off' boards.",
+   "notes": ""
+  },
+  {
+   "id": "rr_signpost_board_plain",
+   "sheet": "Tileset_170_MV.png",
+   "x": 11,
+   "y": 3,
+   "w": 1,
+   "h": 2,
+   "category": "sign",
+   "desc": "Small wooden post with a plain notice board.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     1
+    ]
+   ],
+   "overhead_rows": 1,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Trail markers, fair notices, 'Keep Off' boards.",
+   "notes": ""
+  },
+  {
+   "id": "rr_hanging_sign_plain",
+   "sheet": "Tileset_170_MV.png",
+   "x": 8,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "sign",
+   "desc": "Wooden post with a side arm and a hanging blank board.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Farm stand / livestock barn name sign at the fairgrounds.",
+   "notes": ""
+  },
+  {
+   "id": "rr_hanging_sign_red",
+   "sheet": "Tileset_170_MV.png",
+   "x": 10,
+   "y": 6,
+   "w": 2,
+   "h": 3,
+   "category": "sign",
+   "desc": "Wooden post with a side arm and a hanging board with a red emblem.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     2
+    ]
+   ],
+   "overhead_rows": 2,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairground exhibit sign, inn/farm sign.",
+   "notes": ""
+  },
+  {
+   "id": "rr_entrance_arch_plain",
+   "sheet": "Tileset_170_MV.png",
+   "x": 12,
+   "y": 1,
+   "w": 4,
+   "h": 4,
+   "category": "sign",
+   "desc": "Ranch-style entrance arch: two log posts with X-braced tops, crossbar and a hanging blank board.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Fairgrounds livestock-area gate, farm lane entrance (walk under the board).",
+   "notes": "Gap between the posts (cols 1-2) is the walkable gateway; pair with fence end posts either side."
+  },
+  {
+   "id": "rr_entrance_arch_painted",
+   "sheet": "Tileset_170_MV.png",
+   "x": 12,
+   "y": 5,
+   "w": 4,
+   "h": 4,
+   "category": "sign",
+   "desc": "Ranch-style entrance arch with a painted (red lettering) hanging board.",
+   "era1960": "good",
+   "solid": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "overhead_rows": 3,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "'York Fair' livestock gate, farm entrance.",
+   "notes": "Walk under between the posts."
+  },
+  {
+   "id": "rr_cellar_hatch_closed",
+   "sheet": "Tileset_170_MV.png",
+   "x": 8,
+   "y": 10,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Storm-cellar bulkhead in a stone frame with closed wooden double doors.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Farmhouse yard, fairground barns.",
+   "notes": ""
+  },
+  {
+   "id": "rr_cellar_hatch_open",
+   "sheet": "Tileset_170_MV.png",
+   "x": 11,
+   "y": 9,
+   "w": 3,
+   "h": 4,
+   "category": "prop",
+   "desc": "Storm-cellar bulkhead with the wooden doors swung upright, dark stairs going down.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Farmhouse yard; potential dungeon/cellar entrance.",
+   "notes": "Could be used as a transition trigger into a cellar."
+  },
+  {
+   "id": "rr_cellar_hatch_empty",
+   "sheet": "Tileset_170_MV.png",
+   "x": 8,
+   "y": 13,
+   "w": 3,
+   "h": 3,
+   "category": "prop",
+   "desc": "Stone-framed cellar opening without doors, wooden steps leading down.",
+   "era1960": "good",
+   "solid": "all",
+   "overhead_rows": 0,
+   "doors": [],
+   "needs_ground": true,
+   "york_use": "Ruined farm / cellar entrance.",
+   "notes": ""
+  }
+ ]
+}

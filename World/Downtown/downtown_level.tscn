@@ -1,0 +1,526 @@
+[gd_scene load_steps=21 format=3]
+
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c0_0.tscn" id="1_w35le"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c1_0.tscn" id="2_yk38o"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c2_0.tscn" id="3_3h7vx"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c3_0.tscn" id="4_2q1dt"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c4_0.tscn" id="5_b6r5e"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c0_1.tscn" id="6_oex48"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c1_1.tscn" id="7_wnh2n"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c2_1.tscn" id="8_6ixc4"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c3_1.tscn" id="9_ravxo"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c4_1.tscn" id="10_o8ibd"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c0_2.tscn" id="11_pvhtm"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c1_2.tscn" id="12_txnvi"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c2_2.tscn" id="13_i3unm"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c3_2.tscn" id="14_fp47e"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c4_2.tscn" id="15_m1ghl"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c0_3.tscn" id="16_ekv4r"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c1_3.tscn" id="17_f5saa"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c2_3.tscn" id="18_1hkfj"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c3_3.tscn" id="19_otiyc"]
+[ext_resource type="PackedScene" path="res://World/Downtown/chunks/downtown_c4_3.tscn" id="20_vatv2"]
+
+[node name="Downtown" type="Node2D"]
+metadata/size_px = Vector2i(2560, 2048)
+
+[node name="Chunks" type="Node2D" parent="."]
+
+[node name="Chunk_0_0" type="Node2D" parent="Chunks" instance=ExtResource("1_w35le")]
+
+[node name="Chunk_1_0" type="Node2D" parent="Chunks" instance=ExtResource("2_yk38o")]
+position = Vector2(512, 0)
+
+[node name="Chunk_2_0" type="Node2D" parent="Chunks" instance=ExtResource("3_3h7vx")]
+position = Vector2(1024, 0)
+
+[node name="Chunk_3_0" type="Node2D" parent="Chunks" instance=ExtResource("4_2q1dt")]
+position = Vector2(1536, 0)
+
+[node name="Chunk_4_0" type="Node2D" parent="Chunks" instance=ExtResource("5_b6r5e")]
+position = Vector2(2048, 0)
+
+[node name="Chunk_0_1" type="Node2D" parent="Chunks" instance=ExtResource("6_oex48")]
+position = Vector2(0, 512)
+
+[node name="Chunk_1_1" type="Node2D" parent="Chunks" instance=ExtResource("7_wnh2n")]
+position = Vector2(512, 512)
+
+[node name="Chunk_2_1" type="Node2D" parent="Chunks" instance=ExtResource("8_6ixc4")]
+position = Vector2(1024, 512)
+
+[node name="Chunk_3_1" type="Node2D" parent="Chunks" instance=ExtResource("9_ravxo")]
+position = Vector2(1536, 512)
+
+[node name="Chunk_4_1" type="Node2D" parent="Chunks" instance=ExtResource("10_o8ibd")]
+position = Vector2(2048, 512)
+
+[node name="Chunk_0_2" type="Node2D" parent="Chunks" instance=ExtResource("11_pvhtm")]
+position = Vector2(0, 1024)
+
+[node name="Chunk_1_2" type="Node2D" parent="Chunks" instance=ExtResource("12_txnvi")]
+position = Vector2(512, 1024)
+
+[node name="Chunk_2_2" type="Node2D" parent="Chunks" instance=ExtResource("13_i3unm")]
+position = Vector2(1024, 1024)
+
+[node name="Chunk_3_2" type="Node2D" parent="Chunks" instance=ExtResource("14_fp47e")]
+position = Vector2(1536, 1024)
+
+[node name="Chunk_4_2" type="Node2D" parent="Chunks" instance=ExtResource("15_m1ghl")]
+position = Vector2(2048, 1024)
+
+[node name="Chunk_0_3" type="Node2D" parent="Chunks" instance=ExtResource("16_ekv4r")]
+position = Vector2(0, 1536)
+
+[node name="Chunk_1_3" type="Node2D" parent="Chunks" instance=ExtResource("17_f5saa")]
+position = Vector2(512, 1536)
+
+[node name="Chunk_2_3" type="Node2D" parent="Chunks" instance=ExtResource("18_1hkfj")]
+position = Vector2(1024, 1536)
+
+[node name="Chunk_3_3" type="Node2D" parent="Chunks" instance=ExtResource("19_otiyc")]
+position = Vector2(1536, 1536)
+
+[node name="Chunk_4_3" type="Node2D" parent="Chunks" instance=ExtResource("20_vatv2")]
+position = Vector2(2048, 1536)
+
+[node name="Entities" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="npc_0" type="Marker2D" parent="Markers"]
+position = Vector2(744, 1528)
+metadata/kind = "npc"
+metadata/id = "fisherman"
+metadata/facing = "east"
+metadata/note = "old fisherman on the gravel shoal (S1)"
+
+[node name="secret_1" type="Marker2D" parent="Markers"]
+position = Vector2(712, 1576)
+metadata/kind = "secret"
+metadata/id = "S1"
+metadata/note = "gravel shoal below the Market St bridge"
+
+[node name="interact_2" type="Marker2D" parent="Markers"]
+position = Vector2(744, 1560)
+metadata/kind = "interact"
+metadata/id = "S1_rod"
+metadata/note = "propped fishing rod"
+
+[node name="door_3" type="Marker2D" parent="Markers"]
+position = Vector2(1336, 920)
+metadata/kind = "door"
+metadata/prefab = "dt_market_house"
+
+[node name="door_4" type="Marker2D" parent="Markers"]
+position = Vector2(1352, 920)
+metadata/kind = "door"
+metadata/prefab = "dt_market_house"
+
+[node name="door_5" type="Marker2D" parent="Markers"]
+position = Vector2(1336, 920)
+metadata/kind = "door"
+metadata/building = "central_market"
+
+[node name="door_6" type="Marker2D" parent="Markers"]
+position = Vector2(1352, 920)
+metadata/kind = "door"
+metadata/building = "central_market"
+
+[node name="npc_7" type="Marker2D" parent="Markers"]
+position = Vector2(1032, 840)
+metadata/kind = "npc"
+metadata/role = "farmer_vendor"
+
+[node name="npc_8" type="Marker2D" parent="Markers"]
+position = Vector2(1624, 840)
+metadata/kind = "npc"
+metadata/role = "flower_seller"
+
+[node name="door_9" type="Marker2D" parent="Markers"]
+position = Vector2(1912, 952)
+metadata/kind = "door"
+metadata/prefab = "dt_hotel"
+
+[node name="door_10" type="Marker2D" parent="Markers"]
+position = Vector2(2024, 952)
+metadata/kind = "door"
+metadata/prefab = "dt_hotel"
+
+[node name="door_11" type="Marker2D" parent="Markers"]
+position = Vector2(2376, 952)
+metadata/kind = "door"
+metadata/prefab = "dt_church1_body"
+
+[node name="door_12" type="Marker2D" parent="Markers"]
+position = Vector2(2296, 952)
+metadata/kind = "door"
+metadata/prefab = "dt_church1_tower"
+
+[node name="door_13" type="Marker2D" parent="Markers"]
+position = Vector2(1080, 1240)
+metadata/kind = "door"
+metadata/prefab = "dt_dept"
+
+[node name="door_14" type="Marker2D" parent="Markers"]
+position = Vector2(1128, 1240)
+metadata/kind = "door"
+metadata/prefab = "dt_dept"
+
+[node name="door_15" type="Marker2D" parent="Markers"]
+position = Vector2(1464, 1240)
+metadata/kind = "door"
+metadata/prefab = "dt_dime_b"
+
+[node name="door_16" type="Marker2D" parent="Markers"]
+position = Vector2(2024, 1240)
+metadata/kind = "door"
+metadata/prefab = "dt_bank"
+
+[node name="door_17" type="Marker2D" parent="Markers"]
+position = Vector2(2040, 1240)
+metadata/kind = "door"
+metadata/prefab = "dt_bank"
+
+[node name="door_18" type="Marker2D" parent="Markers"]
+position = Vector2(2360, 1224)
+metadata/kind = "door"
+metadata/prefab = "dt_courthouse"
+
+[node name="door_19" type="Marker2D" parent="Markers"]
+position = Vector2(2376, 1224)
+metadata/kind = "door"
+metadata/prefab = "dt_courthouse"
+
+[node name="npc_20" type="Marker2D" parent="Markers"]
+position = Vector2(1736, 1320)
+metadata/kind = "npc"
+metadata/role = "traffic_cop"
+
+[node name="secret_21" type="Marker2D" parent="Markers"]
+position = Vector2(2472, 1432)
+metadata/kind = "secret"
+metadata/id = "S7"
+
+[node name="door_22" type="Marker2D" parent="Markers"]
+position = Vector2(1096, 1576)
+metadata/kind = "door"
+metadata/prefab = "dt_diner"
+
+[node name="door_23" type="Marker2D" parent="Markers"]
+position = Vector2(1240, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_hardware"
+
+[node name="door_24" type="Marker2D" parent="Markers"]
+position = Vector2(1496, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_barber"
+
+[node name="door_25" type="Marker2D" parent="Markers"]
+position = Vector2(1608, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_news"
+
+[node name="door_26" type="Marker2D" parent="Markers"]
+position = Vector2(1912, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_drug"
+
+[node name="door_27" type="Marker2D" parent="Markers"]
+position = Vector2(2024, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_theatre"
+
+[node name="door_28" type="Marker2D" parent="Markers"]
+position = Vector2(2296, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_b4"
+
+[node name="door_29" type="Marker2D" parent="Markers"]
+position = Vector2(2312, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_b4"
+
+[node name="door_30" type="Marker2D" parent="Markers"]
+position = Vector2(2424, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_b4"
+
+[node name="door_31" type="Marker2D" parent="Markers"]
+position = Vector2(2440, 1656)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_b4"
+
+[node name="door_32" type="Marker2D" parent="Markers"]
+position = Vector2(1048, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c1"
+
+[node name="door_33" type="Marker2D" parent="Markers"]
+position = Vector2(1064, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c1"
+
+[node name="door_34" type="Marker2D" parent="Markers"]
+position = Vector2(1176, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c1"
+
+[node name="door_35" type="Marker2D" parent="Markers"]
+position = Vector2(1192, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c1"
+
+[node name="door_36" type="Marker2D" parent="Markers"]
+position = Vector2(2296, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c4"
+
+[node name="door_37" type="Marker2D" parent="Markers"]
+position = Vector2(2312, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c4"
+
+[node name="door_38" type="Marker2D" parent="Markers"]
+position = Vector2(2424, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c4"
+
+[node name="door_39" type="Marker2D" parent="Markers"]
+position = Vector2(2440, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_rows_c4"
+
+[node name="door_40" type="Marker2D" parent="Markers"]
+position = Vector2(1544, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_church2_body"
+
+[node name="door_41" type="Marker2D" parent="Markers"]
+position = Vector2(1464, 1944)
+metadata/kind = "door"
+metadata/prefab = "dt_church2_tower"
+
+[node name="door_42" type="Marker2D" parent="Markers"]
+position = Vector2(1896, 1912)
+metadata/kind = "door"
+metadata/prefab = "dt_depot"
+
+[node name="door_43" type="Marker2D" parent="Markers"]
+position = Vector2(2008, 1912)
+metadata/kind = "door"
+metadata/prefab = "dt_depot"
+
+[node name="spawn_44" type="Marker2D" parent="Markers"]
+position = Vector2(1944, 1960)
+metadata/kind = "spawn"
+metadata/facing = "up"
+
+[node name="npc_45" type="Marker2D" parent="Markers"]
+position = Vector2(1896, 1960)
+metadata/kind = "npc"
+metadata/role = "newsboy"
+
+[node name="secret_46" type="Marker2D" parent="Markers"]
+position = Vector2(648, 136)
+metadata/kind = "secret"
+metadata/id = "S2"
+metadata/desc = "grove glade, reached by the hidden trail x=40 y=10..21"
+
+[node name="door_47" type="Marker2D" parent="Markers"]
+position = Vector2(776, 344)
+metadata/kind = "door"
+metadata/prefab = "no_factory"
+
+[node name="door_48" type="Marker2D" parent="Markers"]
+position = Vector2(792, 344)
+metadata/kind = "door"
+metadata/prefab = "no_factory"
+
+[node name="door_49" type="Marker2D" parent="Markers"]
+position = Vector2(840, 344)
+metadata/kind = "door"
+metadata/prefab = "no_factory"
+
+[node name="door_50" type="Marker2D" parent="Markers"]
+position = Vector2(904, 344)
+metadata/kind = "door"
+metadata/prefab = "no_factory"
+
+[node name="door_51" type="Marker2D" parent="Markers"]
+position = Vector2(952, 344)
+metadata/kind = "door"
+metadata/prefab = "no_factory"
+
+[node name="secret_52" type="Marker2D" parent="Markers"]
+position = Vector2(680, 56)
+metadata/kind = "secret"
+metadata/id = "S3"
+metadata/desc = "factory back corner behind the crate stacks"
+
+[node name="npc_53" type="Marker2D" parent="Markers"]
+position = Vector2(840, 360)
+metadata/kind = "npc"
+metadata/role = "factory_foreman"
+
+[node name="door_54" type="Marker2D" parent="Markers"]
+position = Vector2(2232, 312)
+metadata/kind = "door"
+metadata/prefab = "no_house_slate"
+
+[node name="door_55" type="Marker2D" parent="Markers"]
+position = Vector2(2408, 312)
+metadata/kind = "door"
+metadata/prefab = "no_house_maroon"
+
+[node name="secret_56" type="Marker2D" parent="Markers"]
+position = Vector2(2440, 56)
+metadata/kind = "secret"
+metadata/id = "S6"
+metadata/desc = "overlook coin telescope + item"
+
+[node name="npc_57" type="Marker2D" parent="Markers"]
+position = Vector2(2376, 88)
+metadata/kind = "npc"
+metadata/role = "overlook_old_couple"
+
+[node name="npc_58" type="Marker2D" parent="Markers"]
+position = Vector2(1896, 488)
+metadata/kind = "npc"
+metadata/role = "bus_stop_commuter"
+
+[node name="gate_59" type="Marker2D" parent="Markers"]
+position = Vector2(1736, 360)
+metadata/kind = "gate"
+metadata/id = "cemetery_gate"
+metadata/note = "Gothic gate on the George St axis; opening x=107..110"
+
+[node name="door_60" type="Marker2D" parent="Markers"]
+position = Vector2(1928, 120)
+metadata/kind = "door"
+metadata/prefab = "cf_gothic_chapel_with_vault"
+
+[node name="door_61" type="Marker2D" parent="Markers"]
+position = Vector2(1992, 120)
+metadata/kind = "door"
+metadata/prefab = "cf_gothic_chapel_with_vault"
+
+[node name="door_62" type="Marker2D" parent="Markers"]
+position = Vector2(1464, 184)
+metadata/kind = "door"
+metadata/prefab = "cf_receiving_vault_arch"
+
+[node name="secret_63" type="Marker2D" parent="Markers"]
+position = Vector2(1464, 184)
+metadata/kind = "secret"
+metadata/id = "S4"
+metadata/note = "receiving vault door in the cliff face; interact from (91,12)"
+
+[node name="secret_64" type="Marker2D" parent="Markers"]
+position = Vector2(1096, 56)
+metadata/kind = "secret"
+metadata/id = "S5"
+metadata/note = "forgotten mausoleum; interact from (68,4)"
+
+[node name="door_65" type="Marker2D" parent="Markers"]
+position = Vector2(1880, 312)
+metadata/kind = "door"
+metadata/id = "gatehouse"
+
+[node name="sign_66" type="Marker2D" parent="Markers"]
+position = Vector2(1304, 120)
+metadata/kind = "sign"
+metadata/id = "soldiers_lot"
+metadata/text = "Soldiers' Lot, 1862"
+
+[node name="npc_67" type="Marker2D" parent="Markers"]
+position = Vector2(1320, 328)
+metadata/kind = "npc"
+metadata/id = "groundskeeper"
+metadata/note = "tending graves beside the wheelbarrow"
+
+[node name="locked_gate_68" type="Marker2D" parent="Markers"]
+position = Vector2(584, 1016)
+metadata/kind = "locked_gate"
+metadata/id = "fair_back_gate"
+metadata/locked = true
+
+[node name="door_69" type="Marker2D" parent="Markers"]
+position = Vector2(88, 232)
+metadata/kind = "door"
+metadata/prefab = "fair_barn_a"
+
+[node name="door_70" type="Marker2D" parent="Markers"]
+position = Vector2(216, 232)
+metadata/kind = "door"
+metadata/prefab = "fair_barn_b"
+
+[node name="door_71" type="Marker2D" parent="Markers"]
+position = Vector2(408, 248)
+metadata/kind = "door"
+metadata/prefab = "fair_memorial_hall"
+
+[node name="door_72" type="Marker2D" parent="Markers"]
+position = Vector2(424, 248)
+metadata/kind = "door"
+metadata/prefab = "fair_memorial_hall"
+
+[node name="secret_73" type="Marker2D" parent="Markers"]
+position = Vector2(296, 728)
+metadata/kind = "secret"
+metadata/id = "S9"
+metadata/desc = "judges' stand: item at the foot of the stand stairs"
+
+[node name="door_74" type="Marker2D" parent="Markers"]
+position = Vector2(440, 1096)
+metadata/kind = "door"
+metadata/prefab = "sy_bigtop"
+
+[node name="door_75" type="Marker2D" parent="Markers"]
+position = Vector2(456, 1096)
+metadata/kind = "door"
+metadata/prefab = "sy_bigtop"
+
+[node name="npc_76" type="Marker2D" parent="Markers"]
+position = Vector2(296, 1016)
+metadata/kind = "npc"
+metadata/role = "barker"
+
+[node name="npc_77" type="Marker2D" parent="Markers"]
+position = Vector2(232, 1208)
+metadata/kind = "npc"
+metadata/role = "ticket_taker"
+
+[node name="landmark_78" type="Marker2D" parent="Markers"]
+position = Vector2(280, 1720)
+metadata/kind = "landmark"
+metadata/id = "soldiers_sailors_column"
+
+[node name="npc_79" type="Marker2D" parent="Markers"]
+position = Vector2(440, 1592)
+metadata/kind = "npc"
+metadata/role = "band"
+
+[node name="door_80" type="Marker2D" parent="Markers"]
+position = Vector2(520, 1912)
+metadata/kind = "door"
+metadata/prefab = "park_pump_house"
+
+[node name="door_81" type="Marker2D" parent="Markers"]
+position = Vector2(536, 1912)
+metadata/kind = "door"
+metadata/prefab = "park_pump_house"
+
+[node name="secret_82" type="Marker2D" parent="Markers"]
+position = Vector2(88, 1880)
+metadata/kind = "secret"
+metadata/id = "S8"
+metadata/desc = "hobo camp: item by the bedroll"
+
+[node name="npc_83" type="Marker2D" parent="Markers"]
+position = Vector2(88, 1864)
+metadata/kind = "npc"
+metadata/role = "hobo"

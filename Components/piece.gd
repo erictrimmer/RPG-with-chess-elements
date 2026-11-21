@@ -10,19 +10,19 @@ var piece_type: int
 
 # Dictionary to map FEN characters to resource paths
 const PIECE_TEXTURE_MAP = {
-	"P": "res://Assets/Sprites/pieces/wp.png", # White Pawn
-	"N": "res://Assets/Sprites/pieces/wn.png", # White Knight
-	"B": "res://Assets/Sprites/pieces/wb.png", # White Bishop
-	"R": "res://Assets/Sprites/pieces/wr.png", # White Rook
-	"Q": "res://Assets/Sprites/pieces/wq.png", # White Queen
-	"K": "res://Assets/Sprites/pieces/wk.png", # White King
+	"P": "res://Assets/Sprites/pieces_staunton/wp.png", # White Pawn
+	"N": "res://Assets/Sprites/pieces_staunton/wn.png", # White Knight
+	"B": "res://Assets/Sprites/pieces_staunton/wb.png", # White Bishop
+	"R": "res://Assets/Sprites/pieces_staunton/wr.png", # White Rook
+	"Q": "res://Assets/Sprites/pieces_staunton/wq.png", # White Queen
+	"K": "res://Assets/Sprites/pieces_staunton/wk.png", # White King
 	
-	"p": "res://Assets/Sprites/pieces/bp.png", # Black Pawn
-	"n": "res://Assets/Sprites/pieces/bn.png", # Black Knight
-	"b": "res://Assets/Sprites/pieces/bb.png", # Black Bishop
-	"r": "res://Assets/Sprites/pieces/br.png", # Black Rook
-	"q": "res://Assets/Sprites/pieces/bq.png", # Black Queen
-	"k": "res://Assets/Sprites/pieces/bk.png", # Black King
+	"p": "res://Assets/Sprites/pieces_staunton/bp.png", # Black Pawn
+	"n": "res://Assets/Sprites/pieces_staunton/bn.png", # Black Knight
+	"b": "res://Assets/Sprites/pieces_staunton/bb.png", # Black Bishop
+	"r": "res://Assets/Sprites/pieces_staunton/br.png", # Black Rook
+	"q": "res://Assets/Sprites/pieces_staunton/bq.png", # Black Queen
+	"k": "res://Assets/Sprites/pieces_staunton/bk.png", # Black King
 }
 
 # New initialization function called by Board.gd
@@ -38,8 +38,8 @@ func initialize_piece(fen_char: String, target_size: int):
 			var tex_size = texture.get_size()
 			var scale_factor = float(target_size) / float(max(tex_size.x, tex_size.y))
 			
-			# Fix: Use Linear filtering for these high-res pieces scaled down to 16px
-			texture_filter = TextureFilter.TEXTURE_FILTER_LINEAR
+			# Pixel art: keep edges crisp (the sprites are drawn at 24px for 24px squares)
+			texture_filter = TextureFilter.TEXTURE_FILTER_NEAREST
 			
 			scale = Vector2(scale_factor, scale_factor)
 		else:
