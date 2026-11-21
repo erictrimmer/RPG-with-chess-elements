@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Pawn's Journey"
-run/main_scene="res://Scenes/demo.tscn"
+config/name="York Chess Quest"
+run/main_scene="res://Scenes/TitleScreen.tscn"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 
 [autoload]
@@ -23,6 +23,8 @@ GameState="*res://Systems/GameState.gd"
 GameManager="*res://Systems/GameManager.gd"
 InventoryManager="*res://Systems/InventoryManager.gd"
 QuestManager="*res://Systems/QuestManager.gd"
+SaveManager="*res://Systems/SaveManager.gd"
+PauseMenu="*res://Systems/PauseMenu.gd"
 
 [display]
 

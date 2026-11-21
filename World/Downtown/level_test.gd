@@ -14,6 +14,7 @@ func _ready() -> void:
 	if level == null or player == null:
 		return
 	SceneDoor.apply_pending_spawn(get_tree(), player)
+	_autosave.call_deferred()
 	var size: Vector2i = level.get_meta("size_px", Vector2i(2560, 2048))
 	var cam: Camera2D = player.get_node_or_null("Camera2D")
 	if cam:
@@ -21,3 +22,9 @@ func _ready() -> void:
 		cam.limit_top = 0
 		cam.limit_right = size.x
 		cam.limit_bottom = size.y
+
+## Re-save the slot this game belongs to, so a door or a load never loses progress.
+func _autosave() -> void:
+	var saves := get_node_or_null("/root/SaveManager")
+	if saves:
+		saves.autosave()

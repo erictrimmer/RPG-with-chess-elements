@@ -31,7 +31,7 @@ Shop owner mentions Tim, a man in the park building something that looks like th
 Fetch scrap metal from the landfill for Tim's sculpture.
 
 **Act 2b — `tims_sculpture`: The Giant Knight** *(existing, unchanged)*
-Tim finishes his giant steel chess knight — in the same park the tournament will later be held in. Player gets the missing black knight piece, completing the set.
+Tim finishes his giant steel chess knight — the world's tallest chess piece, and what he has been welding all along (each fetch quest brings him materials for it) — in the same park the tournament will later be held in. Player gets the missing black knight piece, completing the set.
 
 **Act 3 — `find_clock`: Tim's Old Clock** *(existing, unchanged)*
 Tim mentions he left his old chess clock at the library.

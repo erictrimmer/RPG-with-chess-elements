@@ -9,7 +9,7 @@ Pawn's Journey is a chess-based RPG built with Godot 4 (.NET). Players explore o
 ## Running the Project
 
 - Open in **Godot 4.3+** (with .NET/C# support enabled)
-- Main scene: `res://Scenes/MainMenu.tscn`
+- Main scene: `res://Scenes/TitleScreen.tscn` (title screen: Continue, New Game, Load Game, Quit)
 - Dependencies: .NET 8.0 SDK, NuGet package `ChessDotNetCore` v1.6.0 (managed via `PawnJourney.csproj`)
 - Stockfish executable lives at `Engine/chess_engine.exe` and is launched as a subprocess by `ChessEngine.cs`
 
@@ -31,6 +31,8 @@ Python scripts in `Tools/legacy/` (`center_sprites.py`, `fix_sprite_centering.py
 | `DialogManager` | `Systems/DialogManager.gd` | Global dialog UI (typewriter, sequences, choices) |
 | `InventoryManager` | `Systems/InventoryManager.gd` | Quest item tracking |
 | `QuestManager` | `Systems/QuestManager.gd` | Multi-stage quest progression with signals |
+| `SaveManager` | `Systems/SaveManager.gd` | 3 save slots as JSON in `user://saves/`; saves scene, player position, `GameState`, quests, inventory; autosaves when a level loads |
+| `PauseMenu` | `Systems/PauseMenu.gd` | Esc in any scene with a player: Resume, Save Game, Load Game, Quit to Title |
 | `PuzzleManager` | `Systems/PuzzleManager.gd` | JSON puzzle loading with ELO/tag filtering |
 | `OpeningBookManager` | `Systems/OpeningBookManager.gd` | FEN→UCI opening book lookup for bots |
 

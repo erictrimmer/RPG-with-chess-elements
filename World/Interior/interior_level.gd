@@ -16,6 +16,7 @@ func _ready() -> void:
 	if player == null:
 		return
 	SceneDoor.apply_pending_spawn(get_tree(), player)
+	_autosave.call_deferred()
 	var cam: Camera2D = player.get_node_or_null("Camera2D")
 	if cam:
 		var c := Vector2i(room_size / 2)
@@ -29,3 +30,9 @@ func _ready() -> void:
 func _exit_tree() -> void:
 	# Back to Godot's default grey for the overworld scenes.
 	RenderingServer.set_default_clear_color(Color(0.3, 0.3, 0.3))
+
+## Re-save the slot this game belongs to, so a door or a load never loses progress.
+func _autosave() -> void:
+	var saves := get_node_or_null("/root/SaveManager")
+	if saves:
+		saves.autosave()
